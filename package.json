@@ -1,0 +1,17 @@
+{
+  "name": "parallax-template",
+  "version": "1.0.0",
+  "description": "Oregon Hikes",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "dev": "vite dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Brown",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.1.5"
+  }
+}
