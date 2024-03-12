@@ -9,6 +9,9 @@
 
 
 ### This app lists hikes in Oregon.
+* This is new look based on my other project Oregon Hikes. 
+* https://github.com/rbrown29/sturdy-octo-computing-machine
+
 #### Users can--- 
 * View, edit, add new hikes
 * Sign up
@@ -16,6 +19,14 @@
 * Know the difficulty of the trail
 * Know the distance of the trail
 
+### Maps, links, and Videos on the site
+* YouTube- Oregon Backpacking 1.0
+* All Trails
+* OregonHikers.org
+* Travel Oregon
+* Vist Oregon
+
+### This app is a full stack app that uses the following technologies:
 
 
 ### Languages Used
@@ -50,5 +61,5 @@
 ## Running the Project
 
 1. In the terminal, run: `npm start` or `node sever.js` or `nodemon sever.js`
-2. Browse to frontend at [localhost:3003](http://localhost:3003).
+2. Browse to frontend at [localhost:3001](http://localhost:3001).
 3. Sign up and login to add, edit, or delete hikes.
