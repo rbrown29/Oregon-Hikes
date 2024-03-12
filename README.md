@@ -14,6 +14,8 @@
 * Sign up
 * Login
 * Know the difficulty of the trail
+* Know the distance of the trail
+
 
 
 ### Languages Used
