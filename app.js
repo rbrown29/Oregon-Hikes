@@ -45,6 +45,21 @@ app.get('/login', (req, res) => {
     res.render('login.ejs', {});
 });
 
+app.get('/viewhike/:id', (req, res) => {
+    // Get the ID from the URL
+    const trailId = parseInt(req.params.id);
+    // Find the trail with the matching ID from your data source
+    const trail = trails.trails.find(trail => trail.id === trailId);
+
+    if (!trail) {
+        // If the trail is not found, handle the error (e.g., render an error page)
+        res.status(404).send('Trail not found');
+    } else {
+        // If the trail is found, render the 'viewhike.ejs' template with the trail data
+        res.render('viewhike.ejs', { trail: trail });
+    }
+});
+
 app.get('/json', (req, res) => {
     res.json(json);
 });

@@ -3,13 +3,21 @@
     <div class="row" id="container">
       <% for (var i = 0; i < trails.length; i++) { %>
       <div class="col s12 m4">
-        <div class="card large green">
-          <div class="card-image green">
+        <div class="card large grey">
+          <div class="card-image grey">
             <img src="<%= trails[i].image %>" />
-            <span class="card-title"><%=trails[i].name%></span>
+            <span class="card-title">
+              <ul>
+                <li>
+                  <a class="white-text" href="/viewhike/<%= trails[i].id %>">
+                    <%= trails[i].name %>
+                  </a>
+                </li>
+              </ul>
+            </span>
           </div>
-          <div class="card-content green">
-            <p><%= trails[i].description %></p>
+          <div class="card-content grey">
+            <p style="color: whitesmoke;"><%= trails[i].description %></p>
           </div>
         </div>
       </div>
