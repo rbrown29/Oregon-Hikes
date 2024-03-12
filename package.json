@@ -4,14 +4,25 @@
   "description": "Oregon Hikes",
   "main": "index.js",
   "scripts": {
-    "start": "vite",
+    "start": "node server.js",
     "build": "vite build",
-    "dev": "vite dev",
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Richard Brown",
   "license": "ISC",
   "dependencies": {
+    "address": "^2.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "express-session": "^1.18.0",
+    "json-loader": "^0.5.7",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.2.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
     "vite": "^5.1.5"
   }
 }

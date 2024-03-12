@@ -1,0 +1,19 @@
+{
+    "icons" : [
+        {
+            "name" : "directions",
+            "title" : "Maps",
+            "description" : "Discover the natural wonders, cultural treasures, and hidden gems of the Pacific Northwest with our guide to the top 50 best places to visit in Oregon. From the rugged coastline of the Oregon Coast to the majestic peaks of the Cascade Range, Oregon offers a diverse array of landscapes and attractions just waiting to be explored. Whether you’re an outdoor enthusiast seeking adventure or a history buff eager to uncover the state’s rich heritage, there’s something for everyone in Oregon."
+        },
+        {
+            "name" : "hiking",
+            "title" : "Best Trails in Oregon",
+            "description" : "Find your outdoors. Oregon offers some of the best hiking trails, mountain biking routes, backpacking trips and more. Nature is what unites us all. If you’re dreaming of owning a vacation home, where you can escape the hustle and bustle of everyday life, Oregon might just have your answer. This beautiful state is home to some of the most breathtaking lakes, perfect for water sports enthusiasts and nature enthusiasts alike."
+        },
+        {
+            "name" : "backpack",
+            "title" : "Backpacking and Biking",
+            "description" : "We consider Oregon to be an outdoor lovers paradise. Boasting numerous state parks, desert lands, mountain ranges, a picture perfect coast and so much more, there is never a shortage of things to do or see. While we do get our fair share of rain and inclement weather throughout the year, we recommend checking out these 10 hikes no matter the season. With thousands of miles of trails scattered throughout the state, you are never far away from your next adventure."
+        }
+    ]
+}
