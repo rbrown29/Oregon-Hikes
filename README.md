@@ -28,15 +28,10 @@
 
 ### This app is a full stack app that uses the following technologies:
 
-
-### Languages Used
-
 * ![HTML](https://img.shields.io/badge/HTML-HyperText%20Markup%20Language-red)
 * ![CSS](https://img.shields.io/badge/CSS-Cascade%20Style%20Sheets-blue)
 * ![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-JS-yellow)
 * ![JQUERY](https://img.shields.io/badge/JQUERY-JS-blue)
-
-### Tecnologies Used
 
 * ![Express](https://img.shields.io/badge/EXPRESS-Middleware-orange)
 * ![Node](https://img.shields.io/badge/NODE-JS-brightgreen)
@@ -45,9 +40,7 @@
 * ![Mongoose](https://img.shields.io/badge/MONGOOSE-JS-yellowgreen)
 * ![Bcrypt](https://img.shields.io/badge/BCRYPT-JS-blue)
 
-### CSS Framworks 
-
-* ![MUSTARD](https://img.shields.io/badge/MATERIALIZE-CSS-yellow)
+* ![MATERIALIZE](https://img.shields.io/badge/MATERIALIZE-CSS-yellow)
 * ![GOOGLE FONTS](https://img.shields.io/badge/GOOGLE%20FONTS-GOOGLE-red)
 * ![My Custom CSS](https://img.shields.io/badge/MY%20CUSTOM%20CSS-CSS-lightgrey)
 
