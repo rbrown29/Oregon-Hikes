@@ -2,8 +2,11 @@
 <script src="/js/materialize.js"></script>
 <script src="/js/init.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var modals = document.querySelectorAll('.modal');
+  document.addEventListener("DOMContentLoaded", function () {
+    var modals = document.querySelectorAll(".modal");
     M.Modal.init(modals);
-});
+  });
+  $(document).ready(function () {
+    $(".tooltipped").tooltip({ delay: 50 });
+  });
 </script>
