@@ -20,7 +20,7 @@
 * Know the distance of the trail
 
 ### Maps, links, and Videos on the site
-* YouTube- Oregon Backpacking 1.0
+* YouTube
 * All Trails
 * OregonHikers.org
 * Travel Oregon
