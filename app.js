@@ -5,11 +5,11 @@ const session = require("express-session");
 const cors = require("cors");
 const morgan = require("morgan");
 const ejs = require("ejs");
-const json = require("./trails.json");
-const trails = require("./hike.json");
-const icons = require("./icons.json");
-const links = require("./links.json");
-const names = require("./names.json");
+const json = require("./data/trails.json");
+const trails = require("./data/hike.json");
+const icons = require("./data/icons.json");
+const links = require("./data/links.json");
+const names = require("./data/names.json");
 
 // Middleware
 app.use(express.static("public"));
@@ -28,13 +28,26 @@ app.use(
   session({
     secret: "feedmeseymour",
     resave: true,
-    saveUninitialized: false,
+    saveUninitialized: true,
+    cookie: { secure: process.env.NODE_ENV === 'production' }
   })
 );
 app.set("view engine", "ejs");
 
+// Logged in user global
+
+app.use((req, res, next) => {
+    res.locals.loggedIn = !!req.session.username; // set loggedIn status here
+    res.locals.username = req.session.username || ''; // set username here
+    next();
+});
+
 // Controllers
-//app.use('/contact', require('./controllers/contact.js'));
+const userController = require("./controllers/user.js");
+app.use("/", userController);
+
+const sessionsController = require("./controllers/sessions.js");
+app.use("/sessions", sessionsController);
 
 // Routes
 app.get("/", (req, res) => {
@@ -47,7 +60,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/signup", (req, res) => {
-  res.render("signup.ejs", {});
+    res.render("signup.ejs", {});
 });
 
 app.get("/login", (req, res) => {
@@ -75,6 +88,13 @@ app.get("/trails", (req, res) => {
 
 app.get("/links", (req, res) => {
   res.json(links);
+});
+
+// Logout
+app.get('/logout', (req, res) => {
+    req.session.destroy(() => {
+        res.redirect('/'); 
+    });
 });
 
 module.exports = app;
