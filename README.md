@@ -5,19 +5,21 @@
 ### Author and Code design by Richard Brown
 
 ### Links To Gitub project and live Site.
-
-
+https://oregon-hikes.onrender.com/
+https://github.com/rbrown29/Oregon-Hikes
 
 ### This app lists hikes in Oregon.
 * This is new look based on my other project Oregon Hikes. 
 * https://github.com/rbrown29/sturdy-octo-computing-machine
 
 #### Users can--- 
-* View, edit, add new hikes
+* View, Click hike name to see more details, videos, and a map of hike.
 * Sign up
 * Login
 * Know the difficulty of the trail
 * Know the distance of the trail
+* view the json data at localhost:3001/api/trails
+* view the json data at localhost:3001/api/json
 
 ### Maps, links, and Videos on the site
 * YouTube
