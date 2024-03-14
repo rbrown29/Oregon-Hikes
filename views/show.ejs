@@ -1,0 +1,93 @@
+<%- include('head.ejs') -%> 
+<%- include('nav.ejs') -%>
+<style>
+  /* Custom underline color for active tab */
+  .tabs .indicator {
+    background-color: green !important; 
+  }
+
+  /* Custom background color for active tab */
+  .tabs .tab a.active {
+    background-color: #e0f2f1 !important; 
+    color: darkgreen !important; 
+  }
+
+  /*green text for tabs */
+  .tabs .tab a {
+    color: green !important; 
+  }
+</style>
+<body style="background-color: #3e363f">
+  <div class="row">
+    <% for (var i = 0; i < json.length; i++) { %>
+    <div class="col s12 m4">
+      <div class="card small">
+        <div class="card-content">
+          <p style="font-family: fantasy; font-size: medium;"><%= json[i].name %></p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab">
+              <a href="#urls<%= i %>" class="active green-text">URLs</a>
+            </li>
+            <li class="tab">
+              <a href="#measures<%= i %>" class="green-text">Measures</a>
+            </li>
+            <li class="tab">
+              <a href="#locations<%= i %>" class="green-text">Locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+          <div id="urls<%= i %>" class="col s12">
+            <p>
+              Absolute Source:
+              <a href="<%= json[i].urls.absoluteSource %>" target="_blank"
+                ><%= json[i].name %></a
+              >
+            </p>
+            <p>
+              Trail Start:
+              <a href="<%= json[i].urls.trailStart %>" target="_blank"
+                >Trail Head</a
+              >
+            </p>
+            <p>
+              Trail End:
+              <a href="<%= json[i].urls.trailEnd %>" target="_blank"
+                >Trail End</a
+              >
+            </p>
+          </div>
+          <div id="measures<%= i %>" class="col s12">
+            <p>Difficulty: <%= json[i].measures.difficulty %></p>
+            <p>
+              Distance: <%= json[i].measures.distance.value %> <%=
+              json[i].measures.distance.measure %>
+            </p>
+            <p>
+              Elevation Gain: <%= json[i].measures.elevationGain.value %> <%=
+              json[i].measures.elevationGain.measure %>
+            </p>
+          </div>
+          <div id="locations<%= i %>" class="col s12">
+            <% if (json[i].locations && json[i].locations.trailStart) { %>
+            <p>Latitude: <%= json[i].locations.trailStart.latitude %></p>
+            <p>Longitude: <%= json[i].locations.trailStart.longitude %></p>
+            <% } else { %>
+            <p>Location information not available.</p>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <%- include('scripts.ejs') -%>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".tabs");
+      var instances = M.Tabs.init(elems, {});
+    });
+  </script>
+</body>

@@ -91,6 +91,11 @@ app.get("/viewhike/:id", (req, res) => {
   }
 });
 
+app.get("/show", (req, res) => {
+  res.render("show.ejs", {json: json.items});
+});
+
+
 app.get("/json", (req, res) => {
   res.json(json);
 });
