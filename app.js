@@ -59,6 +59,9 @@ app.use("/sessions", sessionsController);
 const hikesController = require("./controllers/hikes.js");
 app.use("/hikes", hikesController);
 
+const trailsController = require("./controllers/trails.js");
+app.use("/trails", trailsController);
+
 // Routes
 app.get("/", (req, res) => {
   res.render("index.ejs", {

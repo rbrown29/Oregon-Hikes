@@ -3,7 +3,6 @@
     {
       "id": "b8c09fe4-00f7-489d-9132-041a774a897a",
       "name": "Ainsworth Loop Hike",
-      "pic": "https://www.oregonhikers.org/w/images/a/a9/AinsworthLoopHike1.jpg",
       "urls": {
         "absoluteSource": "http://www.oregonhikers.org/field_guide/Ainsworth_Loop_Hike",
         "trailStart": "http://www.oregonhikers.org/field_guide/Ainsworth_Loop_Trailhead",
@@ -2072,7 +2071,6 @@
     {
       "id": "a2d55cb2-dea0-4069-ad17-5e89da262c37",
       "name": "Fort Stevens Loop Hike",
-      "pic" : "https://www.oregonhikers.org/w/images/9/9c/FortStevensLoop2.jpg",
       "urls": {
         "absoluteSource": "http://www.oregonhikers.org/field_guide/Fort_Stevens_Loop_Hike",
         "trailStart": "http://www.oregonhikers.org/field_guide/Military_Museum_Trailhead",
@@ -2091,7 +2089,6 @@
     {
       "id": "b482051b-c057-4473-a221-e878c507a273",
       "name": "Fort Stevens Military Loop Hike",
-      "pic" : "https://www.oregonhikers.org/w/images/c/c9/FortStevensLoop3.jpg",
       "urls": {
         "absoluteSource": "http://www.oregonhikers.org/field_guide/Fort_Stevens_Military_Loop_Hike",
         "trailStart": "http://www.oregonhikers.org/field_guide/Military_Museum_Trailhead",
@@ -2110,7 +2107,6 @@
     {
       "id": "e8c6257b-7468-4aa2-8024-b6f75abfe74d",
       "name": "Fort Yamhill Loop Hike",
-      "pic" : "https://www.oregonhikers.org/w/images/3/39/FortYamhill1.jpg",
       "urls": {
         "absoluteSource": "http://www.oregonhikers.org/field_guide/Fort_Yamhill_Loop_Hike",
         "trailStart": "http://www.oregonhikers.org/field_guide/Fort_Yamhill_Trailhead",
