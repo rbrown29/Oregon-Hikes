@@ -57,6 +57,9 @@ app.use("/", userController);
 const sessionsController = require("./controllers/sessions.js");
 app.use("/sessions", sessionsController);
 
+const hikesController = require("./controllers/hikes.js");
+app.use("/hikes", hikesController);
+
 // Routes
 app.get("/", (req, res) => {
   res.render("index.ejs", {
