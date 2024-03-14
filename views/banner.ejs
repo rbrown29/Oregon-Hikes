@@ -8,6 +8,8 @@
         <div class="row center">
           <h5 class="header col s12 light"></h5>
         </div>
+        <% if (loggedIn) { %>
+        <% } else { %>
         <div class="row center">
           <a
             href="/signup"
@@ -16,6 +18,7 @@
             >Sign Up</a
           >
         </div>
+        <% } %>
         <br /><br />
       </div>
 </div>

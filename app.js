@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const methodOverride = require("method-override");
 const session = require("express-session");
+const flash = require("connect-flash");
 const cors = require("cors");
 const morgan = require("morgan");
 const ejs = require("ejs");
@@ -23,23 +24,30 @@ app.use(
   })
 );
 app.use(morgan("combined"));
+app.use(flash());
 app.use(methodOverride("_method"));
 app.use(
   session({
     secret: "feedmeseymour",
     resave: true,
     saveUninitialized: true,
-    cookie: { secure: process.env.NODE_ENV === 'production' }
+    cookie: { secure: process.env.NODE_ENV === "production" },
   })
 );
 app.set("view engine", "ejs");
 
-// Logged in user global
+// flash validation messages
+app.use((req, res, next) => {
+  res.locals.flashMessages = req.flash();
+  next();
+});
+
+// Logged in user 
 
 app.use((req, res, next) => {
-    res.locals.loggedIn = !!req.session.username; // set loggedIn status here
-    res.locals.username = req.session.username || ''; // set username here
-    next();
+  res.locals.loggedIn = !!req.session.username; 
+  res.locals.username = req.session.username || ""; 
+  next();
 });
 
 // Controllers
@@ -60,7 +68,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/signup", (req, res) => {
-    res.render("signup.ejs", {});
+  res.render("signup.ejs", {});
 });
 
 app.get("/login", (req, res) => {
@@ -91,10 +99,10 @@ app.get("/links", (req, res) => {
 });
 
 // Logout
-app.get('/logout', (req, res) => {
-    req.session.destroy(() => {
-        res.redirect('/'); 
-    });
+app.get("/logout", (req, res) => {
+  req.session.destroy(() => {
+    res.redirect("/");
+  });
 });
 
 module.exports = app;

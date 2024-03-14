@@ -1,28 +1,31 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../models/user.js");
 const bcrypt = require("bcrypt");
+const User = require("../models/user");
+const saltRounds = 10;
 
-router.post("/", (request, response) => {
-    // Encrypt the password
-    const hashedPassword = bcrypt.hashSync(request.body.password, bcrypt.genSaltSync(10));
-    const user = new User({
-        username: request.body.username,
-        password: hashedPassword,
-    });
+router.post("/signup", async (req, res) => {
+  const { username, password } = req.body;
 
-    // Use promise syntax
-    user.save()
-        .then((createdUser) => {
-            console.log(request.body);
-            request.session.username = createdUser.username;
-            response.redirect("/");
-        })
-        .catch((error) => {
-            console.log(error);
-            // Handle the error, e.g., by sending a response to the client
-            response.status(500).send("An error occurred");
-        });
+  // Password validation criteria
+  if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(password)) {
+    req.flash(
+      "error",
+      "Password must be at least 6 characters long and include both numbers and letters."
+    );
+    return res.redirect("/signup");
+  }
+
+  try {
+    const hashedPassword = await bcrypt.hash(password, saltRounds);
+    const newUser = new User({ username, password: hashedPassword });
+    await newUser.save();
+    res.redirect("/");
+  } catch (error) {
+    console.error("Signup error:", error);
+    req.flash("error", "An unexpected error occurred during signup.");
+    res.redirect("/signup");
+  }
 });
 
 module.exports = router;
