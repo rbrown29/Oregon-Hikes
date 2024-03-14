@@ -30,8 +30,7 @@ app.use(
   session({
     secret: "feedmeseymour",
     resave: true,
-    saveUninitialized: true,
-    cookie: { secure: process.env.NODE_ENV === "production" },
+    saveUninitialized: true
   })
 );
 app.set("view engine", "ejs");

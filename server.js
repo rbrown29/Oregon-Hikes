@@ -3,6 +3,8 @@ const http = require("http");
 const { address } = require("address");
 const { mongoConnect } = require("./services/mongoConnect.js");
 require("dotenv").config();
+// populate json data on server start the first time, then comment out
+// const { data } = require("./services/populateData.js");
 
 // Environment Variables
 const PORT = process.env.PORT || 3001;
