@@ -4,7 +4,6 @@ const { address } = require("address");
 const { mongoConnect } = require("./services/mongoConnect.js");
 require("dotenv").config();
 // populate json data on server start the first time, then comment out
-// const { data } = require("./services/populateData.js");
 //const { data } = require("./services/populateData.js");
 
 // Environment Variables

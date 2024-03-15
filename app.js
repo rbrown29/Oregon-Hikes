@@ -12,6 +12,7 @@ const icons = require("./data/icons.json");
 const links = require("./data/links.json");
 const names = require("./data/names.json");
 
+
 // Middleware
 app.use(express.static("public"));
 app.use(express.json());
@@ -61,6 +62,7 @@ app.use("/hikes", hikesController);
 
 const trailsController = require("./controllers/trails.js");
 app.use("/trails", trailsController);
+
 
 // Routes
 app.get("/", (req, res) => {

@@ -3,7 +3,7 @@ require('dotenv').config();
 // populate json data on server start the first time, then comment out
 
 //const mockData = require('../data/hike.json');
-const mockData = require('../data/trails.json');
+//const mockData = require('../data/trails.json');
 
 //const Hike = require('../models/hikes.js');
 //const Trail = require('../models/trails.js');
