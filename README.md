@@ -29,6 +29,7 @@ https://github.com/rbrown29/Oregon-Hikes
 * OregonHikers.org
 * Travel Oregon
 * Vist Oregon
+* Leaflet Open Street Maps
 
 ### This app is a full stack app that uses the following technologies:
 

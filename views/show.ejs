@@ -14,7 +14,7 @@
   <div class="row">
     <% for (var i = 0; i < json.length; i++) { %>
     <div class="col s12 m4">
-      <div class="card small">
+      <div class="card large">
         <div class="card-content">
           <p style="font-family: fantasy; font-size: medium;"><%= json[i].name %></p>
         </div>
@@ -72,11 +72,19 @@
             <% } %>
           </div>
         </div>
+        <% if (json[i].locations && json[i].locations.trailStart) { %>
+          <div id="map<%= i %>" class="map-container" style="height: 200px;"
+            data-lat="<%= json[i].locations.trailStart.latitude %>"
+            data-lng="<%= json[i].locations.trailStart.longitude %>"
+            data-name="<%= json[i].name %>">
+          </div>
+        <% } else { %>
+          <div>No location data available</div>
+        <% } %>
       </div>
     </div>
     <% } %>
   </div>
   <%- include('scripts.ejs') -%>
   <%- include('customJS.ejs')-%>
-  
 </body>

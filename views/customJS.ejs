@@ -18,4 +18,23 @@
         });
       });
     });
+    document.addEventListener('DOMContentLoaded', function() {
+      var mapContainers = document.querySelectorAll('.map-container');
+      
+      mapContainers.forEach(function(container) {
+        var trailLat = parseFloat(container.getAttribute('data-lat'));
+        var trailLng = parseFloat(container.getAttribute('data-lng'));
+        var mapId = container.id;
+        var mapName = container.getAttribute('data-name');
+    
+        var map = L.map(mapId).setView([trailLat, trailLng], 13);
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+        L.marker([trailLat, trailLng]).addTo(map)
+          .bindPopup(mapName).openPopup();
+      });
+    });
   </script>
