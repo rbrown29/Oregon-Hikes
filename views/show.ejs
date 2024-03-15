@@ -1,23 +1,16 @@
 <%- include('head.ejs') -%> 
 <%- include('nav.ejs') -%>
-<style>
-  /* Custom underline color for active tab */
-  .tabs .indicator {
-    background-color: green !important; 
-  }
-
-  /* Custom background color for active tab */
-  .tabs .tab a.active {
-    background-color: #e0f2f1 !important; 
-    color: darkgreen !important; 
-  }
-
-  /*green text for tabs */
-  .tabs .tab a {
-    color: green !important; 
-  }
-</style>
+<%- include('customCss.ejs')-%>
 <body style="background-color: #3e363f">
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="searchInput" type="text" placeholder="Search for trails...">
+        <label for="searchInput">Search Trails</label>
+      </div>
+    </div>
+  </div>
+  
   <div class="row">
     <% for (var i = 0; i < json.length; i++) { %>
     <div class="col s12 m4">
@@ -84,10 +77,6 @@
     <% } %>
   </div>
   <%- include('scripts.ejs') -%>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".tabs");
-      var instances = M.Tabs.init(elems, {});
-    });
-  </script>
+  <%- include('customJS.ejs')-%>
+  
 </body>

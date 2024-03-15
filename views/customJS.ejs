@@ -1,0 +1,21 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.tabs');
+      var instances = M.Tabs.init(elems, {});
+  
+      const searchInput = document.getElementById('searchInput');
+      searchInput.addEventListener('keyup', function() {
+        const searchQuery = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll('.col.s12.m4');
+        
+        cards.forEach(card => {
+          const trailName = card.querySelector('.card-content p').innerText.toLowerCase();
+          if (trailName.includes(searchQuery)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>

@@ -1,0 +1,49 @@
+<style>
+    /* Custom underline color for active tab */
+    .tabs .indicator {
+      background-color: green !important; 
+    }
+  
+    /* Custom background color for active tab */
+    .tabs .tab a.active {
+      background-color: #e0f2f1 !important; 
+      color: darkgreen !important; 
+    }
+  
+    /*green text for tabs */
+    .tabs .tab a {
+      color: green !important; 
+    }
+    #searchInput, #searchInput::placeholder {
+      color: white !important; /* White text */
+    }
+    
+    /* Focus color for the input line and label */
+    #searchInput:focus + label, #searchInput:focus {
+      color: white !important; /* Green label */
+    }
+    
+    /* Line color under the input when focused */
+    .input-field input[type=text]:focus:not([readonly]) {
+      border-bottom: 1px solid green !important;
+      box-shadow: 0 1px 0 0 green !important;
+    }
+    #searchInput, #searchInput::placeholder, .input-field label {
+      color: white !important; 
+    }
+    .input-field label.active {
+      color: white !important;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1; /* Firefox */
+    }
+  
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+    }
+  
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: white;
+    }
+  </style>
