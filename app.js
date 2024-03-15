@@ -50,6 +50,17 @@ app.use((req, res, next) => {
   next();
 });
 
+// Middleware to check if the user is logged in
+function ensureAuthenticated(req, res, next) {
+  if (req.session.username) {
+    return next();
+  }
+  // Redirect to login page if not logged in
+  req.flash('error', 'You must be logged in to view that page');
+  res.redirect('/login');
+}
+
+
 // Controllers
 const userController = require("./controllers/user.js");
 app.use("/", userController);
@@ -93,20 +104,20 @@ app.get("/viewhike/:id", (req, res) => {
   }
 });
 
-app.get("/show", (req, res) => {
+app.get("/show", ensureAuthenticated, (req, res) => {
   res.render("show.ejs", {json: json.items});
 });
 
 
-app.get("/json", (req, res) => {
+app.get("/json", ensureAuthenticated, (req, res) => {
   res.json(json);
 });
 
-app.get("/trails", (req, res) => {
+app.get("/trails", ensureAuthenticated, (req, res) => {
   res.json(trails);
 });
 
-app.get("/links", (req, res) => {
+app.get("/links", ensureAuthenticated, (req, res) => {
   res.json(links);
 });
 
