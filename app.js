@@ -6,6 +6,7 @@ const flash = require("connect-flash");
 const cors = require("cors");
 const morgan = require("morgan");
 const ejs = require("ejs");
+const axios = require("axios");
 const json = require("./data/trails.json");
 const trails = require("./data/hike.json");
 const icons = require("./data/icons.json");
@@ -24,7 +25,7 @@ app.use(
     optionsSuccessStatus: 200,
   })
 );
-app.use(morgan("combined"));
+app.use(morgan("dev"));
 app.use(flash());
 app.use(methodOverride("_method"));
 app.use(
@@ -104,9 +105,28 @@ app.get("/viewhike/:id", (req, res) => {
   }
 });
 
-app.get("/show", ensureAuthenticated, (req, res) => {
-  res.render("show.ejs", {json: json.items});
+app.get('/show', ensureAuthenticated, async (req, res) => {
+  let trailsWithWeather = await Promise.all(json.items.map(async (trail) => {
+    if (trail.locations && trail.locations.trailStart) {
+      const { latitude, longitude } = trail.locations.trailStart;
+      const apiKey = process.env.OPENWEATHER_API_KEY; 
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+
+      try {
+        const weatherResponse = await axios.get(url);
+        trail.weather = weatherResponse.data; // trail data with weather information
+        trail.weather.temperatureF = (trail.weather.main.temp - 273.15) * 9/5 + 32;
+      } catch (error) {
+        console.error('Failed to fetch weather data', error);
+        trail.weather = null; // Handle errors 
+      }
+    }
+    return trail;
+  }));
+
+  res.render('show.ejs', { trails: trailsWithWeather, json: json.items }); // Render with enhanced data
 });
+
 
 
 app.get("/json", ensureAuthenticated, (req, res) => {
@@ -120,6 +140,8 @@ app.get("/trails", ensureAuthenticated, (req, res) => {
 app.get("/links", ensureAuthenticated, (req, res) => {
   res.json(links);
 });
+
+
 
 // Logout
 app.get("/logout", (req, res) => {

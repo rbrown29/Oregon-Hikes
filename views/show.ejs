@@ -12,9 +12,9 @@
   </div>
   
   <div class="row">
-    <% for (var i = 0; i < json.length; i++) { %>
+    <% json.forEach((trail, i) => { %>
     <div class="col s12 m4">
-      <div class="card large">
+      <div class="card xlarge">
         <div class="card-content">
           <p style="font-family: fantasy; font-size: medium;"><%= json[i].name %></p>
         </div>
@@ -81,9 +81,30 @@
         <% } else { %>
           <div>No location data available</div>
         <% } %>
+          <% if (trail.locations && trail.locations.trailStart) { %>
+            <!-- Trail Card -->
+            <div class="weather-info">
+              <% const weatherIcons = {
+                "Clear": "brightness_5",
+                "Clouds": "cloud", 
+                "Rain": "umbrella", 
+                "Snow": "ac_unit" 
+              }; %>
+              <% if (trail.weather) { %>
+                <p>Weather: <%= trail.weather.temperatureF.toFixed(2) %>°F</p>
+                <p>Condition: <%= trail.weather.weather[0].description %>
+                  <% if (weatherIcons[trail.weather.weather[0].main]) { %>
+                    <i class="material-icons blue-text" id="weather"><%= weatherIcons[trail.weather.weather[0].main] %></i>
+                  <% } %>
+                </p>
+              <% } else { %>
+                <p>Weather data not available</p>
+              <% } %>
+            </div>
+          <% } %>
       </div>
     </div>
-    <% } %>
+    <% }); %>
   </div>
   <%- include('scripts.ejs') -%>
   <%- include('customJS.ejs')-%>
