@@ -110,7 +110,7 @@ app.get('/show', ensureAuthenticated, async (req, res) => {
     if (trail.locations && trail.locations.trailStart) {
       const { latitude, longitude } = trail.locations.trailStart;
       const apiKey = process.env.OPENWEATHER_API_KEY; 
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.OPENWEATHER_API_KEY}`;
 
       try {
         const weatherResponse = await axios.get(url);
