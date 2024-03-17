@@ -1,40 +1,42 @@
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.tabs');
-      var instances = M.Tabs.init(elems, {});
-  
-      const searchInput = document.getElementById('searchInput');
-      searchInput.addEventListener('keyup', function() {
-        const searchQuery = searchInput.value.toLowerCase();
-        const cards = document.querySelectorAll('.col.s12.m4');
-        
-        cards.forEach(card => {
-          const trailName = card.querySelector('.card-content p').innerText.toLowerCase();
-          if (trailName.includes(searchQuery)) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".tabs");
+    var instances = M.Tabs.init(elems, {});
+
+    const searchInput = document.getElementById("searchInput");
+    searchInput.addEventListener("keyup", function () {
+      const searchQuery = searchInput.value.toLowerCase();
+      const cards = document.querySelectorAll(".col.s12.m4");
+
+      cards.forEach((card) => {
+        const trailName = card
+          .querySelector(".card-content p")
+          .innerText.toLowerCase();
+        if (trailName.includes(searchQuery)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
       });
     });
-    document.addEventListener('DOMContentLoaded', function() {
-      var mapContainers = document.querySelectorAll('.map-container');
-      
-      mapContainers.forEach(function(container) {
-        var trailLat = parseFloat(container.getAttribute('data-lat'));
-        var trailLng = parseFloat(container.getAttribute('data-lng'));
-        var mapId = container.id;
-        var mapName = container.getAttribute('data-name');
-    
-        var map = L.map(mapId).setView([trailLat, trailLng], 13);
-    
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-    
-        L.marker([trailLat, trailLng]).addTo(map)
-          .bindPopup(mapName).openPopup();
-      });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    var mapContainers = document.querySelectorAll(".map-container");
+
+    mapContainers.forEach(function (container) {
+      var trailLat = parseFloat(container.getAttribute("data-lat"));
+      var trailLng = parseFloat(container.getAttribute("data-lng"));
+      var mapId = container.id;
+      var mapName = container.getAttribute("data-name");
+
+      var map = L.map(mapId).setView([trailLat, trailLng], 13);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      L.marker([trailLat, trailLng]).addTo(map).bindPopup(mapName).openPopup();
     });
-  </script>
+  });
+</script>

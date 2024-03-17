@@ -71,13 +71,13 @@ const sessionsController = require("./controllers/sessions.js");
 app.use("/sessions", sessionsController);
 
 const hikesController = require("./controllers/hikes.js");
-app.use("/hikes", hikesController);
+app.use("/hikesData", ensureAuthenticated, hikesController);
 
 const trailsController = require("./controllers/trails.js");
-app.use("/trails", trailsController);
+app.use("/trailsData", ensureAuthenticated, trailsController);
 
 const bikingController = require("./controllers/biking.js");
-app.use("/biking", bikingController);
+app.use("/bikingData", ensureAuthenticated, bikingController);
 
 
 // Routes
@@ -131,23 +131,10 @@ app.get('/show', ensureAuthenticated, async (req, res) => {
   res.render('show.ejs', { trails: trailsWithWeather, json: json.items }); // Render with enhanced data
 });
 
-
-
-app.get("/json", ensureAuthenticated, (req, res) => {
-  res.json(json);
+app.get("/biking", ensureAuthenticated, (req, res) => {
+  res.render("bikeShow.ejs", { bikeTrails: bikeTrails.BikingTrails });
 });
 
-app.get("/trails", ensureAuthenticated, (req, res) => {
-  res.json(trails);
-});
-
-app.get("/links", ensureAuthenticated, (req, res) => {
-  res.json(links);
-});
-
-app.get("/biker", ensureAuthenticated, (req, res) => {
-  res.json(bikeTrails);
-});
 
 
 

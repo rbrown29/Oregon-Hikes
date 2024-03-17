@@ -14,7 +14,7 @@ router.post('/trails', async (req, res) => {
 });
 
 // GET: Retrieve all trails
-router.get('/trails', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const trails = await Trail.find();
         res.json(trails);

@@ -14,7 +14,7 @@ router.post('/hikes', async (req, res) => {
 });
 
 // READ - Get all hikes
-router.get('/hikes', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const hikes = await Hike.find();
         res.json(hikes);

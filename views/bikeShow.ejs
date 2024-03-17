@@ -1,0 +1,100 @@
+<%- include('head.ejs') -%> 
+<%- include('nav.ejs') -%>
+ <%-include('customCss.ejs')-%>
+<body style="background-color: #3e363f">
+  <div class="banner"></div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s12">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for Bike trails..."
+        />
+        <label for="searchInput">Search Bike Trails</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <% for (var i = 0; i < bikeTrails.length; i++) { %>
+    <div class="col s12 m4">
+      <div class="card xlarge">
+        <div class="card-content">
+          <p style="font-family: fantasy; font-size: medium">
+            <%= bikeTrails[i].name %><br />
+            <%= bikeTrails[i].city %>,
+            <%= bikeTrails[i].region %>
+          </p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab">
+              <a href="#urls<%= i %>" class="active green-text">URLs</a>
+            </li>
+            <li class="tab">
+              <a href="#measures<%= i %>" class="green-text">Measures</a>
+            </li>
+            <li class="tab">
+              <a href="#locations<%= i %>" class="green-text">Locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-content">
+          <div id="urls<%= i %>" class="col s12">
+            <p>
+              Source:
+              <a
+                href="<%= bikeTrails[i].url %>"
+                target="_blank"
+                style="color: green"
+                ><%= bikeTrails[i].name %></a
+              >
+            </p>
+        </div>
+        <div id="measures<%= i %>" class="col s12">
+            <p>
+                <% if (bikeTrails[i].difficulty) { %>
+                Difficulty: <%= bikeTrails[i].difficulty %>
+                <% } else { %>
+                Difficulty: Information not available.
+                <% } %>
+            </p>
+            <p>
+                <% if (bikeTrails[i].distance) { %>
+                    Distance: <%= bikeTrails[i].distance %> 
+                <% } else { %>
+                    Distance: Information not available.
+                <% } %>
+            </p>
+        </div>
+        <div id="locations<%= i %>" class="col s12">
+            <% if (bikeTrails[i].lat && bikeTrails[i].lon) { %>
+            <p>Latitude: <%= bikeTrails[i].lat %></p>
+            <p>Longitude: <%= bikeTrails[i].lon %></p>
+            <% } else { %>
+            <p>Location information not available.</p>
+            <% } %>
+          </div>
+          <% if (bikeTrails[i].lat && bikeTrails[i].lon) { %>
+            <div id="map<%= i %>" class="map-container" style="height: 200px;"
+              data-lat="<%= bikeTrails[i].lat %>"
+              data-lng="<%= bikeTrails[i].lon %>"
+              data-name="<%= bikeTrails[i].name %>">
+            </div>
+          <% } else { %>
+            <div id="map<%= i %>" class="map-container" style="height: 200px;"
+                data-lat="43.80413340"
+                data-lng="-120.55420120" 
+                data-name="<%= bikeTrails[i].name %> (Location not available)">
+              </div>
+          <% } %>
+          
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <%- include('scripts.ejs') -%> 
+  <%- include('customJS.ejs')-%>
+</body>
