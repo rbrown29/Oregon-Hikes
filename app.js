@@ -12,6 +12,7 @@ const trails = require("./data/hike.json");
 const icons = require("./data/icons.json");
 const links = require("./data/links.json");
 const names = require("./data/names.json");
+const bikeTrails = require("./data/biking.json");
 
 
 // Middleware
@@ -74,6 +75,9 @@ app.use("/hikes", hikesController);
 
 const trailsController = require("./controllers/trails.js");
 app.use("/trails", trailsController);
+
+const bikingController = require("./controllers/biking.js");
+app.use("/biking", bikingController);
 
 
 // Routes
@@ -139,6 +143,10 @@ app.get("/trails", ensureAuthenticated, (req, res) => {
 
 app.get("/links", ensureAuthenticated, (req, res) => {
   res.json(links);
+});
+
+app.get("/biker", ensureAuthenticated, (req, res) => {
+  res.json(bikeTrails);
 });
 
 
