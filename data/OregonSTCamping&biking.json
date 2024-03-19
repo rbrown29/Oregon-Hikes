@@ -1,0 +1,1592 @@
+{
+  "camp": [  {
+    "location" : {
+      "latitude" : "45.69061",
+      "needs_recoding" : false,
+      "longitude" : "-123.36721"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike, Horse",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "Bell Camp",
+    "information" : {
+      "file_id" : "9c99b913-7631-4c56-8a23-c2b02bd6b257",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "724",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "7dfe0d0b-dbde-4561-89c3-8ce4340c8094"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.764372",
+      "needs_recoding" : false,
+      "longitude" : "-123.64377"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$15 walk-in sites, $5 extra vehicles",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "Morrison Eddy",
+    "information" : {
+      "file_id" : "e2fca0fb-369c-4341-87ac-ba69070d1b27",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "6 walk-in tent sites",
+    "recreation_opportunities_services" : "666e88c8-671b-4987-b4f2-2cec0186ceb5",
+    "amentities" : "picnic tables; fire rings, restrooms"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.721419",
+      "needs_recoding" : false,
+      "longitude" : "-123.756668"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "Cook Creek ",
+    "information" : {
+      "file_id" : "2592d0dc-ec4c-4722-9475-5cf2893c8a8a",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "17 desingated campsites",
+    "recreation_opportunities_services" : "cdd789fa-2510-4785-9b60-2c53dd56b227",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6143494",
+      "needs_recoding" : false,
+      "longitude" : "-123.3667679"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "Deyoe Creek ",
+    "information" : {
+      "file_id" : "627e3be7-f96f-42cb-af8f-44a29cb44f96",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "baf251d3-eb6c-46d1-b0ab-51662f6d471f"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.415325",
+      "needs_recoding" : false,
+      "longitude" : "-123.602476"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "East Fork and South Fork Trask",
+    "information" : {
+      "file_id" : "8757ec81-a99d-4cb4-af33-3d94fd831a74",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "8 designated campsites",
+    "recreation_opportunities_services" : "dee7f39e-a20c-4b9f-9e68-2ce2e5455b9b",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.17715",
+      "needs_recoding" : false,
+      "longitude" : "-123.504958"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "$15 walk-in tent sites, $5 extra vehicles",
+    "season" : "All year",
+    "type" : "Camp, Hike, Fish",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-325-5451",
+    "name" : "Gnat Creek ",
+    "information" : {
+      "file_id" : "6fde25b5-7c2e-4c7f-84d5-fd9b5c89c03c",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "4 walk-in tent sites; day-use picnicking",
+    "recreation_opportunities_services" : "bde2ddd3-c8ec-4164-b6db-bee435b87dd7",
+    "amentities" : "restrooms; picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5884552",
+      "needs_recoding" : false,
+      "longitude" : "-123.5552139"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Fish, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-842-2545",
+    "name" : "Jones Creek Day Use",
+    "information" : {
+      "file_id" : "32978d7b-2c5f-48d1-8c0b-52782de7df40",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "6d136fad-e6d9-4cfd-9ed9-6ed5bfbbbf6e",
+    "amentities" : "restrooms; picnic tables, day use picnic area, river access"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.536567",
+      "needs_recoding" : false,
+      "longitude" : "-123.56151"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "Jordan Creek",
+    "information" : {
+      "file_id" : "1396598b-815a-4775-ab45-fdbd7fdfbcd7",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "15 designated campsites",
+    "recreation_opportunities_services" : "714d574b-6fd4-4df2-b621-f2dc1a1e3f50",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5970726",
+      "needs_recoding" : false,
+      "longitude" : "-123.5063782"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "Kings Mountain",
+    "information" : {
+      "file_id" : "e3424268-ec80-4b8c-baee-1b56eb6d07b4",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "e714580e-7ee5-4ef4-8801-4fa539d3d313",
+    "amentities" : "restrooms"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.823027",
+      "needs_recoding" : false,
+      "longitude" : "-123.579867"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Fish, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Boat Launch",
+    "contact_number" : "503-325-5451",
+    "name" : "Lost Lake",
+    "information" : {
+      "file_id" : "cbf0c0af-e0fc-499d-8c81-f53a74605d98",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "9a1274f3-5495-4c5b-88f4-d960ab11b952",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "7d4f5e4a-9cc6-47ae-b054-81e34fb72737"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5870399",
+      "needs_recoding" : false,
+      "longitude" : "-123.4394836"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "OHV",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "OHV Staging Area",
+    "contact_number" : "503-357-2191",
+    "name" : "Lyda Camp",
+    "information" : {
+      "file_id" : "d07a718d-7ad2-4e58-b631-46e871ad3c12",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "4dfd4209-00d0-40bd-abe9-cb07460c111c",
+    "amentities" : "portable restrooms available June-Sept"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.7873688",
+      "needs_recoding" : false,
+      "longitude" : "-122.2827072"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "N/A",
+    "season" : "May - November (depending on snow level)",
+    "type" : "Hike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Trailhead",
+    "contact_number" : "503-859-2151",
+    "name" : "Rocky Top ",
+    ":@computed_region_7u8j_y3re" : "17",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2409",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "39e4ffdb-a415-4726-8626-f40038e0e757"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.837882",
+      "needs_recoding" : false,
+      "longitude" : "-123.513606"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-325-5451",
+    "name" : "Bloom Lake Trail",
+    "information" : {
+      "file_id" : "f17e9661-95b5-4efc-842f-d609f49af1f4",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "41a8832d-7351-44c2-b1a7-84bff978a010"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.14335",
+      "needs_recoding" : false,
+      "longitude" : "-123.450975"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-325-5451",
+    "name" : "Kerry Road Campsite",
+    "information" : {
+      "file_id" : "82142405-89a1-45a8-9650-31bcc7acb747",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "2 vehicle sites",
+    "recreation_opportunities_services" : "80849b5d-eca3-4cd9-94fb-ed58ab2c3696",
+    "amentities" : "picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.7372284",
+      "needs_recoding" : false,
+      "longitude" : "-122.4159012"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "N/A",
+    "season" : "Day Use: All year. Camping: Open from the Thursday before Memorial Day through the Tueesday after Labor Day.",
+    "type" : "Hike,  Horse, Bike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Trailhead",
+    "contact_number" : "503-859-2151",
+    "name" : "Monument Peak",
+    ":@computed_region_7u8j_y3re" : "17",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2407",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "f6d65870-1ed4-4e6b-8851-1b8717e66229"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.114679",
+      "needs_recoding" : false,
+      "longitude" : "-123.425098"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-325-5451",
+    "name" : "Plympton Ridge Road Campsite",
+    "information" : {
+      "file_id" : "76453f62-1350-4bf0-92dc-944b2c78c9ba",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "2 vehicle sites",
+    "recreation_opportunities_services" : "239b69eb-9ec4-45e9-be74-a2a5c561ef53",
+    "amentities" : "picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.857296",
+      "needs_recoding" : false,
+      "longitude" : "-123.752328"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-325-5451",
+    "name" : "Soapstone Lake ",
+    "information" : {
+      "file_id" : "2e028aa9-eb65-46f4-87af-b3269c130579",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "16ad9564-ebb7-4c7e-9e60-0ff05f91e37c"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.7956314",
+      "needs_recoding" : false,
+      "longitude" : "-123.4585953"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Day Use, Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Picnic Site",
+    "contact_number" : "503-357-2191",
+    "name" : "Steam Donkey Trail/Dooley Spur",
+    "information" : {
+      "file_id" : "ac11837d-b62f-4ecd-a2f0-32abbfe7c4a5",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "03c255e9-9c6c-4c17-b26c-4c19aa215801",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "e8086413-d9f7-4e71-aad3-08132546a18b",
+    "amentities" : "restrooms; picnic tables"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6280479",
+      "needs_recoding" : false,
+      "longitude" : "-123.3876114"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike, Horse",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "Storey Burn ",
+    "information" : {
+      "file_id" : "f815549d-70ec-486f-a4dd-acc96591df9c",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "6858c8ce-ba4d-4c2b-ae50-bf1942695e7c"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6234207",
+      "needs_recoding" : false,
+      "longitude" : "-123.3768768"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "Summit ",
+    "information" : {
+      "file_id" : "0b999e33-33e2-4b6a-b85a-712c52fede40",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "a5be0f4c-b4e3-4e8d-9eb8-e0257a03fb00"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.586471",
+      "needs_recoding" : false,
+      "longitude" : "-123.560477"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "March - November",
+    "type" : "Hike, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Visitor Center",
+    "contact_number" : "503-815-6800",
+    "name" : "Tillamook Forest Center",
+    "information" : {
+      "file_id" : "228fae0a-d8aa-4022-b9ff-08373bbae845",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "7e7fa0ad-5c71-439d-b64c-85986a8c1e38",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "ce7781f5-e9ac-4836-98b1-3765999b9476",
+    "amentities" : "restrooms; picnic tables"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5984459",
+      "needs_recoding" : false,
+      "longitude" : "-123.3921509"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "University Falls ",
+    "information" : {
+      "file_id" : "790caa7c-efe8-4b6e-a749-65dde5e5ce74",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "0b3055a6-7c8b-43be-a181-63909880be4c"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.11295",
+      "needs_recoding" : false,
+      "longitude" : "-123.42646"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "$20 vehicle sites, $5 extra vehicle",
+    "season" : "Year round",
+    "type" : "Camp, OHV",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-325-5451",
+    "name" : "Viewpoint",
+    "information" : {
+      "file_id" : "4998bd56-e18b-41d4-8837-6c2937cade4a",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "4cbfb288-a2c6-4131-baf6-d025e03e0ac8",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "4 vehicle sites",
+    "recreation_opportunities_services" : "96d20b17-a575-494e-b4c3-f8ec115f5172",
+    "amentities" : "restrooms, picnic tables, fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5832405",
+      "needs_recoding" : false,
+      "longitude" : "-123.6470261"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-842-2545",
+    "name" : "Cedar Butte ",
+    "information" : {
+      "file_id" : "f7c05e6d-2f12-450a-a20d-f6a62e278ed5",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "51daf9fd-0364-4ff1-b69b-a7596c3e7c8f"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.751786",
+      "needs_recoding" : false,
+      "longitude" : "-123.861797"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-842-2545",
+    "name" : "Coal Creek",
+    "information" : {
+      "file_id" : "3d677fb7-e367-4045-99dd-d8f24f849088",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "5d4b3621-bb48-42e5-93bf-874137497c36"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.375544",
+      "needs_recoding" : false,
+      "longitude" : "-123.565477"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "5",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "East Fork Trask ",
+    "information" : {
+      "file_id" : "164ec17e-eca1-44ee-9851-c51ad2f9da4a",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "10",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "5 designated campsites",
+    "recreation_opportunities_services" : "24f8335b-bbf2-4304-9bda-fc146e12d3ee",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5630951",
+      "needs_recoding" : false,
+      "longitude" : "-123.5854568"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Fish, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-842-2545",
+    "name" : "Footbridge",
+    "information" : {
+      "file_id" : "d44d8906-e11f-468c-837a-a7fcaf112fb7",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "77f9fe97-4aa6-4e65-872b-1c3a8a78516e",
+    "amentities" : "restrooms; picnic tables, river access"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.7805786",
+      "needs_recoding" : false,
+      "longitude" : "-123.3510132"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-357-2191",
+    "name" : "Four County Point",
+    "information" : {
+      "file_id" : "9e09375b-ead2-4df0-9e24-9ee337ca2456",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "31",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2319",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "b16d94fb-79ed-45dd-9df2-499fcccf2433"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.4100304",
+      "needs_recoding" : false,
+      "longitude" : "-123.6121826"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp, OHV, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping, OHV Staging Area",
+    "contact_number" : "503-842-2545",
+    "name" : "Hollywood OHV Staging Area & Edward Creek Learners Loop",
+    "information" : {
+      "file_id" : "b74ec30d-8081-4a88-8be0-44444033a990",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "3 designated campsites",
+    "recreation_opportunities_services" : "21fc2059-05aa-497d-a350-e31743d8dfd3",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.1716194",
+      "needs_recoding" : false,
+      "longitude" : "-123.4318008"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Day Use, Hike, Fish, Picnic tables",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Picnic Site",
+    "contact_number" : "503-325-5451",
+    "name" : "Bradley Wayside",
+    "information" : {
+      "file_id" : "37696130-856d-416f-b8a4-0732acb869ef",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "65ac02fe-1ace-4d41-bc8e-00d549264c31",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "6ecd32a1-b20a-4ef3-876e-f7b95671f618",
+    "amentities" : "picnic tables"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.458819",
+      "needs_recoding" : false,
+      "longitude" : "-123.585156"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "North Fork Trask",
+    "information" : {
+      "file_id" : "bbdffe72-90f3-4b25-b656-a160a24a8bf7",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "2 designated campsites",
+    "recreation_opportunities_services" : "0463bcdb-fb80-4d3e-b38b-bf7013e45597",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.4554329",
+      "needs_recoding" : false,
+      "longitude" : "-123.672287"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Day Use, Hike, Fish",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Boat Launch",
+    "contact_number" : "503-842-2545",
+    "name" : "Peninsula",
+    "information" : {
+      "file_id" : "9e10363e-b106-4d44-96cf-4f6378226ef9",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "9a1274f3-5495-4c5b-88f4-d960ab11b952",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "fdbb14e3-59d1-4f0c-b8ec-451f12823a68",
+    "amentities" : "picnic tables; boat launch"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.9298172",
+      "needs_recoding" : false,
+      "longitude" : "-122.5627365"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "N/A",
+    "season" : "Open from the Thursday before Memorial Day through the Thursday after Labor Day. Seasonal trail closures during fire season.",
+    "type" : "OHV",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "OHV Staging Area",
+    "contact_number" : "503-859-2151",
+    "name" : "Crooked Finger OHV Area",
+    ":@computed_region_7u8j_y3re" : "18",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2409",
+    "number_of_sites" : "N/A"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.7678871",
+      "needs_recoding" : false,
+      "longitude" : "-122.2760086"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "N/A",
+    "season" : "May - November (depending on snow level)",
+    "type" : "Hike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Trailhead",
+    "contact_number" : "503-859-2151",
+    "name" : "Natural Rock Arch",
+    ":@computed_region_7u8j_y3re" : "17",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2409",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "60a90f99-337b-4ca1-87e4-291847f7eef1",
+    "amentities" : "picnic tables"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.492218",
+      "needs_recoding" : false,
+      "longitude" : "-123.630188"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Day Use, Hike, Fish, Picnic tables",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Picnic Site",
+    "contact_number" : "503-842-2545",
+    "name" : "Sprague Memorial Wayside",
+    "information" : {
+      "file_id" : "5f0d7d27-01b0-4182-9785-134dc16edcb2",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a72c990a-23bf-49fd-b936-2cea01cf4a5e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "12a948ee-bd30-40d0-b828-03f7c5b876ea",
+    "amentities" : "restrooms; picnic tables; hiking trail, pet walking area"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6100731",
+      "needs_recoding" : false,
+      "longitude" : "-123.4665833"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "$15 walk-in sites",
+    "season" : "Year-round (may close in inclement weather)",
+    "type" : "Camp, Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-357-2191",
+    "name" : "Elk Creek ",
+    "information" : {
+      "file_id" : "ad0e2007-5881-4cb8-a452-b50d7220a460",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "14 walk-in tent sites, only 2 vehicles permitted per campsite",
+    "recreation_opportunities_services" : "248e0e09-b40a-4824-a712-e22b44dffed5",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.7195168",
+      "needs_recoding" : false,
+      "longitude" : "-122.4367371"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "$20 vehicle sites; $5 extra vehicles",
+    "season" : "Closed until further notice. ",
+    "type" : "Camp, Bike, Hike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Camping",
+    "contact_number" : "503-859-2151",
+    "name" : "Rock Creek ",
+    ":@computed_region_7u8j_y3re" : "17",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2407",
+    "number_of_sites" : "3 vehicle sites",
+    "recreation_opportunities_services" : "fb49d5a7-7932-4478-b937-9ada9db3b5da",
+    "amentities" : "restrooms; picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.587552",
+      "needs_recoding" : false,
+      "longitude" : "-123.55179"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Fish, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Picnic Site",
+    "contact_number" : "503-842-2545",
+    "name" : "Smith Homestead",
+    "information" : {
+      "file_id" : "a8e97a6e-458b-4e6e-9e59-e99bbbeec550",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "03c255e9-9c6c-4c17-b26c-4c19aa215801",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "df88c279-04b5-4b6e-9793-fc61e6ca8f41",
+    "amentities" : "restrooms; picnic tables, river access"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.023332",
+      "needs_recoding" : false,
+      "longitude" : "-123.454727"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "May - November",
+    "type" : "Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-325-5451",
+    "name" : "Big Tree Trail",
+    "information" : {
+      "file_id" : "49f31d5c-5cac-4d30-8d19-52b5cac92f4e",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "847fdaae-30ff-4779-a38d-ed0ee6afa131"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.8164063",
+      "needs_recoding" : false,
+      "longitude" : "-122.6109695"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "$20 vehicle sites; $15 walk-in sites; $5 extra vehicle",
+    "season" : "Camping: May 23-September 3, 2019",
+    "type" : "Camp, Hike, Horse, Bike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Camping",
+    "contact_number" : "503-859-2151",
+    "name" : "Shellburg Falls Recreation Area",
+    ":@computed_region_7u8j_y3re" : "17",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2409",
+    "number_of_sites" : "4 vehicle sites; 3 walk-in tent sites",
+    "recreation_opportunities_services" : "23a0be3a-082e-4aad-8e4d-657fd6d082fa",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water; trash service; picnic shelter"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.9210968",
+      "needs_recoding" : false,
+      "longitude" : "-122.5114975"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "$20 vehicle sites; $5 extra vehicles",
+    "season" : "May 23-September 3, 2019",
+    "type" : " Camp, Hike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Camping",
+    "contact_number" : "503-859-2151",
+    "name" : "Butte Creek Falls & Butte Creek Campground",
+    ":@computed_region_7u8j_y3re" : "18",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2409",
+    "number_of_sites" : "3 vehicle sites",
+    "recreation_opportunities_services" : "7e87397d-73ae-4ef0-afc8-a5d93337bf25",
+    "amentities" : "restrooms; picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6042671",
+      "needs_recoding" : false,
+      "longitude" : "-123.5479355"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$5 per vehicle per night",
+    "season" : "All year",
+    "type" : "Camp, OHV, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "OHV Camp & Staging Area",
+    "contact_number" : "503-842-2545",
+    "name" : "Diamond Mill OHV Campground & Staging Area",
+    "information" : {
+      "file_id" : "08565c83-7ace-4dec-8ff8-bc28e94a11bf",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "17 designated campsites",
+    "recreation_opportunities_services" : "38e28456-e226-4fdf-8066-06bdc3a69c3d",
+    "amentities" : "restrooms; picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.150834",
+      "needs_recoding" : false,
+      "longitude" : "-123.451908"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "OHV",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "OHV Staging Area",
+    "contact_number" : "503-325-5451",
+    "name" : "Nicolai Mountain OHV Area",
+    "information" : {
+      "file_id" : "bc6edeb8-80e0-44a1-8df1-a3127fc2da60",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "4f5286d3-beb7-4849-a4a5-f183e8ca88f2",
+    "amentities" : "restrooms; picnic tables"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.71023333",
+      "needs_recoding" : false,
+      "longitude" : "-123.76425"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Day Use, Hike, Fish, Boat Launch",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Boat Launch",
+    "contact_number" : "503-842-2545",
+    "name" : "Beaver Slide Boat Launch",
+    "information" : {
+      "file_id" : "9f6c135a-d913-4a35-8af9-31d83ee7c12d",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "3b1a671e-f578-4752-b732-10fbcd02ac5e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "c2189244-f4e6-4e39-ae58-af2aea6a25c7",
+    "amentities" : "boat launch; swimming"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.4491005",
+      "needs_recoding" : false,
+      "longitude" : "-123.6284866"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Day Use, Hike, Fish, Boat Launch",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Boat Launch",
+    "contact_number" : "503-842-2545",
+    "name" : "Stones Road Boat Launch",
+    "information" : {
+      "file_id" : "cc33af1d-3142-45ed-b5a5-709e5bcafc2b",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "32a0dae5-d59b-4124-b246-8a35bee6e23a",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "67f1e2d0-d062-4a5d-bba6-ebd35f1138fb",
+    "amentities" : "boat launch - wooden boat slide for drift boat launching"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6113205",
+      "needs_recoding" : false,
+      "longitude" : "-123.3488541"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "$20 vehicle sites; $5 extra vehicle; $50 group site ",
+    "season" : "April 5 - October 28, 2019",
+    "type" : "Camp, OHV",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "OHV Camp & Staging Area",
+    "contact_number" : "503-357-2191",
+    "name" : "Browns Camp OHV Campground & Staging Area",
+    "information" : {
+      "file_id" : "c57cfe72-59a1-4916-8890-51887d15bb83",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "29 vehicle sites; 1 group campsite (by reservation only)",
+    "recreation_opportunities_services" : "295013ef-b0a2-41a0-a1f2-e0413c2a73d1",
+    "amentities" : "holiday weekend camp host; restrooms; picnic tables; fire rings; ptoable water; day-use picnic area"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6423454",
+      "needs_recoding" : false,
+      "longitude" : "-123.3595734"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "$20 vehicle sites; $15 walk-in sites; $5 extra vehicle",
+    "season" : "May 17 - September 30, 2019 (Camping) / Day Use Year-round",
+    "type" : "Camp, Hike, Bike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-357-2191",
+    "name" : "Gales Creek ",
+    "information" : {
+      "file_id" : "b31cfd0b-2f63-4955-9106-96292de2a55f",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "724",
+    "number_of_sites" : "17 vehicle sites; 4 walk-in tent sites",
+    "recreation_opportunities_services" : "c4c3d497-1aee-42df-9851-13e57568619d",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water; trash service; day-use picnic area"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5884628",
+      "needs_recoding" : false,
+      "longitude" : "-123.5594711"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$20 vehicle sites; $15 walk-in sites; $5 extra vehicle; $50 group site ",
+    "season" : "May 24 - September 16, 2019",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "Jones Creek",
+    "information" : {
+      "file_id" : "97c9adda-0655-412a-af1d-d72dc22e10fa",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "28 vehicle sites; 14 walk-in tent sites; 1 group campsite (reservation only)",
+    "recreation_opportunities_services" : "988a6590-b338-41b4-b260-ad9b3f5d6f15",
+    "amentities" : "camp host; restrooms; picnic tables; fire rings; potable water; trash service; firewood available for purchase"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5374451",
+      "needs_recoding" : false,
+      "longitude" : "-123.5686951"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$20 vehicle sites; $5 extra vehicle",
+    "season" : "May 24- September 16, 2019",
+    "type" : "Camp, OHV, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "OHV Camp & Staging Area",
+    "contact_number" : "503-842-2545",
+    "name" : "Jordan Creek OHV Campground & Staging Area",
+    "information" : {
+      "file_id" : "b968c225-857a-4bcb-b1b0-6446f723bbc3",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "a1b6c0aa-2a92-44a2-92ea-2321d699012a",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "6 vehicle sites",
+    "recreation_opportunities_services" : "e6697047-eb21-49cc-a221-4076c1e89adb",
+    "amentities" : "restrooms; picnic tables; fire rings; trash service"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.819923",
+      "needs_recoding" : false,
+      "longitude" : "-123.611823"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "$20 vehicle site; $15 walk-in tent sites; $5 extra vehicles",
+    "season" : "Year round",
+    "type" : "Camp, Hike, Fish",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-325-5451",
+    "name" : "Henry Rierson Spruce Run ",
+    "information" : {
+      "file_id" : "89445785-75b8-4043-99cd-59ea60516689",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "32 vehicle sites; 5 walk-in tent sites",
+    "recreation_opportunities_services" : "43033fac-96b1-4b85-b66a-7345917c8a6b",
+    "amentities" : "restrooms; pinic tables; fire rings; potable water; trash service (seasonal); firewood available for purchase"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.581413",
+      "needs_recoding" : false,
+      "longitude" : "-123.570453"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$5 per night/per vehicle",
+    "season" : "Year round",
+    "type" : "Camp, OHV, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping, OHV Staging Area",
+    "contact_number" : "503-842-2545",
+    "name" : " Cedar Creek OHV Staging Area",
+    "information" : {
+      "file_id" : "cdaabc28-96ab-4d8f-9428-afda93d8e001",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "24 designated campsites",
+    "recreation_opportunities_services" : "690dbf70-e000-461c-a8c5-3732e6e5e6c4",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.367238",
+      "needs_recoding" : false,
+      "longitude" : "-123.587407"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "free",
+    "season" : "All year",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "5",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "South Fork Trask",
+    "information" : {
+      "file_id" : "6ff2c82d-2bc7-4f02-8cba-3b831a4b1911",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "10",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "2 designated campsites",
+    "recreation_opportunities_services" : "e5c17c5f-c34a-4d75-b8ad-735413afe5af",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.6222",
+      "needs_recoding" : false,
+      "longitude" : "-123.3748779"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, OHV, Bike, Horse",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead, OHV Staging Area",
+    "contact_number" : "503-357-2191",
+    "name" : "Rogers Camp ",
+    "information" : {
+      "file_id" : "8c6f01c1-8972-43e3-b9c3-2ab1cf08e785",
+      "filename" : "TillamookStateForestRecreationGuide.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "11e435f7-c741-4c5c-b384-b3a8bc5d4b12",
+    "amentities" : "restrooms"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5418777",
+      "needs_recoding" : false,
+      "longitude" : "-123.6126709"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$15 walk-in sites; $5 extra vehicles",
+    "season" : "Year round",
+    "type" : "Camp, Hike, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "Keenig Creek",
+    "information" : {
+      "file_id" : "f5ab02be-f0aa-4d3b-8de1-3ea358f5d44c",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "12 walk-in tent sites",
+    "recreation_opportunities_services" : "8a454d14-da4a-4e82-ae2b-693caa8e9e66",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water; day use picnic area"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.7283134",
+      "needs_recoding" : false,
+      "longitude" : "-123.77211"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$20 vehicle sites; $15 walk-in sites; $5 extra vehicle; $50 group site ",
+    "season" : "May 24- September 16, 2019",
+    "type" : "Camp, Hike, Fish, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "Nehalem Falls",
+    "information" : {
+      "file_id" : "2d36271a-86ce-493d-a735-58c76513c88b",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "14 vehicle sites; 6 walk-in tent sites; 1 group campsite (by reservation only)",
+    "recreation_opportunities_services" : "eb17946e-4e85-4d9d-a891-02c1be6aec0c",
+    "amentities" : "camp host; restrooms; picnic tables; fire rings; potable water; trash service; firewood available for purchase"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.609351",
+      "needs_recoding" : false,
+      "longitude" : "-123.55015"
+    },
+    "district" : "Tillamook",
+    "overnight_fee" : "$5 per night, per vehicle",
+    "season" : "Year round",
+    "type" : "Camp",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Dispersed Camping",
+    "contact_number" : "503-842-2545",
+    "name" : "North Fork Wilson",
+    "information" : {
+      "file_id" : "05a43bd0-a684-4d92-a1a5-7cf5c03ce286",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "d52dc46d-01b3-4fd2-9645-51b9eed043db",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "7 designated campsites",
+    "recreation_opportunities_services" : "a2edcc95-545c-4cc1-91ee-0bc18aea8edf",
+    "amentities" : "fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.707239",
+      "needs_recoding" : false,
+      "longitude" : "-123.332796"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "$20 vehicle and equestrian sites; $5 extra vehicles",
+    "season" : "May 17 - September 30, 2019",
+    "type" : "Camp, Bike, Horse, Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Horse Camp",
+    "contact_number" : "503-357-2191",
+    "name" : "Reehers Camp",
+    "information" : {
+      "file_id" : "ea49ee16-2158-4763-b403-bd8e8220eadf",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "eda8a656-7b68-4e94-bf7d-52f1d68ccc84",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "724",
+    "number_of_sites" : "10 equestrian sites (with corrals); 7 vehicle sites",
+    "recreation_opportunities_services" : "cab10b9d-3b8c-4fc2-9327-98596f3d5e9b",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water; day-use picnic area"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.5977211",
+      "needs_recoding" : false,
+      "longitude" : "-123.4143524"
+    },
+    "district" : "Forest Grove",
+    "overnight_fee" : "$20 equestrian and vehicle sites; $5 extra vehicle",
+    "season" : "All year; Corral sites are for equestrian use only April 1- October 31",
+    "type" : "Camp, Horse",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Horse Camp",
+    "contact_number" : "503-357-2191",
+    "name" : "Stagecoach Horse Camp",
+    "information" : {
+      "file_id" : "4a4ba4fc-2586-4f3f-83f1-6547868caedd",
+      "filename" : "Tillamook State Forest Recreation Guide 2018.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "eda8a656-7b68-4e94-bf7d-52f1d68ccc84",
+    "state_forest" : "Tillamook",
+    ":@computed_region_i25a_xk5b" : "2412",
+    "number_of_sites" : "9 equestrian sites with 2 stall corrals; 1 vehicle site",
+    "recreation_opportunities_services" : "c1e78d91-25c0-40d6-9379-fa4242c465a1",
+    "amentities" : "restrooms; picnic tables; fire rings; stock water"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.019313",
+      "needs_recoding" : false,
+      "longitude" : "-123.453266"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "$20 vehicle and equestrian sites; $5 extra vehicles",
+    "season" : "May 17-Nov 30, 2019",
+    "type" : "Horse, Camp, Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Horse Camp",
+    "contact_number" : "503-325-5451",
+    "name" : "Northrup Creek Horse Camp",
+    "information" : {
+      "file_id" : "1bca2912-257f-499e-ae0f-0982c73a08c0",
+      "filename" : "Clatsop_State_Forest_Recreation_Guide_032017.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "eda8a656-7b68-4e94-bf7d-52f1d68ccc84",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "8 equestrian/RV sites; 3 tent sites",
+    "recreation_opportunities_services" : "940a5058-e707-493b-870f-0f6411432216",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water; day-use picnic area"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.887969",
+      "needs_recoding" : false,
+      "longitude" : "-122.400377"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "free",
+    "season" : "Camping: May 23-September 3, 2019",
+    "type" : "Camp, Hike, Bike, Fish",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Camping",
+    "contact_number" : "503-859-2151",
+    "name" : "Rhody Lake & Butte Lakes, High Lakes Recreation Area",
+    "information" : {
+      "file_id" : "e69f621f-fb69-4851-aa38-a63da2eec3a4",
+      "filename" : "Santiam State Forest Recreation Guide.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "18",
+    "icon" : "27dc236a-fcd4-4968-9ef5-38d6f8e6cb51",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2409",
+    "number_of_sites" : "3 vehicle sites (primitive)",
+    "recreation_opportunities_services" : "27344bc2-dd2b-4a6e-a5c6-087ce523b039",
+    "amentities" : "primitive sites; restrooms"
+  }
+  , {
+    "location" : {
+      "latitude" : "44.7300987",
+      "needs_recoding" : false,
+      "longitude" : "-122.4029083"
+    },
+    "district" : "North Cascade",
+    "overnight_fee" : "$20 vehicle sites; $15 walk-in sites; $5 extra vehicles",
+    "season" : "Camping: May 23-September 3, 2019",
+    "type" : "Camp, Horse, Bike",
+    ":@computed_region_ciix_jbrk" : "9",
+    "description" : "Horse Camp",
+    "contact_number" : "503-859-2151",
+    "name" : "Santiam Horse Camp ",
+    ":@computed_region_7u8j_y3re" : "17",
+    "icon" : "eda8a656-7b68-4e94-bf7d-52f1d68ccc84",
+    "state_forest" : "Santiam",
+    ":@computed_region_i25a_xk5b" : "2407",
+    "number_of_sites" : "10 vehicle sites; 2 walk-in tent sites",
+    "recreation_opportunities_services" : "f83835c3-6630-43bb-86cf-59b0843c4a56",
+    "amentities" : "restrooms; picnic tables; fire rings; potable water"
+  }
+  , {
+    "location" : {
+      "latitude" : "45.777593",
+      "needs_recoding" : false,
+      "longitude" : "-123.646706"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "$15 walk-in tent sites; $5 extra vehicles",
+    "season" : "May 22 - Sept. 21, 2020",
+    "type" : "Camp, Hike",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Camping",
+    "contact_number" : "503-325-5451",
+    "name" : "Beaver Eddy ",
+    "information" : {
+      "file_id" : "648e6272-bcf0-4411-a433-1a91826e1594",
+      "filename" : "ClatsopStateForestRecreationGuide.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "4b0caca0-7799-4a21-ac1f-97850df1f1d9",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "8 walk-in tent sites",
+    "recreation_opportunities_services" : "7c3293f9-7ae6-420a-bc78-c13983393fc6",
+    "amentities" : "restrooms (seasonal); picnic tables; fire rings"
+  }
+  , {
+    "location" : {
+      "latitude" : "46.152108",
+      "needs_recoding" : false,
+      "longitude" : "-123.797886"
+    },
+    "district" : "Astoria",
+    "overnight_fee" : "N/A",
+    "season" : "All year",
+    "type" : "Hike, Day Use",
+    ":@computed_region_ciix_jbrk" : "16",
+    "description" : "Trailhead",
+    "contact_number" : "503-325-5451",
+    "name" : "Astoria Demonstration Forest",
+    "information" : {
+      "file_id" : "75791156-c38e-43a2-bf48-252e6f8d85f3",
+      "filename" : "ClatsopStateForestRecreationGuide.pdf"
+    },
+    ":@computed_region_7u8j_y3re" : "32",
+    "icon" : "33f49858-7b6d-4adf-8e6c-7cee6d44d44e",
+    "state_forest" : "Clatsop",
+    ":@computed_region_i25a_xk5b" : "2318",
+    "number_of_sites" : "N/A",
+    "recreation_opportunities_services" : "fe51912f-376f-4b62-a583-7c024c2ad10d"
+  }
+   ]
+}

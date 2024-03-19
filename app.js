@@ -13,6 +13,7 @@ const icons = require("./data/icons.json");
 const links = require("./data/links.json");
 const names = require("./data/names.json");
 const bikeTrails = require("./data/biking.json");
+const camping = require("./data/OregonSTCamping&biking.json");
 
 
 // Middleware
@@ -133,6 +134,10 @@ app.get('/show', ensureAuthenticated, async (req, res) => {
 
 app.get("/biking", ensureAuthenticated, (req, res) => {
   res.render("bikeShow.ejs", { bikeTrails: bikeTrails.BikingTrails });
+});
+
+app.get("/camping", ensureAuthenticated,  (req, res) => {
+  res.render("camp.ejs", { camping: camping.camp });
 });
 
 app.get("/search", ensureAuthenticated, async (req, res) => {

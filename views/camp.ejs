@@ -1,0 +1,93 @@
+<%- include('head.ejs') -%> 
+<%- include('nav.ejs') -%>
+ <%-include('customCss.ejs')-%>
+<body style="background-color: #3e363f">
+    <div class="banner"></div><br />
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s12">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for Camping..."
+        />
+        <label for="searchInput">Search Camping</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <% for (var i = 0; i < camping.length; i++) { %>
+    <div class="col s12 m4">
+      <div class="card xlarge">
+        <div class="card-content">
+          <p style="font-family: fantasy; font-size: medium">
+            <%= camping[i].name %>
+            <br />
+            <%= camping[i].district %>
+          </p>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab">
+              <a href="#urls<%= i %>" class="active green-text">Amentities</a>
+            </li>
+            <li class="tab">
+              <a href="#measures<%= i %>" class="green-text">Measures</a>
+            </li>
+            <li class="tab">
+              <a href="#locations<%= i %>" class="green-text">ConTact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-content">
+          <div id="urls<%= i %>" class="col s12">
+            <p>
+                Amentities:
+                <% if (camping[i].amentities) { %>
+                <%= camping[i].amentities %> 
+                <% } else { %>
+                Information not available.
+                <% } %>
+                <br />
+                Type: <%= camping[i].type %> <br />
+                Fee: <%= camping[i].overnight_fee %>
+            </p>
+        </div>
+        <div id="measures<%= i %>" class="col s12">
+            <p>
+                <% if (camping[i].location.latitude && camping[i].location.longitude) { %>
+                    Latitude: <%= camping[i].location.latitude %> 
+                    <br />
+                    Longitude: <%= camping[i].location.longitude %>
+                <% } else { %>
+                    Distance: Information not available.
+                <% } %>
+            </p>
+        </div>
+        <div id="locations<%= i %>" class="col s12">
+            <p>
+                Contact: <%= camping[i].contact_number %>
+            </p>
+          </div>
+          <% if (camping[i].location.latitude && camping[i].location.longitude) { %>
+            <div id="map<%= i %>" class="map-container" style="height: 200px;"
+              data-lat="<%= camping[i].location.latitude %>"
+              data-lng="<%= camping[i].location.longitude %>"
+              data-name="<%= camping[i].name %>,<%= camping[i].district %>">
+            </div>
+          <% } else { %>
+            <div id="map<%= i %>" class="map-container" style="height: 200px;"
+                data-lat="43.80413340"
+                data-lng="-120.55420120" 
+                data-name="<%= camping[i].district %> (Location not available)">
+              </div>
+          <% } %>
+          
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <%- include('scripts.ejs') -%> 
+  <%- include('customJS.ejs')-%>
+</body>
