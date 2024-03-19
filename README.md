@@ -22,6 +22,7 @@ https://github.com/rbrown29/Oregon-Hikes
 * Know the distance of the trail
 * view the json data at localhost:3001/trails
 * view the json data at localhost:3001/json
+* Internet search for more information on the hike, or the area.
 
 ### Maps, links, and Videos on the site
 * YouTube
@@ -30,6 +31,7 @@ https://github.com/rbrown29/Oregon-Hikes
 * Travel Oregon
 * Vist Oregon
 * Leaflet Open Street Maps
+* data.oregon.gov (Oregon State Data api)
 
 ### This app is a full stack app that uses the following technologies:
 
