@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="row">
-    <% for (var i = 0; i < camping.length; i++) { %>
+    <% camping.forEach((camp, i) => { %>
     <div class="col s12 m4">
       <div class="card xlarge">
         <div class="card-content">
@@ -82,11 +82,36 @@
                 data-name="<%= camping[i].district %> (Location not available)">
               </div>
           <% } %>
+              <% if (camp.location) { %>
+                <!-- Trail Card -->
+                <div class="weather-info">
+                  <% const weatherIcons = {
+                    "Clear": "brightness_5",
+                    "Clouds": "cloud", 
+                    "Rain": "umbrella", 
+                    "Snow": "ac_unit",
+                    "Thunderstorm": "flash_on",
+                    "Drizzle": "grain",
+                     "Mist": "grain"
+                  }; %>
+                  <% if (camp.weather) { %>
+                    <p>Weather: <%= camp.weather.temperatureF.toFixed(2) %>°F</p>
+                    <p>Condition: <%= camp.weather.weather[0].description %>
+                      <% if (weatherIcons[camp.weather.weather[0].main]) { %>
+                        <i class="material-icons blue-text" id="weather"><%= weatherIcons[camp.weather.weather[0].main] %></i>
+                      <% } %>
+                    </p>
+                  <% } else { %>
+                    <p>Weather: Information not available</p>
+                    <p>Condition: Information not available</p>
+                  <% } %>
+                </div>
+              <% } %>
           
         </div>
       </div>
     </div>
-    <% } %>
+    <% }); %>
   </div>
   <%- include('scripts.ejs') -%> 
   <%- include('customJS.ejs')-%>

@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="row">
-    <% for (var i = 0; i < bikeTrails.length; i++) { %>
+    <% bikeTrails.forEach((Trail , i) => { %>
     <div class="col s12 m4">
       <div class="card xlarge">
         <div class="card-content">
@@ -94,11 +94,33 @@
                 data-name="<%= bikeTrails[i].name %> (Location not available)">
               </div>
           <% } %>
-          
+            <!-- Trail Card -->
+            <div class="weather-info">
+              <% const weatherIcons = {
+                "Clear": "brightness_5",
+                "Clouds": "cloud", 
+                "Rain": "umbrella", 
+                "Snow": "ac_unit",
+                "Thunderstorm": "flash_on",
+                "Drizzle": "grain",
+                 "Mist": "grain"
+              }; %>
+              <% if (Trail.weather) { %>
+                <p>Weather: <%= Trail.weather.temperatureF.toFixed(2) %>°F</p>
+                <p>Condition: <%= Trail.weather.weather[0].description %>
+                  <% if (weatherIcons[Trail.weather.weather[0].main]) { %>
+                    <i class="material-icons blue-text" id="weather"><%= weatherIcons[Trail.weather.weather[0].main] %></i>
+                  <% } %>
+                </p>
+              <% } else { %>
+                <p>Weather: Information not available</p>
+                <p>Condition: Information not available.</p>
+              <% } %>
+            </div>
         </div>
       </div>
     </div>
-    <% } %>
+    <% }); %>
   </div>
   <%- include('scripts.ejs') -%> 
   <%- include('customJS.ejs')-%>
