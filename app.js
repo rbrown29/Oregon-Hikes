@@ -14,6 +14,7 @@ const links = require("./data/links.json");
 const names = require("./data/names.json");
 const bikeTrails = require("./data/biking.json");
 const camping = require("./data/OregonSTCamping&biking.json");
+const { ensureAuthenticated } = require("./middleware/auth.js");
 
 
 // Middleware
@@ -52,16 +53,6 @@ app.use((req, res, next) => {
   res.locals.username = req.session.username || ""; 
   next();
 });
-
-// Middleware to check if the user is logged in
-function ensureAuthenticated(req, res, next) {
-  if (req.session.username) {
-    return next();
-  }
-  // Redirect to login page if not logged in
-  req.flash('error', 'You must be logged in to view that page');
-  res.redirect('/login');
-}
 
 
 // Controllers
