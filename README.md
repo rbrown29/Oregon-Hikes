@@ -20,8 +20,9 @@ https://github.com/rbrown29/Oregon-Hikes
 * Login
 * Know the difficulty of the trail
 * Know the distance of the trail
-* view the json data at localhost:3001/trails
-* view the json data at localhost:3001/json
+* view the json data at localhost:3001/hikesData
+* view the json data at localhost:3001/trailsData
+* view the json data at localhost:3001/bikingData
 * Internet search for more information on the hike, or the area.
 
 ### Maps, links, and Videos on the site
