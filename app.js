@@ -69,7 +69,7 @@ const trailsController = require("./controllers/trails.js");
 app.use("/trailsData", ensureAuthenticated, trailsController);
 
 const bikingController = require("./controllers/biking.js");
-const BikingTrail = require("./models/biking.js");
+
 app.use("/bikingData", ensureAuthenticated, bikingController);
 
 
