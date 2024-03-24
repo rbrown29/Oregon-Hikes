@@ -11,6 +11,13 @@
             <% }); %>
           </div>
         <% } %>
+        <% if (flashMessages.success && flashMessages.success.length > 0) { %>
+          <div class="card-panel green lighten-1">
+            <% flashMessages.success.forEach(function(message) { %>
+              <p class="white-text"><%= message %></p>
+            <% }); %>
+          </div>
+        <% } %>
         <form action="/sessions" method="POST">
           <div class="input-field">
             <i class="material-icons prefix">account_circle</i>

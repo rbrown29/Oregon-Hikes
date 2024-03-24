@@ -15,6 +15,7 @@ const names = require("./data/names.json");
 const bikeTrails = require("./data/biking.json");
 const camping = require("./data/OregonSTCamping&biking.json");
 const { ensureAuthenticated } = require("./middleware/auth.js");
+const rateLimiter = require('express-rate-limit');
 
 
 // Middleware
@@ -38,6 +39,11 @@ app.use(
     saveUninitialized: true
   })
 );
+app.use(
+  rateLimiter({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100 // limit each IP to 100 requests per windowMs
+}));
 app.set("view engine", "ejs");
 
 // flash validation messages
