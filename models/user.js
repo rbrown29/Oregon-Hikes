@@ -10,13 +10,18 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: [true, "Please provide a password"],
-  }
+  },
+  jwt: {
+    type: String,
+  },
 });
 
-userSchema.methods.generateAuthToken = function () {
-  return jwt.sign({ _id: this._id, username: this.username }, process.env.JWT_SECRET, {
-    expiresIn: "process.env.JWT_EXPIRES_IN",
-  }, { algorithm: "HS256" });
+userSchema.methods.generateAuthToken = async function () {
+  const user = this;
+  const token = jwt.sign({ _id: user._id.toString(), username: user.username }, process.env.JWT_SECRET);
+  user.jwt = token; 
+  await user.save();
+  return token;
 }
 
 const User = mongoose.model("User", userSchema);
