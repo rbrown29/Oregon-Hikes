@@ -14,6 +14,10 @@ const userSchema = new Schema({
   jwt: {
     type: String,
   },
+  loginCount: {
+    type: Number,
+    default: 0,
+  },
 });
 
 userSchema.methods.generateAuthToken = async function () {

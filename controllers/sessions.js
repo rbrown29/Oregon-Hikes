@@ -13,6 +13,8 @@ router.post("/", async (request, response) => {
         } else {
             const doesPasswordMatch = bcrypt.compareSync(request.body.password, foundUser.password);
             if (doesPasswordMatch) {
+                foundUser.loginCount += 1;
+                await foundUser.save();
                 request.session.username = foundUser.username;
                 request.session.loggedIn = true; // set loggedIn status here
                 response.redirect("/");
