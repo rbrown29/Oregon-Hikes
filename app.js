@@ -15,11 +15,12 @@ const names = require("./data/names.json");
 const bikeTrails = require("./data/biking.json");
 const camping = require("./data/OregonSTCamping&biking.json");
 const { ensureAuthenticated } = require("./middleware/auth.js");
-const rateLimiter = require('express-rate-limit');
-
+const rateLimiter = require("express-rate-limit");
+const bodyParser = require("body-parser");
 
 // Middleware
 app.use(express.static("public"));
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
@@ -36,14 +37,15 @@ app.use(
   session({
     secret: "feedmeseymour",
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
   })
 );
 app.use(
   rateLimiter({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100 // limit each IP to 100 requests per windowMs
-}));
+    max: 100, // limit each IP to 100 requests per windowMs
+  })
+);
 app.set("view engine", "ejs");
 
 // flash validation messages
@@ -52,14 +54,13 @@ app.use((req, res, next) => {
   next();
 });
 
-// Logged in user 
+// Logged in user
 
 app.use((req, res, next) => {
-  res.locals.loggedIn = !!req.session.username; 
-  res.locals.username = req.session.username || ""; 
+  res.locals.loggedIn = !!req.session.username;
+  res.locals.username = req.session.username || "";
   next();
 });
-
 
 // Controllers
 const userController = require("./controllers/user.js");
@@ -77,7 +78,6 @@ app.use("/trailsData", ensureAuthenticated, trailsController);
 const bikingController = require("./controllers/biking.js");
 
 app.use("/bikingData", ensureAuthenticated, bikingController);
-
 
 // Routes
 app.get("/", (req, res) => {
@@ -97,6 +97,7 @@ app.get("/login", (req, res) => {
   res.render("login.ejs", {});
 });
 
+
 app.get("/viewhike/:id", (req, res) => {
   const trailId = parseInt(req.params.id);
   const trail = trails.trails.find((trail) => trail.id === trailId);
@@ -108,70 +109,82 @@ app.get("/viewhike/:id", (req, res) => {
   }
 });
 
-app.get('/show', ensureAuthenticated, async (req, res) => {
-  let trailsWithWeather = await Promise.all(json.items.map(async (trail) => {
-    if (trail.locations && trail.locations.trailStart) {
-      const { latitude, longitude } = trail.locations.trailStart;
-      const apiKey = process.env.OPENWEATHER_API_KEY; 
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.OPENWEATHER_API_KEY}`;
+app.get("/show", ensureAuthenticated, async (req, res) => {
+  let trailsWithWeather = await Promise.all(
+    json.items.map(async (trail) => {
+      if (trail.locations && trail.locations.trailStart) {
+        const { latitude, longitude } = trail.locations.trailStart;
+        const apiKey = process.env.OPENWEATHER_API_KEY;
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.OPENWEATHER_API_KEY}`;
 
-      try {
-        const weatherResponse = await axios.get(url);
-        trail.weather = weatherResponse.data; 
-        trail.weather.temperatureF = (trail.weather.main.temp - 273.15) * 9/5 + 32;
-      } catch (error) {
-        console.error('Failed to fetch weather data', error);
-        trail.weather = null;
+        try {
+          const weatherResponse = await axios.get(url);
+          trail.weather = weatherResponse.data;
+          trail.weather.temperatureF =
+            ((trail.weather.main.temp - 273.15) * 9) / 5 + 32;
+        } catch (error) {
+          console.error("Failed to fetch weather data", error);
+          trail.weather = null;
+        }
       }
-    }
-    return trail;
-  }));
+      return trail;
+    })
+  );
 
-  res.render('show.ejs', { trails: trailsWithWeather, json: json.items }); // Render with enhanced data
+  res.render("show.ejs", { trails: trailsWithWeather, json: json.items }); // Render with enhanced data
 });
 
 app.get("/biking", ensureAuthenticated, async (req, res) => {
-  let trailsWithWeather = await Promise.all(bikeTrails.BikingTrails.map(async (BikingTrail) => {
-    if (BikingTrail.lat && BikingTrail.lon) {
-      const latitude = BikingTrail.lat;
-      const longitude = BikingTrail.lon;
-      const apiKey = process.env.OPENWEATHER_API_KEY; 
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-  
-      try {
-        const weatherResponse = await axios.get(url);
-        const tempKelvin = weatherResponse.data.main.temp;
-        BikingTrail.weather = weatherResponse.data;
-        BikingTrail.weather.temperatureF = (tempKelvin - 273.15) * 9/5 + 32;
-      } catch (error) {
-        console.error('Failed to fetch weather data', error);
-        BikingTrail.weather = null;  
+  let trailsWithWeather = await Promise.all(
+    bikeTrails.BikingTrails.map(async (BikingTrail) => {
+      if (BikingTrail.lat && BikingTrail.lon) {
+        const latitude = BikingTrail.lat;
+        const longitude = BikingTrail.lon;
+        const apiKey = process.env.OPENWEATHER_API_KEY;
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+
+        try {
+          const weatherResponse = await axios.get(url);
+          const tempKelvin = weatherResponse.data.main.temp;
+          BikingTrail.weather = weatherResponse.data;
+          BikingTrail.weather.temperatureF =
+            ((tempKelvin - 273.15) * 9) / 5 + 32;
+        } catch (error) {
+          console.error("Failed to fetch weather data", error);
+          BikingTrail.weather = null;
+        }
       }
-    }
-    return BikingTrail;
-  }));
-  res.render("bikeShow.ejs", {BikeTrails: trailsWithWeather, bikeTrails: bikeTrails.BikingTrails });
+      return BikingTrail;
+    })
+  );
+  res.render("bikeShow.ejs", {
+    BikeTrails: trailsWithWeather,
+    bikeTrails: bikeTrails.BikingTrails,
+  });
 });
 
-app.get("/camping", ensureAuthenticated, async  (req, res) => {
-  let trailsWithWeather = await Promise.all(camping.camp.map(async (camp) => {
-    if (camp.location) {
-      const { latitude, longitude } = camp.location;
-      const apiKey = process.env.OPENWEATHER_API_KEY; 
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.OPENWEATHER_API_KEY}`;
+app.get("/camping", ensureAuthenticated, async (req, res) => {
+  let trailsWithWeather = await Promise.all(
+    camping.camp.map(async (camp) => {
+      if (camp.location) {
+        const { latitude, longitude } = camp.location;
+        const apiKey = process.env.OPENWEATHER_API_KEY;
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.OPENWEATHER_API_KEY}`;
 
-      try {
-        const weatherResponse = await axios.get(url);
-        camp.weather = weatherResponse.data; 
-        camp.weather.temperatureF = (camp.weather.main.temp - 273.15) * 9/5 + 32;
-      } catch (error) {
-        console.error('Failed to fetch weather data', error);
-        camp.weather = null; 
+        try {
+          const weatherResponse = await axios.get(url);
+          camp.weather = weatherResponse.data;
+          camp.weather.temperatureF =
+            ((camp.weather.main.temp - 273.15) * 9) / 5 + 32;
+        } catch (error) {
+          console.error("Failed to fetch weather data", error);
+          camp.weather = null;
+        }
       }
-    }
-    return camp;
-  }));
-  res.render("camp.ejs", {camping: trailsWithWeather, camping: camping.camp });
+      return camp;
+    })
+  );
+  res.render("camp.ejs", { camping: trailsWithWeather, camping: camping.camp });
 });
 
 app.get("/search", ensureAuthenticated, async (req, res) => {
@@ -179,30 +192,30 @@ app.get("/search", ensureAuthenticated, async (req, res) => {
 
   // Check if 'query' is not provided or empty
   if (!query) {
-    return res.render('search', { results: null, message: "" });
+    return res.render("search", { results: null, message: "" });
   }
 
   const options = {
-    method: 'GET',
-    url: 'https://google-web-search1.p.rapidapi.com/',
-    params: { query: query, limit: '20', related_keywords: 'true' },
+    method: "GET",
+    url: "https://google-web-search1.p.rapidapi.com/",
+    params: { query: query, limit: "20", related_keywords: "true" },
     headers: {
-      'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
-      'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
-    }
+      "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,
+      "X-RapidAPI-Host": "google-web-search1.p.rapidapi.com",
+    },
   };
 
   try {
     const response = await axios.request(options);
-    res.render('search', { results: response.data.results, message: null });
+    res.render("search", { results: response.data.results, message: null });
   } catch (error) {
     console.error(error);
-    res.render('search', { results: null, message: "Failed to fetch results. Please try again." });
+    res.render("search", {
+      results: null,
+      message: "Failed to fetch results. Please try again.",
+    });
   }
 });
-
-
-
 
 // Logout
 app.get("/logout", (req, res) => {
