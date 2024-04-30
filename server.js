@@ -7,13 +7,13 @@ require("dotenv").config();
 //const { data } = require("./services/populateData.js");
 
 // Environment Variables
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
 
 const server = http.createServer(app);
 
 async function startServer() {
   await mongoConnect;
-  app.listen(PORT, () => {
+  server.listen(PORT, () => {
     console.log("Server is listening at http://localhost:" + PORT);
     address((err, addr) => {
       console.log(
