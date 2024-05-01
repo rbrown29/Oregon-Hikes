@@ -21,6 +21,14 @@
       "title": "Recreation.gov"
     },
     {
+      "src": "https://www.oregon.gov/ODF/Recreation/Pages/NonMotorizedTrails.aspx",
+      "title": "Oregon Department of Forestry"
+    },
+    {
+      "src": "https://www.hikingproject.com/directory/8009849/oregon",
+      "title": "Hiking Project"
+    },
+    {
       "src": "https://www.oregonhikers.org/field_guide/Tips_for_Crossing_Streams",
       "title": "Crossing Streams"
     },
@@ -95,6 +103,10 @@
     {
       "src": "https://www.alltrails.com/explore/us/oregon/prineville?b_tl_lat=46.49996796158936&b_tl_lng=-127.53022561709635&b_br_lat=41.02546454513015&b_br_lng=-112.84300988615912&mobileMap=true",
       "title": "AllTrails Oregon"
+    },
+    {
+      "src": "https://www.google.com/maps/d/viewer?mid=10sBQx6ytnchLnwpqfnJ5Zs3SYSc&g_ep=CAISDTYuMTEzLjAuNTcwMjAYACDdYio_LDk0MjE2Mzk1LDQ3MDcxNzA0LDQ3MDY5NTA4LDk0MjE4NjM1LDQ3MDg0MzA0LDk0MjA4NDU4LDk0MjA4NDQ3QgJVUw%3D%3D&g_st=ic&ll=45.339959702457044%2C-122.447562&z=9",
+      "title": "Bigfoot Sightings in Oregon"
     }
   ]
 }
