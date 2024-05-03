@@ -4,7 +4,7 @@
     <div class="row" id="container">
       <% for (var i = 0; i < trails.length; i++) { %>
       <div class="col s12 m4">
-        <div class="card large grey lighten-2">
+        <div class="card small  black">
           <div class="card-image">
             <img src="<%= trails[i].image %>" />
             <span class="card-title ">
@@ -17,9 +17,14 @@
               </ul>
             </span>
           </div>
-          <div class="card-content grey lighten-2">
-            <p><%= trails[i].description %></p>
-          </div>
+          <div class="card-content green-text text-accent-4">
+            <p>
+              <%= trails[i].difficulty %>
+            </p>
+            <p>
+              <%= trails[i].length %> Miles
+            </p>
+            </div>
         </div>
       </div>
       <% } %>
