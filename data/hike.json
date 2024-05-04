@@ -9,7 +9,8 @@
             "image" : "/images/AngelsRest2.webp",
             "description" : "Try this 4.5-mile out-and-back trail near Corbett, Oregon. Generally considered a challenging route, it takes an average of 2 h 51 min to complete. This is a very popular area for hiking and running, so you'll likely encounter other people while exploring.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/angels-rest--3?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/KyBJlT3wpWA?si=ydVzW8N-Pds6xowC"
+            "video" : "https://www.youtube.com/embed/KyBJlT3wpWA?si=ydVzW8N-Pds6xowC",
+            "stars" : "★ ★ ★ ★ ★"
         },
         {
             "id" : 2,
@@ -19,7 +20,8 @@
             "image" : "/images/smithRock2.webp",
             "description" : "Explore this 3.6-mile loop trail near Terrebonne, Oregon. Generally considered a challenging route, it takes an average of 1 h 59 min to complete. This is a very popular area for hiking and running, so you'll likely encounter other people while exploring.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/misery-ridge-and-summit-trail-loop?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/ZcU_j-6SXdA?si=-jT4LqZ6TyDE5Q6t"
+            "video" : "https://www.youtube.com/embed/ZcU_j-6SXdA?si=-jT4LqZ6TyDE5Q6t",
+            "stars" : "★ ★ ★ ★ ★"
 
         },
         {
@@ -30,7 +32,8 @@
             "image" : "/images/tunnelFalls.webp",
             "description" : "Try this 12.2-mile out-and-back trail near Cascade Locks, Oregon. Generally considered a challenging route, it takes an average of 5 h 44 min to complete. This is a very popular area for camping and hiking, so you'll likely encounter other people while exploring.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/tunnel-falls-via-eagle-creek-trail-440?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/O4nhJgx8RGI?si=C8AVRwOrx8xsbVDT"
+            "video" : "https://www.youtube.com/embed/O4nhJgx8RGI?si=C8AVRwOrx8xsbVDT",
+            "stars" : "★ ★ ★ ★"
         },
         {
             "id" : 4,
@@ -40,7 +43,8 @@
             "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjI2MTg5MDkvYjE1ODFjOWQ4ZGFkNTg0OTUyYWM4NDg4OWY0MzI1N2IuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
             "description" : "Wahkeena Falls Loop is a beautiful experience located in the Columbia River Gorge National Scenic Area that brings hikers to one of the best waterfalls on the Oregon side. Start from the Wahkeena Picnic Area and take Wahkeena which passes by several waterfalls and ascends Wahkeena Creek past the springs which feed the waterfall",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/wahkeena-falls-loop-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/NydBzNVGxiM?si=Zo5mNTkuWCFG346s"
+            "video" : "https://www.youtube.com/embed/NydBzNVGxiM?si=Zo5mNTkuWCFG346s",
+            "stars" : "★ ★ ★ ★ ★"
         },
         {
             "id" : 5,
@@ -50,7 +54,8 @@
             "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjc3NTE1ODAvZTU2OTg2NmI2YmIzZWVjNzBkYzY4NTBmZTEzZTE4YTQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
             "description" : "Mirror Lake Loop Trail is a great family-friendly hike in Mount Hood National Forest. Traveling from the parking area and trailhead, you will hike roughly 2 miles before coming to Mirror Lake. This is a great place for a picnic and a swim during warmer months! ",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/mirror-lake-loop-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/Aaai22IjBL8?si=Hh9As_8T0F5lXGoU"
+            "video" : "https://www.youtube.com/embed/Aaai22IjBL8?si=Hh9As_8T0F5lXGoU",
+            "stars" : "★ ★ ★ ★"
         },
         {
             "id" : 6,
@@ -60,7 +65,8 @@
             "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzE0MDk2MTEvOGE2ZjY0NDkxYmI4NzZlMWZlNzIwZDg2OTJkMTVlZDIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
             "description" : "This is a spectacular path passing many waterfalls, winding through old-growth forests, and along the edges of cliffs. There are mild falling hazards in spots, keep the kids and dogs close, but it is family-friendly.  Some of the ledges have been blasted and offer great views of the canyon below with Eagle Creek flowing through it.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/eagle-creek-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/T5DzGrDp5Xw?si=7ZZutkRFW8l5S5aq"
+            "video" : "https://www.youtube.com/embed/T5DzGrDp5Xw?si=7ZZutkRFW8l5S5aq",
+            "stars" : "★ ★ ★ ★"
         },
         {
             "id" : 7,
@@ -70,7 +76,8 @@
             "image" : "https://www.oregonhikers.org/w/images/1/1e/CraterLake1.jpg",
             "description" : "Crater Lake is the the centerpiece of Oregon's only national park and a world-class tourist attraction. Statistics on the lake vary with the seasons, but the lake is six miles across at its widest and has a maximum depth of 1,949 feet. This makes it the deepest lake in the United States, second deepest in North America, and the ninth deepest in the world. Crater Lake is the deepest lake on the planet whose floor lies above sea level.\r\n\r\nCrater Lake is renowned for its intense blue color and its clarity. This is a result of a lack of sediment in the lake as there are no inflowing watercourses: the lake nestles within a massive caldera that filled with rain and snow melt (The area experiences some of the highest snowfall totals in the world). Most days, it is possible to see at least 100 feet below the surface.",
             "src" : "https://www.alltrails.com/widget/parks/us/oregon/crater-lake-national-park?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/UcAjS28SDs8?si=SRoh4S_he6dkWR0S"
+            "video" : "https://www.youtube.com/embed/UcAjS28SDs8?si=SRoh4S_he6dkWR0S",
+            "stars" : "★ ★ ★ ★ ★"
         },
         {
             "id" : 8,
@@ -80,7 +87,8 @@
             "image" : "https://lh5.googleusercontent.com/p/AF1QipPV3p4aOqA0VR7H_Nu5U35kr5mpExNlxmJ835At=w408-h544-k-no",
             "description" : "Hiking trail through forests & meadows of a scenic headland with wildflowers & sweeping ocean views.The Cascade Head Preserve, the beautiful coastal area through which a good portion of this trail travels, is owned and maintained by The Nature Conservancy.  ",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/lower-cascade-head-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/HsGMV978mM0?si=vfktmp3wc6L93qFG"
+            "video" : "https://www.youtube.com/embed/HsGMV978mM0?si=vfktmp3wc6L93qFG",
+            "stars" : "★ ★ ★ ★ ★"
         },
         {
             "id" : 9,
@@ -90,7 +98,8 @@
             "image" : "https://lh5.googleusercontent.com/p/AF1QipNYFExmV40ymAX1BagAqkuWfhZHOXTM8qGFYoJd=w408-h306-k-no",
             "description" : "One of the most unique features of Cape Kiwanda is the massive sand dune that dominates the landscape. You can climb to the top for incredible views of the beach and surrounding area or you can try your hand at sandboarding down the dune.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/cape-kiwanda-state-natural-area?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/pQm0p8xb_4w?si=XCqsruw7BHtoUY4_"
+            "video" : "https://www.youtube.com/embed/pQm0p8xb_4w?si=XCqsruw7BHtoUY4_",
+            "stars" : "★ ★ ★ ★ ★"
         },
         {
             "id" : 10,
@@ -100,7 +109,8 @@
             "image" : "https://www.alltrails.com/api/alltrails/v2/trails/10037403/photos/0?size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i",
             "description" : "This short portion of the McKenzie River National Recreation Trail takes you to the beautiful turquoise Tamolitch Pool, also known as Blue Pool. It does not take you to the Koosah and Sahalie Falls",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/tamolitch-blue-pool-via-mckenzie-river-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/ge_vHS99huo?si=5CZmj_l6UUWqDf0d"
+            "video" : "https://www.youtube.com/embed/ge_vHS99huo?si=5CZmj_l6UUWqDf0d",
+            "stars" : "★ ★ ★ ★"
         },
         {
             "id" : 11,
@@ -110,7 +120,8 @@
             "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjM3OTU1MzEvZDg5OTA1Mjk2Yjk3NTNhYjc4YTYxNmQ4ODJhNmVjM2IuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
             "description" : "Opal Creek is a beautiful area that is popular with hikers and campers. The hike to Jawbone Flats is a great way to experience the area. The trail is easy to follow and the scenery is beautiful. The hike is a great way to experience the beauty of the Opal Creek area.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/opal-creek-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/zrK95oHorT4?si=Y-FYRwSaSDREwe8W"
+            "video" : "https://www.youtube.com/embed/zrK95oHorT4?si=Y-FYRwSaSDREwe8W",
+            "stars" : "★ ★ ★ ★"
         },
         {
             "id" : 12,
@@ -120,7 +131,8 @@
             "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjI0OTMwNTAvNzMwNmU2ZDJjNDFhOWViOGMyNzI4YTc3ZGU2MmJmZTYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
             "description" : "This loop features beautiful ocean views. It can be a little muddy in some spots, especially on foggy days. There are lots of curves and light uphill and downhills, but nothing too extreme. The trail is well-maintained, except for the walk out to the point, which is a little overgrown.",
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/cape-falcon?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/_bfxh7pALfU?si=KkstL6Ke2g69SGB4"
+            "video" : "https://www.youtube.com/embed/_bfxh7pALfU?si=KkstL6Ke2g69SGB4",
+            "stars" : "★ ★ ★ ★ ★"
         }
     ]
 }
