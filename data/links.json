@@ -107,6 +107,10 @@
     {
       "src": "https://www.google.com/maps/d/viewer?mid=10sBQx6ytnchLnwpqfnJ5Zs3SYSc&g_ep=CAISDTYuMTEzLjAuNTcwMjAYACDdYio_LDk0MjE2Mzk1LDQ3MDcxNzA0LDQ3MDY5NTA4LDk0MjE4NjM1LDQ3MDg0MzA0LDk0MjA4NDU4LDk0MjA4NDQ3QgJVUw%3D%3D&g_st=ic&ll=45.339959702457044%2C-122.447562&z=9",
       "title": "Bigfoot Sightings in Oregon"
+    },
+    {
+      "src": "https://www.oregonhikers.org/maps/load.php",
+      "title": "Oregon Hikers Maps"
     }
   ]
 }
