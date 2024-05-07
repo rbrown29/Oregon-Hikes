@@ -17,6 +17,7 @@ const camping = require("./data/OregonSTCamping&biking.json");
 const { ensureAuthenticated } = require("./middleware/auth.js");
 const rateLimiter = require("express-rate-limit");
 const bodyParser = require("body-parser");
+const { pageVisits } = require("./middleware/pageVisits");
 
 // Middleware
 app.use(express.static("public"));
@@ -82,6 +83,8 @@ app.use("/bikingData", ensureAuthenticated, bikingController);
 app.use("/sitemap", (req, res) => {
   res.sendFile(__dirname + "/sitemap.xml");
 });
+app.use(pageVisits);
+
 
 // Routes
 app.get("/", (req, res) => {
