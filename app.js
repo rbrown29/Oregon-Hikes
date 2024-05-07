@@ -80,7 +80,7 @@ const bikingController = require("./controllers/biking.js");
 app.use("/bikingData", ensureAuthenticated, bikingController);
 
 app.use("/sitemap", (req, res) => {
-  res.sendFile(__dirname + "/sitemap.html");
+  res.sendFile(__dirname + "/sitemap.xml");
 });
 
 // Routes
