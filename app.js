@@ -96,6 +96,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/disclaimer", (req, res) => {
+  res.render("disclaimer.ejs", {});
+});
+
 app.get("/signup", (req, res) => {
   res.render("signup.ejs", {});
 });

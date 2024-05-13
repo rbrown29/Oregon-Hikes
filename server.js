@@ -7,7 +7,7 @@ require("dotenv").config();
 //const { data } = require("./services/populateData.js");
 
 // Environment Variables
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3004;
 
 const server = http.createServer(app);
 
