@@ -133,6 +133,72 @@
             "src" : "https://www.alltrails.com/widget/trail/us/oregon/cape-falcon?u=i&sh=cngirw",
             "video" : "https://www.youtube.com/embed/_bfxh7pALfU?si=KkstL6Ke2g69SGB4",
             "stars" : "★ ★ ★ ★ ★"
+        },
+        {
+            "id" : 13,
+            "name" : "Adams Glacier Meadows Hike",
+            "length" : 8.2,
+            "difficulty" : "Moderate",
+            "image" : "https://www.oregonhikers.org/w/images/thumb/6/6e/Meadows_at_High_Camp%2C_High_Camp_Trail.jpg/800px-Meadows_at_High_Camp%2C_High_Camp_Trail.jpg",
+            "description" : "Adams Glacier Meadows, also known as High Camp, is one of the highest, easiest to access alpine areas on Mount Adams. It can get pretty busy on summer weekends, but the meadow area is large enough for many people to camp without being on top of each other. The area is very exposed during bad weather, so keep an eye on the weather report. The shortest approach for day hikers is via the Killen Creek Trail, which rises through montane woods on a rather aggressively stepped trail before reaching lush subalpine meadows and then the Pacific Crest Trail.",
+            "src" : "https://www.alltrails.com/widget/trail/us/washington/mt-adams-via-divide-camp-trail-112-and-pct?u=i&sh=cngirw",
+            "video" : "https://www.youtube.com/embed/wUdQSADa3ho?si=ulVcd-yJoeEy56bA",
+            "stars" : "★ ★ ★ ★ ★"
+        },
+        {
+            "id" : 14,
+            "name" : "Battle Ax Loop Hike",
+            "length" : 6,
+            "difficulty" : "Moderate",
+            "image" : "https://www.oregonhikers.org/w/images/4/4c/BattleAxLoop4.jpg",
+            "description" : "The loop to the top of Battle Ax is probably the most scenic short loop in the Bull of the Woods Wilderness. You just have to endure the slow, rocky, potholed road up to Elk Lake in order to partake of the visual feast. You will pass a series of lush tarns, which harbor mosquitoes late into the summer, before gaining incredible views, from Mount Rainier to the Three Sisters as you switchback up to the old lookout site on Battle Ax’s summit ridge. Coming down the north ridge, you’ll get a glimpse of the formations on the mountains rugged west face as well as across to Mount Beachies spectacular northeast ridge",
+            "src" : "https://www.alltrails.com/widget/trail/us/oregon/twin-lakes-via-battle-ax-mountain-and-bagby-trails-loop?u=i&sh=cngirw",
+            "video" : "https://www.youtube.com/embed/FzTGd2VQwog?si=U7eY3VP-H6W_vShC",
+            "stars" : "★ ★ ★ ★ ★"
+        },
+        {
+            "id" : 15,
+            "name" : "Belknap Crater Hike",
+            "length" : 6.8,
+            "difficulty" : "Moderate",
+            "image" : "https://www.oregonhikers.org/w/images/0/08/Mt._Washington%2C_Belknap_Crater%2C_McKenzie_Pass.jpg",
+            "description" : "The impressive rugged black lava flows at McKenzie Pass were produced by two shield volcanoes, Belknap Crater and Little Belknap Crater, between about 3,000 and 1,500 years ago. The last eruption in the area is estimated to have been around 480 A.D. The Pacific Crest Trail enters the Mount Washington Wilderness in these lava fields, and a short hike takes you on trail to the small prominence of Little Belknap Crater. On the hike and at Little Belknap’s summit, you will get views of Cascade prominences such as North and Middle Sister, The Husband, Black Butte, Mount Washington, Three Fingered Jack, and Mount Jefferson. A little farther on, you can take a well-defined user trail to the summit of Belknap Crater, which offers the same views from much higher up and invites exploration of its craters.",
+            "src" : "https://www.alltrails.com/widget/trail/us/oregon/belknap-crater-from-old-mckenzie-highway-242?u=i&sh=cngirw",
+            "video" : "https://www.youtube.com/embed/GMieU_KnNaE?si=hhhwOGtAYPmGLHkt",
+            "stars" : "★ ★ ★ ★ ★"
+        },
+        {
+            "id" : 16,
+            "name" : "Blue Basin Loop Hike",
+            "length" : 4.1,
+            "difficulty" : "Moderate",
+            "image" : "https://www.oregonhikers.org/w/images/thumb/f/f9/Claystone%2C_tuff%2C_basalt%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg/500px-Claystone%2C_tuff%2C_basalt%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg",
+            "description" : "Active volcanic activity 31-29 million years ago and about 100 miles to the west of the current location of the Blue Basin produced the welded ash tuffs and blue-green claystone that characterizes exposed remnants of the Turtle Cove Member of the John Day Formation. At that time, this part of Oregon was a mixed woodland interspersed with open meadows and home to a wide variety of creatures, including tortoises, three-toed horses, beavers, oreodonts, wild dogs, nimravids (false saber-tooths), and entelodonts. Fossil remains of all of these species and many more come to light as the soft deposits steadily erode.",
+            "src" : "https://www.alltrails.com/widget/trail/us/oregon/blue-basin-overlook-trail?u=i&sh=cngirw",
+            "video" : "https://www.youtube.com/embed/iWsMwQK0Waw?si=K-kNyzD7RBDQqAwc",
+            "stars" : "★ ★ ★ ★ ★"
+        },
+        {
+            "id" : 17,
+            "name" : "Cached Lake Loop Hike",
+            "length" : 17.4,
+            "difficulty" : "Hard",
+            "image" : "https://www.oregonhikers.org/w/images/thumb/b/b8/Whitebark_pines_and_Needle_Point%2C_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-Whitebark_pines_and_Needle_Point%2C_Eagle_Creek_Trail%2C_Wallowas.jpg",
+            "description" : "The south side of the Wallowas sees far fewer visitors than the northern access routes from Lostine and Joseph. Yet there are similar raw granite slopes, bright displays of wildflowers, rushing creeks, alpine lakes and meadows, and 9,000 foot peaks to explore. This lollipop route up the Main Eagle Trail takes you past a broad meadow to high cirques with mountain lakes and then an 8,000-foot pass that delivers you into the Minam River drainage with more spectacular views. You’ll descend back to Eagle Creek via the “unmaintained” Bench Canyon Trail, rough but easy to follow, passing a couple more secluded mountain lakes. Wildlife is present, but you’re most likely to see golden-mantled ground squirrels, chipmunks, red squirrels, and lots of Columbian ground squirrels in the meadows. Mule deer and elk are also common in the valleys. Up high, you’ll be lucky to see mountain goats, which generally stay away from trails",
+            "src" : "https://www.alltrails.com/widget/trail/us/oregon/cache-mountain-via-national-forest-road-900-and-800?u=i&sh=cngirw",
+            "video" : "https://www.youtube.com/embed/30EgWO_Y3o0?si=9VRt7XNOSmrirDWv",
+            "stars" : "★ ★ ★ ★ ★"
+        },
+        {
+            "id" : 18,
+            "name" : "Ice Lake Hike",
+            "length" : 15.4,
+            "difficulty" : "Hard",
+            "image" : "https://www.oregonhikers.org/w/images/thumb/a/a6/IceLake7.jpg/500px-IceLake7.jpg",
+            "description" : "Ice Lake is one of the most coveted destinations in the Wallowas and, as such, campsites can be at a premium on summer weekends, when overnighters have their sights set on bagging the Matterhorn’s marble summit (see Matterhorn Add-on Hike). The popularity of the spot should not detract from a visit, however, especially if you can do it mid-week. All up the trail, meadows are blooming in mid-summer, there are waterfalls to explore as you ascend Adam Creek, and Ice Lake itself is a tranquil oasis below the Wallowas’ highest ridge. Some will do Ice Lake, and even the Matterhorn, as a long day hike; others will prefer the repose of an evening or two in the wilderness on the shores of this high lake",
+            "src" : "https://www.alltrails.com/widget/trail/us/oregon/ice-lake-trail?u=i&sh=cngirw",
+            "video" : "https://www.youtube.com/embed/TwR6pEvrWgo?si=dlYtJYpoYlanFxk5",
+            "stars" : "★ ★ ★ ★ ★"
         }
     ]
 }
