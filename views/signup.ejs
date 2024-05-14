@@ -120,7 +120,11 @@
         password += charset.charAt(Math.floor(Math.random() * n));
       }
       if (length < 6 || length > 59) {
-        if (length == 0 || length === "" || length === null) {
+        if (length == 0) {
+          document.getElementById("passwordOutput").innerText =
+            "Really! 0? That's like trying to make a sandwich with no bread! Try again!";
+          return;
+        } else if (length === null || length === " ") {
           document.getElementById("passwordOutput").innerText =
             "Who knew numbers could be so rebellious? Please enter a valid number before the math police show up!";
           return;
