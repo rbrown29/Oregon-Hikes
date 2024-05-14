@@ -1,4 +1,45 @@
 <%- include('head.ejs')-%>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+  body {
+    background-color: #3e363f;
+    font-family: "Syne Mono", monospace;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  input {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background-color: #08ff08;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Syne Mono, monospace;
+    box-shadow: 0 4px 4px #08ff08;
+    border: none;
+  }
+  input::placeholder {
+    color: #28282b;
+  }
+  input [type="text"] {
+    color: #28282b;
+    border: 1px solid #08ff08;
+    box-shadow: 0 0 10px #08ff08;
+    outline: none;
+  }
+  #passwordOutput {
+    margin-top: 20px;
+    color: #08ff08;
+    font-family: Syne Mono, monospace;
+    font-size: 16px;
+  }
+</style>
 <body>
   <div class="container">
     <div class="row">
@@ -22,23 +63,59 @@
             <input type="password" name="password" id="password" required />
             <label for="password">Password</label>
           </div>
-          <button
-            class="btn waves-effect waves-light green lighten-1"
-            type="submit"
-            name="Register"
-          >
-            Sign Up
-          </button>
-          <button
-            class="btn waves-effect waves-light green lighten-1"
-            type="reset"
-            value="Reset"
-          >
-            Reset Form
-          </button>
+          <div class="buttons">
+            <button
+              class="btn waves-effect waves-light black lighten-1"
+              type="submit"
+              name="Register"
+            >
+              Sign Up
+            </button>
+            <button
+              class="btn waves-effect waves-light black lighten-1"
+              type="reset"
+              value="Reset"
+            >
+              Reset Form
+            </button>
+            <button
+              class="btn waves-effect waves-light black lighten-1"
+              type="button"
+              onclick="location.href='/'"
+            >
+              Return
+            </button>
+          </div>
         </form>
+        <br />
+        <br />
+        <h4>Generate a secure password</h4>
+        <input
+          type="text"
+          id="passwordLength"
+          placeholder="Enter password length"
+        />
+        <button
+          class="btn waves-effect waves-light black lighten-1"
+          onclick="generatePassword()"
+        >
+          Generate Password
+        </button>
+        <div id="passwordOutput"></div>
       </div>
     </div>
   </div>
   <%- include('scripts.ejs')-%>
+  <script>
+    function generatePassword() {
+      var length = document.getElementById("passwordLength").value;
+      var charset =
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+      var password = "";
+      for (var i = 0, n = charset.length; i < length; ++i) {
+        password += charset.charAt(Math.floor(Math.random() * n));
+      }
+      document.getElementById("passwordOutput").innerText = password;
+    }
+  </script>
 </body>
