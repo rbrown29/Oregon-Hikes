@@ -93,7 +93,7 @@
         <br />
         <br />
         <h4>Generate a secure password</h4>
-        <h6>Enter a number greater than 6 and less than 60</h6>
+        <h6>Enter a number greater or equal to 6 and less than 60</h6>
         <input
           type="text"
           id="passwordLength"
@@ -121,7 +121,7 @@
       }
       if (length < 6 || length > 59) {
         document.getElementById("passwordOutput").innerText =
-          "The number you entered is like trying to fit a giraffe in a go-kart or a mouse in a monster truck. Please enter a number greater than 6 and less than 60 before we call in animal control!";
+          "The number you entered is like trying to fit a giraffe in a go-kart or a mouse in a monster truck. Please enter a number greater or equal to 6 and less than 60 before we call in animal control!";
         return;
       }
       document.getElementById("passwordOutput").innerText = password;
