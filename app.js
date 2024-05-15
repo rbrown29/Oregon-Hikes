@@ -93,6 +93,7 @@ app.get("/", (req, res) => {
     icons: icons.icons,
     links: links.links,
     names: names.names,
+    visitCount: res.locals.visitCount,
   });
 });
 

@@ -12,6 +12,7 @@ async function pageVisits(req, res, next) {
             await newVisit.save();
         }
         console.log(`Visits to ${url}: ${visit ? visit.count : 1}`);
+        res.locals.visitCount = visit.count; 
     } catch (error) {
         console.error('Database operation failed', error);
     }
