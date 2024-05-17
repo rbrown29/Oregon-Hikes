@@ -24,7 +24,7 @@ async function IPlog(req, res, next) {
             longitude: lon,
         });
 
-        const savedLog = await newLog.save();
+        await newLog.save();
     } catch (error) {
         console.error('Error fetching location or saving to MongoDB:', error);
     }
