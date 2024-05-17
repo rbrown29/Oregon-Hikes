@@ -25,7 +25,6 @@ async function IPlog(req, res, next) {
         });
 
         const savedLog = await newLog.save();
-        console.log('IP address and location saved to MongoDB', savedLog);
     } catch (error) {
         console.error('Error fetching location or saving to MongoDB:', error);
     }
