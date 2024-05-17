@@ -2,29 +2,30 @@ const mongoose = require('mongoose');
 
 const ipSchema = new mongoose.Schema({
     ipAddress: {
-        type: String
+        type: String,
+        required: true,
     },
-    country : {
-        type: String
+    country: {
+        type: String,
     },
-    region : {
-        type: String
+    region: {
+        type: String,
     },
-    city : {
-        type: String
+    city: {
+        type: String,
     },
-    latitude : {
-        type: Number
+    latitude: {
+        type: Number,
     },
-    longitude : {
-        type: Number
+    longitude: {
+        type: Number,
     },
-    timestamp : {
+    timestamp: {
         type: Date,
-        default: Date.now
-    }
+        default: Date.now,
+    },
 });
 
-const IpLog = mongoose.model('Ip', ipSchema);
+const IPLog = mongoose.model('IPLog', ipSchema);
 
-module.exports = IpLog;
+module.exports = IPLog;
