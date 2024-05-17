@@ -18,6 +18,7 @@ const { ensureAuthenticated } = require("./middleware/auth.js");
 const rateLimiter = require("express-rate-limit");
 const bodyParser = require("body-parser");
 const { pageVisits } = require("./middleware/pageVisits");
+const { IPlog } = require("./middleware/Iplog.js");
 
 // Middleware
 app.use(express.static("public"));
@@ -84,7 +85,7 @@ app.use("/sitemap", (req, res) => {
   res.sendFile(__dirname + "/sitemap.xml");
 });
 app.use(pageVisits);
-
+app.use(IPlog);
 
 // Routes
 app.get("/", (req, res) => {
