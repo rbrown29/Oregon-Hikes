@@ -2,8 +2,14 @@ const axios = require('axios');
 const IPLog = require('../models/Ip');
 
 async function IPlog(req, res, next) {
-    const userIp = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-    console.log('User IP: ', userIp);
+    let userIp = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+    console.log('Raw User IP: ', userIp);
+
+    // Handle multiple IP addresses in 'x-forwarded-for'
+    if (userIp.includes(',')) {
+        userIp = userIp.split(',')[0].trim();
+    }
+    console.log('Processed User IP: ', userIp);
 
     if (userIp === '::1' || userIp === '127.0.0.1') {
         console.log('Localhost access detected. Location data will not be fetched.');
@@ -25,6 +31,7 @@ async function IPlog(req, res, next) {
         });
 
         await newLog.save();
+        console.log('IP address and location saved to MongoDB');
     } catch (error) {
         console.error('Error fetching location or saving to MongoDB:', error);
     }
