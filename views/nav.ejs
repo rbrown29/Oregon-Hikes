@@ -1,17 +1,23 @@
+<style>
+  .a {
+    color: black !important;
+    font-size: 1.2rem;
+  }
+</style>
 <nav class="green" role="navigation">
   <div class="nav-wrapper container">
     <a id="logo-container" href="/" class="brand-logo">Hiking</a>
     <% if (loggedIn) { %>
       <ul class="right hide-on-med-and-down">
         <li>Welcome, <%= username %></li>
+        <li><a class="a" href="/logout">Log Out</a></li>
+        <li><a class="a" href="/reset-password">Reset Password</a></li>
         <%= console.log("Logged in status:", loggedIn); %>
-        <li>
-          <a href="/logout">Log Out</a>
-        </li>
       </ul>
       <ul id="nav-mobile" class="sidenav">
         <li style="color: black; margin-left: 1rem;"><%= username %></li>
         <li><a href="/logout">Log Out</a></li>
+        <li><a href="/reset-password">Reset Password?</a></li>
       </ul>
       <% } else { %>
       <ul class="right hide-on-med-and-down">

@@ -45,6 +45,29 @@
   h5 {
     color: #08ff08;
   }
+  .input-field input[type="text"]:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  .input-field input[type="password"]:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  #passwordLength:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  input[type="password"]:focus + label,
+  input[type="password"]:focus {
+    color: white !important;
+  }
+  input[type="text"]:focus + label,
+  input[type="text"]:focus {
+    color: white !important;
+  }
+  i {
+    color: black !important;
+  }
 </style>
 <body>
   <div class="container">

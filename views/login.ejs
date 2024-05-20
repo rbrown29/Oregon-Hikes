@@ -9,6 +9,31 @@
     display: flex;
     justify-content: space-between;
   }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #fff;
+  }
+  .input-field input[type="text"]:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  .input-field input[type="password"]:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  input[type="password"]:focus + label,
+  input[type="password"]:focus {
+    color: white !important;
+  }
+  input[type="text"]:focus + label,
+  input[type="text"]:focus {
+    color: white !important;
+  }
+  i {
+    color: black !important;
+  }
 </style>
 <body>
   <div class="container">
@@ -16,18 +41,18 @@
       <div class="col s12 m6 offset-m3">
         <h1 class="center-align">Login</h1>
         <% if (flashMessages.error && flashMessages.error.length > 0) { %>
-          <div class="card-panel red">
-            <% flashMessages.error.forEach(function(message) { %>
-              <p class="white-text"><%= message %></p>
-            <% }); %>
-          </div>
-        <% } %>
-        <% if (flashMessages.success && flashMessages.success.length > 0) { %>
-          <div class="card-panel green lighten-1">
-            <% flashMessages.success.forEach(function(message) { %>
-              <p class="white-text"><%= message %></p>
-            <% }); %>
-          </div>
+        <div class="card-panel red">
+          <% flashMessages.error.forEach(function(message) { %>
+          <p class="white-text"><%= message %></p>
+          <% }); %>
+        </div>
+        <% } %> <% if (flashMessages.success && flashMessages.success.length >
+        0) { %>
+        <div class="card-panel green lighten-1">
+          <% flashMessages.success.forEach(function(message) { %>
+          <p class="white-text"><%= message %></p>
+          <% }); %>
+        </div>
         <% } %>
         <form action="/sessions" method="POST">
           <div class="input-field">
@@ -41,9 +66,27 @@
             <label for="password">Password</label>
           </div>
           <div class="buttons">
-          <button class="btn waves-effect waves-light black lighten-1" type="submit" name="action">Login</button>
-          <button class="btn waves-effect waves-light black lighten-1" type="reset" value="Reset">Reset Form</button>
-          <button class="btn waves-effect waves-light black lighten-1" type="button" onclick="location.href='/'">Return</button>
+            <button
+              class="btn waves-effect waves-light black lighten-1"
+              type="submit"
+              name="action"
+            >
+              Login
+            </button>
+            <button
+              class="btn waves-effect waves-light black lighten-1"
+              type="reset"
+              value="Reset"
+            >
+              Reset Form
+            </button>
+            <button
+              class="btn waves-effect waves-light black lighten-1"
+              type="button"
+              onclick="location.href='/'"
+            >
+              Return
+            </button>
           </div>
         </form>
       </div>

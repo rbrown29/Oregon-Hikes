@@ -77,6 +77,14 @@ app.use("/trailsData", ensureAuthenticated, trailsController);
 const bikingController = require("./controllers/biking.js");
 app.use("/bikingData", ensureAuthenticated, bikingController);
 
+app.use("/reset-password", (req, res) => {
+  res.render("reset-password.ejs");
+});
+
+app.use("/reset", (req, res) => {
+  res.render("reset.ejs");
+});
+
 app.use("/sitemap", siteMap);
 app.use(pageVisits);
 app.use(IPlog);
