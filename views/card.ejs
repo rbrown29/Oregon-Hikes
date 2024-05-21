@@ -1,6 +1,19 @@
-
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+  #h4 {
+    color: #100c08;
+    font-family: "Syne Mono", monospace;
+    font-size: 2em;
+  }
+  #name {
+    font-family: "Syne Mono", monospace;
+    font-size: 1em;
+    color: #fffafa;
+  }
+</style>
 <div class="container">
   <div class="section">
+    <h4 class="center-align" id="h4">Featured Hikes</h4>
     <div class="row" id="container">
       <% for (var i = 0; i < trails.length; i++) { %>
       <div class="col s12 m4">
@@ -10,7 +23,7 @@
             <span class="card-title ">
               <ul>
                 <li>
-                  <a class="tooltipped white-text" data-position="top" data-delay="50" data-tooltip="Click The Name!" href="/viewhike/<%= trails[i].id %>">
+                  <a class="tooltipped" id="name" data-position="top" data-delay="50" data-tooltip="Click The Name!" href="/viewhike/<%= trails[i].id %>">
                     <%= trails[i].name %>
                   </a>
                 </li>
