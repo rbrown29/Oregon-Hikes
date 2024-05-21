@@ -6,6 +6,7 @@ const userSchema = new Schema({
   username: {
     type: String,
     required: [true, "Please provide a username"],
+    unique: true,
   },
   password: {
     type: String,
@@ -18,6 +19,10 @@ const userSchema = new Schema({
     type: Number,
     default: 0,
   },
+  profile: {
+    type: Schema.Types.ObjectId,
+    ref: 'UserProfile'
+  }
 });
 
 userSchema.methods.generateAuthToken = async function () {

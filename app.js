@@ -77,6 +77,10 @@ app.use("/trailsData", ensureAuthenticated, trailsController);
 const bikingController = require("./controllers/biking.js");
 app.use("/bikingData", ensureAuthenticated, bikingController);
 
+const userProfilesController = require("./controllers/userProfile.js");
+app.use("/profile", ensureAuthenticated, userProfilesController);
+
+
 app.use("/reset-password", (req, res) => {
   res.render("reset-password.ejs");
 });

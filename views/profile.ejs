@@ -1,0 +1,110 @@
+<%- include('head.ejs') -%>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+  body {
+    background-color: #3e363f;
+    font-family: "Syne Mono", monospace;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    color: #a6a6a6;
+  }
+  a:hover {
+    color: #fff;
+  }
+  .input-field input[type="text"]:focus:not([readonly]),
+  .input-field input[type="email"]:focus:not([readonly]),
+  textarea:focus:not([readonly]) {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important;
+  }
+  .input-field input[type="text"]:focus + label,
+  .input-field input[type="email"]:focus + label,
+  textarea:focus + label {
+    color: white !important;
+  }
+  .input-field input[type="text"]:focus,
+  .input-field input[type="email"]:focus,
+  textarea:focus {
+    color: white !important;
+  }
+  p {
+    color: #08ff08;
+    font-size: large;
+  }
+  p strong {
+    color: #a6a6a6;
+    font-size: large;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-right: 100px;
+  }
+  .btn {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 500px; 
+  }
+  @media (max-width: 600px) {
+    .row-center {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <h1 class="center-align">User Profile</h1>
+        <% if (flashMessages.error && flashMessages.error.length > 0) { %>
+        <div class="card-panel red">
+          <% flashMessages.error.forEach(function(message) { %>
+          <p class="white-text"><%= message %></p>
+          <% }); %>
+        </div>
+        <% } %> <% if (flashMessages.info && flashMessages.info.length > 0) { %>
+        <div class="card-panel blue lighten-1">
+          <% flashMessages.info.forEach(function(message) { %>
+          <p class="white-text"><%= message %></p>
+          <% }); %>
+        </div>
+        <% } %>
+        <div>
+          <p><strong>Username:</strong> <%= profile.username %></p>
+          <p><strong>First Name:</strong> <%= profile.firstName %></p>
+          <p><strong>Last Name:</strong> <%= profile.lastName %></p>
+          <p><strong>Email:</strong> <%= profile.email %></p>
+          <p><strong>Bio:</strong> <%= profile.bio %></p>
+        </div>
+        <div class="buttons">
+          <a
+            href="/profile/edit"
+            class="btn waves-effect waves-light black lighten-1"
+            >Edit Profile</a
+          >
+          <a
+            href="/reset-password"
+            class="btn waves-effect waves-light black lighten-1"
+            >Reset Password</a
+          >
+          <a href="/logout" class="btn waves-effect waves-light black lighten-1"
+            >Log Out</a
+          >
+          <a href="/" class="btn waves-effect waves-light black lighten-1"
+            >Home</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('scripts.ejs') -%>
+</body>
