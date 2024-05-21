@@ -24,6 +24,7 @@ const { siteMap } = require("./middleware/siteMap.js");
 const { disclaimer } = require("./middleware/disclaimer.js");
 const { signUp } = require("./middleware/signUp.js");
 const { login } = require("./middleware/login.js");
+const { resetPassword } = require("./middleware/resetPassword.js");
 
 // Middleware
 app.use(express.static("public"));
@@ -80,15 +81,7 @@ app.use("/bikingData", ensureAuthenticated, bikingController);
 const userProfilesController = require("./controllers/userProfile.js");
 app.use("/profile", ensureAuthenticated, userProfilesController);
 
-
-app.use("/reset-password", (req, res) => {
-  res.render("reset-password.ejs");
-});
-
-app.use("/reset", (req, res) => {
-  res.render("reset.ejs");
-});
-
+app.use("/reset-password", ensureAuthenticated, resetPassword );
 app.use("/sitemap", siteMap);
 app.use(pageVisits);
 app.use(IPlog);
