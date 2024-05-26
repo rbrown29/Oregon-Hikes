@@ -1,4 +1,35 @@
 <%- include('head.ejs')-%>
+<style>
+  .carousel .carousel-item img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+  }
+  .carousel.carousel-slider .carousel-item {
+    height: 400px;
+  }
+  .card-content h5 {
+    color: white;
+  }
+  .card-content ul.collection {
+    background-color: black;
+    border: none;
+  }
+  .card-content ul.collection .collection-item {
+    color: #08ff08;
+    font-size: medium;
+    background-color: black;
+    border: none;
+  }
+  .modal.green .modal-content h4,
+  .modal.green .modal-footer .btn-flat {
+    color: white;
+  }
+  #waypointname {
+    color: white;
+    font-size: large;
+  }
+</style>
 <%- include('nav.ejs')-%>
 <body style="background-color: #3E363F;">
   <div class="container">
@@ -7,25 +38,51 @@
         <div class="row s12 m4">
           <div class="card x-large green">
             <div class="card-image green">
-              <img src="<%= trail.image %>" style="width: 100%; height: 60%;" />
+              <div class="carousel carousel-slider">
+                <% trail.image.forEach((img, index) => { %>
+                  <a class="carousel-item">
+                    <img src="<%= img %>" alt="Image <%= index + 1 %>" />
+                  </a>
+                <% }); %>
+              </div>
               <span class="card-title"><%=trail.name%></span>
             </div>
             <div class="card-content black">
-              <h5 style="color: white;"><p><%= trail.description %></p></h5>
+              <h5><p><%= trail.description %></p></h5>
               <br />
                <!-- Modal Trigger Button -->
                <a class="waves-effect waves-light btn-large modal-trigger black" href="#video-modal"> Play Video</a>
-               <a class="waves-effect waves-light btn-large modal-trigger black">Review Trail(coming soon..)</a>
                <a class="waves-effect waves-light btn-large modal-trigger black" href='<%= trail.info %>' target="_blank" >More Info</a>
-               <a class="waves-effect waves-light btn-large modal-trigger black">Add to Bucket List(coming soon..)</a>
               <%if (trail.difficulty === "Hard"){%>
-                <h4 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
+                <h5 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
               <br />
               <%} else if (trail.difficulty === "Moderate") {%>
-                <h4 class="yellow-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: yellow;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
+                <h5 class="yellow-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: yellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
               <%} else { %>
-                <h4 class="green-text text-darken-4"><span style="color: #08ff08;"><%= trail.stars %><span/><span style="color: greenyellow;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
+                <h5 class="green-text text-darken-4"><span style="color: #08ff08;"><%= trail.stars %><span/><span style="color: greenyellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
               <%}%>
+              <h6 class="white-text">Categories</h6>
+              <ul class="collection">
+                <% trail.categories.forEach((category, index) => { %>
+                  <li class="collection-item"><%= category %></li>
+                <% }); %>
+              </ul>
+              <br />
+              <h6 class="white-text">Regulations</h6>
+              <ul class="collection">
+                <% trail.regulations.forEach((regulation, index) => { %>
+                  <li class="collection-item"><%= regulation %></li>
+                <% }); %>
+              </ul>
+              <br />
+              <h6 class="white-text">Way Points</h6>
+              <ul class="collection">
+                <% trail.waypoints.forEach((waypoint, index) => { %>
+                  <li class="collection-item" id="waypointname"><%= waypoint.name %></li>
+                  <li class="collection-item"><%= waypoint.location %></li>
+                <% }); %>
+              </ul>
+              <br />
               <iframe 
                 class="alltrails" 
                 src="<%= trail.src %>" 
@@ -55,6 +112,21 @@
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-
   <%- include('scripts.ejs')-%>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, {
+        fullWidth: true,
+        indicators: true
+      });
+      setInterval(() => {
+        instances.forEach(instance => instance.next());
+      }, 2500);
+
+      var modalElems = document.querySelectorAll('.modal');
+      M.Modal.init(modalElems);
+    });
+  </script>
 </body>

@@ -1,222 +1,646 @@
-
 {
-    "trails" : [
+  "trails": [
+    {
+      "id": 1,
+      "name": "Angels Rest",
+      "length": 4.5,
+      "difficulty": "Hard",
+      "image": [
+        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.pCqeD3pohBQh313teKMwBAHaDt%26pid%3DApi&f=1&ipt=f5c5bb51953dcf36451354a62fee95248b92b0546f071c19be38299377c669ac&ipo=images",
+        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CcgT8kL8Y8ju83qZlSsihQHaC3%26pid%3DApi&f=1&ipt=74f7aafbc9556956b43d32fae48ee9e2aed66a481cf433f6b3ad9fbda11b74cb&ipo=images",
+        "https://www.oregonhikers.org/w/images/6/6a/GorgeSunsetAngelsRest.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/6/6b/First_scree_slope_and_Archer_Mt.%2C_Angel%27s_Rest_Trail.jpg/500px-First_scree_slope_and_Archer_Mt.%2C_Angel%27s_Rest_Trail.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/3/34/Cape_Horn%2C_Angel%27s_Rest_Trail.jpg/500px-Cape_Horn%2C_Angel%27s_Rest_Trail.jpg"
+      ],
+      "description": "Angels Rest is an exposed bluff on the western end of the Columbia River Gorge. The platy andesite that composes this promontory is part of a million-year-old lava flow from Larch Mountain, a member of the Boring Lava Field. The summit is characterized by a long, rocky spine surrounded on three sides by cliffs, boasting a striking 270 degree view! While you can't see any of the Cascade volcanoes from the top, you do get great vantages of Beacon Rock, Silver Star Mountain, and many other landmarks. The real draw, however, is the perspective of the Columbia River below - like you're on a balcony over a great auditorium. Its 1500 foot prominence and its proximity to the Columbia River give you the false sensation that you could dive from Angels Rest to the water below!",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/angels-rest--3?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/KyBJlT3wpWA?si=ydVzW8N-Pds6xowC",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.oregonhikers.org/field_guide/Angels_Rest_Hike",
+      "waypoints": [
         {
-            "id" : 1,
-            "name" : "Angels Rest",
-            "length" : 4.5,
-            "difficulty" : "Hard",
-            "image" : "/images/AngelsRest2.webp",
-            "description" : "Try this 4.5-mile out-and-back trail near Corbett, Oregon. Generally considered a challenging route, it takes an average of 2 h 51 min to complete. This is a very popular area for hiking and running, so you'll likely encounter other people while exploring.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/angels-rest--3?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/KyBJlT3wpWA?si=ydVzW8N-Pds6xowC",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.outdoorproject.com/united-states/oregon/angels-rest-foxglove-way-hike"
+          "location": "45.56065, -122.17241",
+          "name": "Angels Rest Trailhead"
         },
         {
-            "id" : 2,
-            "name" : "Smith Rock",
-            "length" : 3.6,
-            "difficulty" : "Hard" ,
-            "image" : "/images/smithRock2.webp",
-            "description" : "Explore this 3.6-mile loop trail near Terrebonne, Oregon. Generally considered a challenging route, it takes an average of 1 h 59 min to complete. This is a very popular area for hiking and running, so you'll likely encounter other people while exploring.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/misery-ridge-and-summit-trail-loop?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/ZcU_j-6SXdA?si=-jT4LqZ6TyDE5Q6t",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.outdoorproject.com/united-states/oregon/smith-rock-state-park"
-
-        },
-        {
-            "id" : 3,
-            "name" : "Tunnel Falls",
-            "length" : 12.2,
-            "difficulty" : "Moderate",
-            "image" : "/images/tunnelFalls.webp",
-            "description" : "Try this 12.2-mile out-and-back trail near Cascade Locks, Oregon. Generally considered a challenging route, it takes an average of 5 h 44 min to complete. This is a very popular area for camping and hiking, so you'll likely encounter other people while exploring.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/tunnel-falls-via-eagle-creek-trail-440?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/O4nhJgx8RGI?si=C8AVRwOrx8xsbVDT",
-            "stars" : "★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7022469/eagle-creek-trail-to-tunnel-falls"
-        },
-        {
-            "id" : 4,
-            "name" : "Wahkeena Falls Loop",
-            "length" : 5.3,
-            "difficulty" : "Moderate",
-            "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjI2MTg5MDkvYjE1ODFjOWQ4ZGFkNTg0OTUyYWM4NDg4OWY0MzI1N2IuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
-            "description" : "Wahkeena Falls Loop is a beautiful experience located in the Columbia River Gorge National Scenic Area that brings hikers to one of the best waterfalls on the Oregon side. Start from the Wahkeena Picnic Area and take Wahkeena which passes by several waterfalls and ascends Wahkeena Creek past the springs which feed the waterfall",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/wahkeena-falls-loop-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/NydBzNVGxiM?si=Zo5mNTkuWCFG346s",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7085296/wahkeena-falls-devils-rest-angels-rest-loop"
-        },
-        {
-            "id" : 5,
-            "name" : "Mirror Lake Trail",
-            "length" : 4.2,
-            "difficulty" : "Moderate",
-            "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjc3NTE1ODAvZTU2OTg2NmI2YmIzZWVjNzBkYzY4NTBmZTEzZTE4YTQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
-            "description" : "Mirror Lake Loop Trail is a great family-friendly hike in Mount Hood National Forest. Traveling from the parking area and trailhead, you will hike roughly 2 miles before coming to Mirror Lake. This is a great place for a picnic and a swim during warmer months! ",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/mirror-lake-loop-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/Aaai22IjBL8?si=Hh9As_8T0F5lXGoU",
-            "stars" : "★ ★ ★ ★",
-            "info" : "https://www.outdoorproject.com/united-states/oregon/mirror-lake"
-        },
-        {
-            "id" : 6,
-            "name" : "Eagle Creek Trail",
-            "length" : 4.8,
-            "difficulty" : "Moderate",
-            "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzE0MDk2MTEvOGE2ZjY0NDkxYmI4NzZlMWZlNzIwZDg2OTJkMTVlZDIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
-            "description" : "This is a spectacular path passing many waterfalls, winding through old-growth forests, and along the edges of cliffs. There are mild falling hazards in spots, keep the kids and dogs close, but it is family-friendly.  Some of the ledges have been blasted and offer great views of the canyon below with Eagle Creek flowing through it.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/eagle-creek-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/T5DzGrDp5Xw?si=7ZZutkRFW8l5S5aq",
-            "stars" : "★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7022469/eagle-creek-trail-to-tunnel-falls"
-        },
-        {
-            "id" : 7,
-            "name" : "Crater Lake",
-            "length" : 5,
-            "difficulty" : "Moderate",
-            "image" : "https://www.oregonhikers.org/w/images/1/1e/CraterLake1.jpg",
-            "description" : "Crater Lake is the the centerpiece of Oregon's only national park and a world-class tourist attraction. Statistics on the lake vary with the seasons, but the lake is six miles across at its widest and has a maximum depth of 1,949 feet. This makes it the deepest lake in the United States, second deepest in North America, and the ninth deepest in the world. Crater Lake is the deepest lake on the planet whose floor lies above sea level.\r\n\r\nCrater Lake is renowned for its intense blue color and its clarity. This is a result of a lack of sediment in the lake as there are no inflowing watercourses: the lake nestles within a massive caldera that filled with rain and snow melt (The area experiences some of the highest snowfall totals in the world). Most days, it is possible to see at least 100 feet below the surface.",
-            "src" : "https://www.alltrails.com/widget/parks/us/oregon/crater-lake-national-park?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/UcAjS28SDs8?si=SRoh4S_he6dkWR0S",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.outdoorproject.com/united-states/oregon/crater-lake-national-park"
-        },
-        {
-            "id" : 8,
-            "name" : "Cascade Head",
-            "length" : 5.5,
-            "difficulty" : "Hard",
-            "image" : "https://lh5.googleusercontent.com/p/AF1QipPV3p4aOqA0VR7H_Nu5U35kr5mpExNlxmJ835At=w408-h544-k-no",
-            "description" : "Hiking trail through forests & meadows of a scenic headland with wildflowers & sweeping ocean views.The Cascade Head Preserve, the beautiful coastal area through which a good portion of this trail travels, is owned and maintained by The Nature Conservancy.  ",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/lower-cascade-head-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/HsGMV978mM0?si=vfktmp3wc6L93qFG",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7098321/gods-thumb-via-the-knoll"
-        },
-        {
-            "id" : 9,
-            "name" : "Cape Kiwanda",
-            "length" : 5,
-            "difficulty" : "Moderate",
-            "image" : "https://lh5.googleusercontent.com/p/AF1QipNYFExmV40ymAX1BagAqkuWfhZHOXTM8qGFYoJd=w408-h306-k-no",
-            "description" : "One of the most unique features of Cape Kiwanda is the massive sand dune that dominates the landscape. You can climb to the top for incredible views of the beach and surrounding area or you can try your hand at sandboarding down the dune.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/cape-kiwanda-state-natural-area?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/pQm0p8xb_4w?si=XCqsruw7BHtoUY4_",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.outdoorproject.com/united-states/oregon/cape-kiwanda-state-natural-area"
-        },
-        {
-            "id" : 10,
-            "name" : "Tamolitch Blue",
-            "length" : 2,
-            "difficulty" : "Moderate",
-            "image" : "https://www.alltrails.com/api/alltrails/v2/trails/10037403/photos/0?size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i",
-            "description" : "This short portion of the McKenzie River National Recreation Trail takes you to the beautiful turquoise Tamolitch Pool, also known as Blue Pool. It does not take you to the Koosah and Sahalie Falls",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/tamolitch-blue-pool-via-mckenzie-river-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/ge_vHS99huo?si=5CZmj_l6UUWqDf0d",
-            "stars" : "★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/photo/7063516/tamolitch-blue-pool"
-        },
-        {
-            "id" : 11,
-            "name" : "Opal Creek",
-            "length" : 6.9,
-            "difficulty" : "Moderate",
-            "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjM3OTU1MzEvZDg5OTA1Mjk2Yjk3NTNhYjc4YTYxNmQ4ODJhNmVjM2IuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
-            "description" : "Opal Creek is a beautiful area that is popular with hikers and campers. The hike to Jawbone Flats is a great way to experience the area. The trail is easy to follow and the scenery is beautiful. The hike is a great way to experience the beauty of the Opal Creek area.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/opal-creek-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/zrK95oHorT4?si=Y-FYRwSaSDREwe8W",
-            "stars" : "★ ★ ★ ★",
-            "info" : "https://www.outdoorproject.com/united-states/oregon/opal-creek-wilderness"
-        },
-        {
-            "id" : 12,
-            "name" : "Cape falcon",
-            "length" : 4.8,
-            "difficulty" : "Moderate",
-            "image" : "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjI0OTMwNTAvNzMwNmU2ZDJjNDFhOWViOGMyNzI4YTc3ZGU2MmJmZTYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
-            "description" : "This loop features beautiful ocean views. It can be a little muddy in some spots, especially on foggy days. There are lots of curves and light uphill and downhills, but nothing too extreme. The trail is well-maintained, except for the walk out to the point, which is a little overgrown.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/cape-falcon?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/_bfxh7pALfU?si=KkstL6Ke2g69SGB4",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7022307/cape-falcon-trail"
-        },
-        {
-            "id" : 13,
-            "name" : "Adams Glacier Meadows Hike",
-            "length" : 8.2,
-            "difficulty" : "Moderate",
-            "image" : "https://www.oregonhikers.org/w/images/thumb/6/6e/Meadows_at_High_Camp%2C_High_Camp_Trail.jpg/800px-Meadows_at_High_Camp%2C_High_Camp_Trail.jpg",
-            "description" : "Adams Glacier Meadows, also known as High Camp, is one of the highest, easiest to access alpine areas on Mount Adams. It can get pretty busy on summer weekends, but the meadow area is large enough for many people to camp without being on top of each other. The area is very exposed during bad weather, so keep an eye on the weather report. The shortest approach for day hikers is via the Killen Creek Trail, which rises through montane woods on a rather aggressively stepped trail before reaching lush subalpine meadows and then the Pacific Crest Trail.",
-            "src" : "https://www.alltrails.com/widget/trail/us/washington/mt-adams-via-divide-camp-trail-112-and-pct?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/wUdQSADa3ho?si=ulVcd-yJoeEy56bA",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/photo/7072219/adams-glacier-on-the-north-face-of-mt-adams"
-        },
-        {
-            "id" : 14,
-            "name" : "Battle Ax Loop Hike",
-            "length" : 6,
-            "difficulty" : "Moderate",
-            "image" : "https://www.oregonhikers.org/w/images/4/4c/BattleAxLoop4.jpg",
-            "description" : "The loop to the top of Battle Ax is probably the most scenic short loop in the Bull of the Woods Wilderness. You just have to endure the slow, rocky, potholed road up to Elk Lake in order to partake of the visual feast. You will pass a series of lush tarns, which harbor mosquitoes late into the summer, before gaining incredible views, from Mount Rainier to the Three Sisters as you switchback up to the old lookout site on Battle Ax’s summit ridge. Coming down the north ridge, you’ll get a glimpse of the formations on the mountains rugged west face as well as across to Mount Beachies spectacular northeast ridge",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/twin-lakes-via-battle-ax-mountain-and-bagby-trails-loop?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/FzTGd2VQwog?si=U7eY3VP-H6W_vShC",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7073215/battle-axe-creek-trail-3339"
-        },
-        {
-            "id" : 15,
-            "name" : "Belknap Crater Hike",
-            "length" : 6.8,
-            "difficulty" : "Moderate",
-            "image" : "https://www.oregonhikers.org/w/images/0/08/Mt._Washington%2C_Belknap_Crater%2C_McKenzie_Pass.jpg",
-            "description" : "The impressive rugged black lava flows at McKenzie Pass were produced by two shield volcanoes, Belknap Crater and Little Belknap Crater, between about 3,000 and 1,500 years ago. The last eruption in the area is estimated to have been around 480 A.D. The Pacific Crest Trail enters the Mount Washington Wilderness in these lava fields, and a short hike takes you on trail to the small prominence of Little Belknap Crater. On the hike and at Little Belknap’s summit, you will get views of Cascade prominences such as North and Middle Sister, The Husband, Black Butte, Mount Washington, Three Fingered Jack, and Mount Jefferson. A little farther on, you can take a well-defined user trail to the summit of Belknap Crater, which offers the same views from much higher up and invites exploration of its craters.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/belknap-crater-from-old-mckenzie-highway-242?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/GMieU_KnNaE?si=hhhwOGtAYPmGLHkt",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7083791/belknap-crater-trail"
-        },
-        {
-            "id" : 16,
-            "name" : "Blue Basin Loop Hike",
-            "length" : 4.1,
-            "difficulty" : "Moderate",
-            "image" : "https://www.oregonhikers.org/w/images/thumb/f/f9/Claystone%2C_tuff%2C_basalt%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg/500px-Claystone%2C_tuff%2C_basalt%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg",
-            "description" : "Active volcanic activity 31-29 million years ago and about 100 miles to the west of the current location of the Blue Basin produced the welded ash tuffs and blue-green claystone that characterizes exposed remnants of the Turtle Cove Member of the John Day Formation. At that time, this part of Oregon was a mixed woodland interspersed with open meadows and home to a wide variety of creatures, including tortoises, three-toed horses, beavers, oreodonts, wild dogs, nimravids (false saber-tooths), and entelodonts. Fossil remains of all of these species and many more come to light as the soft deposits steadily erode.",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/blue-basin-overlook-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/iWsMwQK0Waw?si=K-kNyzD7RBDQqAwc",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7061038/blue-lake-basin-loop"
-        },
-        {
-            "id" : 17,
-            "name" : "Cached Lake Loop Hike",
-            "length" : 17.4,
-            "difficulty" : "Hard",
-            "image" : "https://www.oregonhikers.org/w/images/thumb/b/b8/Whitebark_pines_and_Needle_Point%2C_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-Whitebark_pines_and_Needle_Point%2C_Eagle_Creek_Trail%2C_Wallowas.jpg",
-            "description" : "The south side of the Wallowas sees far fewer visitors than the northern access routes from Lostine and Joseph. Yet there are similar raw granite slopes, bright displays of wildflowers, rushing creeks, alpine lakes and meadows, and 9,000 foot peaks to explore. This lollipop route up the Main Eagle Trail takes you past a broad meadow to high cirques with mountain lakes and then an 8,000-foot pass that delivers you into the Minam River drainage with more spectacular views. You’ll descend back to Eagle Creek via the “unmaintained” Bench Canyon Trail, rough but easy to follow, passing a couple more secluded mountain lakes. Wildlife is present, but you’re most likely to see golden-mantled ground squirrels, chipmunks, red squirrels, and lots of Columbian ground squirrels in the meadows. Mule deer and elk are also common in the valleys. Up high, you’ll be lucky to see mountain goats, which generally stay away from trails",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/cache-mountain-via-national-forest-road-900-and-800?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/30EgWO_Y3o0?si=9VRt7XNOSmrirDWv",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7072702/cache-cabin-trail"
-        },
-        {
-            "id" : 18,
-            "name" : "Ice Lake Hike",
-            "length" : 15.4,
-            "difficulty" : "Hard",
-            "image" : "https://www.oregonhikers.org/w/images/thumb/a/a6/IceLake7.jpg/500px-IceLake7.jpg",
-            "description" : "Ice Lake is one of the most coveted destinations in the Wallowas and, as such, campsites can be at a premium on summer weekends, when overnighters have their sights set on bagging the Matterhorn’s marble summit (see Matterhorn Add-on Hike). The popularity of the spot should not detract from a visit, however, especially if you can do it mid-week. All up the trail, meadows are blooming in mid-summer, there are waterfalls to explore as you ascend Adam Creek, and Ice Lake itself is a tranquil oasis below the Wallowas’ highest ridge. Some will do Ice Lake, and even the Matterhorn, as a long day hike; others will prefer the repose of an evening or two in the wilderness on the shores of this high lake",
-            "src" : "https://www.alltrails.com/widget/trail/us/oregon/ice-lake-trail?u=i&sh=cngirw",
-            "video" : "https://www.youtube.com/embed/TwR6pEvrWgo?si=dlYtJYpoYlanFxk5",
-            "stars" : "★ ★ ★ ★ ★",
-            "info" : "https://www.hikingproject.com/trail/7042857/ice-lake-trail-1808"
+          "location": "45.56431, -122.15299",
+          "name": "Angels Rest trailend"
         }
-    ]
+      ],
+      "categories": ["Hiking", "family friendly", "Crowded", "All Season"],
+      "regulations": [
+        "Parking can be a problem. Try to get there early (before 8:30 a.m. on weekends), or hike during the week. Park only in designated spots at one of the two parking areas.",
+        "Day use only: open 6:00 a.m. - 10:00 p.m.",
+        "Closest restrooms at the Bridal Veil Trailhead, less than one mile west",
+        "Keep dogs on leash",
+        "Best not to hike this trail under icy, windy, or very wet conditions"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smith Rock",
+      "length": 3.6,
+      "difficulty": "Hard",
+      "image": [
+        "https://www.oregonhikers.org/w/images/thumb/5/5a/Three_Sisters_looming%2C_Burma_Road%2C_Smith_Rock.jpg/800px-Three_Sisters_looming%2C_Burma_Road%2C_Smith_Rock.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/f/f9/Monkey_Face_and_Black_Butte%2C_Misery_Ridge_Trail%2C_Smith_Rock.jpg/500px-Monkey_Face_and_Black_Butte%2C_Misery_Ridge_Trail%2C_Smith_Rock.jpg",
+        "https://www.oregonhikers.org/w/images/f/fb/SmithRockTrhd1.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/7/72/Coyote_Butte_and_Mt._Jefferson%2C_Summit_Viewpoint_Trail%2C_Smith_Rock.jpg/800px-Coyote_Butte_and_Mt._Jefferson%2C_Summit_Viewpoint_Trail%2C_Smith_Rock.jpg"
+      ],
+      "description": "Smith Rock is hardly an uncrowded destination. On any nice day, you’ll need to get here quite early to find parking. However, once away from the main attractions, you will find back trails that are relatively unpopulated. The route of this hike covers the northern part of the 640-acre state park (see the Misery Ridge Loop Hike for the southern section). Once you’ve admired the landscape from the Monkey Face Viewpoint and have descended to the Summit Trail, you’ll get a few quiet miles and a secluded viewpoint before hitting more human traffic on the Burma Road. There are many spots with incredible views on this hike and, as always, the tuff walls that attract climbers from all over the world perform their photogenic magic for more casual visitors as well.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/misery-ridge-and-summit-trail-loop?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/ZcU_j-6SXdA?si=-jT4LqZ6TyDE5Q6t",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.outdoorproject.com/united-states/oregon/smith-rock-state-park",
+      "waypoints": [
+        {
+          "location": "44.36515, -121.13789",
+          "name": "Smith Rock Trailhead"
+        },
+        {
+          "location": "44.37290, -121.14257",
+          "name": "Smith Rock Summit"
+        }
+      ],
+      "categories": ["Hiking", "All Season"],
+      "regulations": [
+        "Day use parking permit required",
+        "Open dawn to dusk",
+        "Information kiosk, restrooms, picnic area",
+        "Keep dogs on leash",
+        "Share some trails with mountain bikers"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Eagle Creek to Tunnel Falls Hike",
+      "length": 12.2,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/thumb/d/d6/TunnelFalls1.jpg/600px-TunnelFalls1.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/7/7f/Big_crib_wall%2C_Eagle_Creek_Trail.jpg/500px-Big_crib_wall%2C_Eagle_Creek_Trail.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/3/35/PunchbowlFalls.jpg/500px-PunchbowlFalls.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/b/be/Bouldery_creek%2C_Eagle_Creek_Trail.jpg/500px-Bouldery_creek%2C_Eagle_Creek_Trail.jpg"
+      ],
+      "description": "Tunnel Falls is the traditional turnaround spot for many on the Eagle Creek Trail, and it is indeed a splendid climax. Over the last thousand years, the falls have carved a majestic basin here, plunging 160 feet from towering basalt cliffs to the rushing creek bed below. While this scene is impressive enough, the most bewildering aspect of the falls in the passageway behind them. Trail builders from the early 1900s blasted a tunnel behind the falls and then across the sheer rock face on their far side, making this area the slickest and perhaps most precarious section of trail in the Columbia River Gorge. Looking downstream from the falls, you can see where the two forks of Eagle Creek converge, meeting at Grand Union Falls.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/tunnel-falls-via-eagle-creek-trail-440?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/O4nhJgx8RGI?si=C8AVRwOrx8xsbVDT",
+      "stars": "★ ★ ★ ★",
+      "info": "https://www.hikingproject.com/trail/7022469/eagle-creek-trail-to-tunnel-falls",
+      "waypoints": [
+        {
+          "location": "45.636574, -121.91970",
+          "name": "Eagle Creek Trailhead"
+        },
+        {
+          "location": "45.58489, -121.85199",
+          "name": "Tunnel Falls"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Backpacking"],
+      "regulations": [
+        "Northwest Forest Pass (or America the Beautiful Pass) required; fee kiosk at the trailhead",
+        "Restrooms, picnic tables, information kiosk, nearby campground",
+        "Dogs on leash",
+        "Limited parking; if lot is full, go back to the Eagle Creek Day Use Trailhead",
+        "Overnight camping permitted above the High Bridge; campfires not allowed!"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Multnomah-Wahkeena Loop Hike",
+      "length": 5.3,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/d/da/Ecola1.JPG",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzUwMzA0OTAvNjgyMjdiYzY4ZjU2M2I2ZjM1NzE1NjdlOGQ3ZGFiN2YuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzQ5NjY3ODUvOWY1NTUwYzczOWE1ZTljMWJiZDIxM2E5ZjIxZWI5MDAuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzQ5NjEwOTYvMGMzZDY2NDFkMTBlNDk3NzFlNjE1ZDM2ZWI0ZjVhMTkuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzQ4MTg4MzAvOGUyYWVkMzYxNTY3NzAzYmYyYzFhNmViZjY5YTFhMjcuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "Wahkeena Falls Loop is a beautiful experience located in the Columbia River Gorge National Scenic Area that brings hikers to one of the best waterfalls on the Oregon side. Start from the Wahkeena Picnic Area and take Wahkeena which passes by several waterfalls and ascends Wahkeena Creek past the springs which feed the waterfall",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/wahkeena-falls-loop-trail?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/NydBzNVGxiM?si=Zo5mNTkuWCFG346s",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.hikingproject.com/trail/7085296/wahkeena-falls-devils-rest-angels-rest-loop",
+      "waypoints": [
+        {
+          "location": " 45.57893, -122.11841",
+          "name": "Multnomah Falls Trailhead"
+        },
+        {
+          "location": "45.57535, -122.12809",
+          "name": "Wahkeena Falls Trailhead"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Family Friendly"],
+      "regulations": [
+        "For parking at the Multnomah Falls Lodge between Memorial Day and Labor Day weekends, a Timed Use Permit ($2 fee) will be required for each personal vehicle between 9 a.m. and 6 p.m. In addition, as of 2024 there's an additional parking fee ($10 and up) required by the concessionaire (Sasquatch Shuttle) that operates the parking lot here.",
+        "For the I-84 Exit 31 parking area, between Memorial Day and Labor Day weekends, you will need to purchase reserved tickets from Recreation.gov. Booking early in the morning or later in the afternoon is best for ensuring a spot.",
+        "Keep dogs on leash",
+        "Restrooms, restaurant, visitor center at Multnomah Falls Lodge; picnic area, restrooms, information kiosk near Wahkeena Trailhead"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mirror Lake Trail",
+      "length": 4.2,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/e/e8/MirrorLakeAlpenglow.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/a/ac/Bridge_over_Camp_Creek%2C_Mirror_Lake_Trail.jpg/500px-Bridge_over_Camp_Creek%2C_Mirror_Lake_Trail.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/6/68/Wide_open_trail%2C_Mirror_Lake_Trail.jpg/500px-Wide_open_trail%2C_Mirror_Lake_Trail.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/3/30/MirrorLake.jpg/500px-MirrorLake.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/8/85/Mt._Hood_from_Mirror_Lake.jpg/500px-Mt._Hood_from_Mirror_Lake.jpg"
+      ],
+      "description": "Mirror Lake Loop Trail is a great family-friendly hike in Mount Hood National Forest. Traveling from the parking area and trailhead, you will hike roughly 2 miles before coming to Mirror Lake. This is a great place for a picnic and a swim during warmer months! ",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/mirror-lake-loop-trail?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/Aaai22IjBL8?si=Hh9As_8T0F5lXGoU",
+      "stars": "★ ★ ★ ★",
+      "info": "https://www.outdoorproject.com/united-states/oregon/mirror-lake",
+      "waypoints": [
+        {
+          "location": "45.30277, -121.77728",
+          "name": "Mirror Lake Trailhead"
+        },
+        {
+          "location": "45.29695, -121.79286",
+          "name": "Mirror Lake"
+        }
+      ],
+      "categories": [
+        "Hiking",
+        "All Season",
+        "Family Friendly",
+        "Crowded",
+        "Backpacking"
+      ],
+      "regulations": [
+        "Northwest Forest Pass required",
+        "Day use only",
+        "Keep dogs on leash",
+        "Restrooms, picnic table, information kiosk at trailhead"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cape Perpetua Hike",
+      "length": 6.5,
+      "difficulty": "Moderate",
+      "image": [
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjU0MjQ3ODcvMDY5MzE0ODA4ZjU2YmIwMjgwNmY0ODVlYmI5MzQ2ZjQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
+        "https://www.oregonhikers.org/w/images/2/2a/CapePerpetua1.jpg",
+        "https://www.alltrails.com/api/alltrails/v2/trails/10020061/photos/0?size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i",
+        "https://www.alltrails.com/api/alltrails/v2/trails/10252966/photos/0?size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i",
+        "https://www.alltrails.com/api/alltrails/v2/trails/10260406/photos/0?size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i"
+      ],
+      "description": "The Siuslaw National Forest's Cape Perpetua Scenic Area is one of the jewels of the central Oregon coast. The rugged lava headland, an oceanic shield volcano, is much more than a landscape of rock meeting ocean. There are pocket beaches, tide pools, blowholes, a lush creek, old growth Sitka spruce, and wildflower meadows. Fingers of weathered lava jut into the surf at sea level and, from a historic stone shelter at 745 feet, you can look out on the whole vista. A network of trails leads through here, and you need to give yourself time to do them all. While you can drive to other trailheads in the Scenic Area, plan to be here on a balmy day and take your time.",
+      "src": "https://www.alltrails.com/widget/parks/us/oregon/cape-perpetua-scenic-area?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/1HYX0ACLqFQ?si=F8tMyJhxebrolIqp",
+      "stars": "★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/siuslaw/recarea/?recid=42265",
+      "waypoints": [
+        {
+          "location": "44.2805, -124.1078",
+          "name": "Cape Perpetua Trailhead"
+        },
+        {
+          "location": "44.2874, -124.1103",
+          "name": "Cape Perpetua Stone Shelter"
+        }
+      ],
+      "categories": [
+        "Hiking",
+        "All Season",
+        "Crowded",
+        "Family Friendly",
+        "Backpacking"
+      ],
+      "regulations": [
+        "Northwest Forest Pass (or America the Beautiful Pass) required or $5 per vehicle",
+        "Keep dogs on leash",
+        "Visitor Center, campground, restrooms, interpretive signs, picnic tables"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Garfield Peak Hike",
+      "length": 3.5,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/1/1e/CraterLake1.jpg",
+        "https://www.oregonhikers.org/w/images/c/cf/GarfieldPeak1.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/c/c0/GarfieldPeak2.jpg/500px-GarfieldPeak2.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzE3OTA1MTkvOTMxMDEwZmFmMmQxYWFhNjZiMDRkMzQ2Zjc0YjRhMmEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjgzNjUyODEvZWQ3NmEyNWRmODBmNzc3ZDVkZDliNzViMDI3NGNlZjIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "Crater Lake is the the centerpiece of Oregon's only national park and a world-class tourist attraction. Statistics on the lake vary with the seasons, but the lake is six miles across at its widest and has a maximum depth of 1,949 feet. This makes it the deepest lake in the United States, second deepest in North America, and the ninth deepest in the world. Crater Lake is the deepest lake on the planet whose floor lies above sea level.\r\n\r\nCrater Lake is renowned for its intense blue color and its clarity. This is a result of a lack of sediment in the lake as there are no inflowing watercourses: the lake nestles within a massive caldera that filled with rain and snow melt (The area experiences some of the highest snowfall totals in the world). Most days, it is possible to see at least 100 feet below the surface.",
+      "src": "https://www.alltrails.com/widget/parks/us/oregon/crater-lake-national-park?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/UcAjS28SDs8?si=SRoh4S_he6dkWR0S",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.outdoorproject.com/united-states/oregon/crater-lake-national-park",
+      "waypoints": [
+        {
+          "location": "42.9109, -122.1435",
+          "name": "Rim Village Trailhead"
+        },
+        {
+          "location": "42.9041, -122.1232",
+          "name": "Garfield Peak"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Family Friendly"],
+      "regulations": [
+        "$30 per vehicle entrance fee to Crater Lake National Park - good for 7 days - or America the Beautiful Pass",
+        "No pets"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Cascade Head Hike",
+      "length": 5.5,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/f/f4/CascadeHead3.JPG",
+        "https://www.hikeoregon.net/uploads/2/9/0/0/29006543/cascade-head-view-of-ocean_orig.jpg",
+        "https://www.hikeoregon.net/uploads/2/9/0/0/29006543/salmon-river-from-cascade-head_orig.jpg",
+        "https://www.hikeoregon.net/uploads/2/9/0/0/29006543/cascade-head-trail_orig.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzQ3NTg1NjQvYzc1NWJkYTE5NjlmNmEwZDYxMmViZDUxYTY1YTVkMDkuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "Hiking trail through forests & meadows of a scenic headland with wildflowers & sweeping ocean views.The Cascade Head Preserve, the beautiful coastal area through which a good portion of this trail travels, is owned and maintained by The Nature Conservancy.  ",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/lower-cascade-head-trail?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/HsGMV978mM0?si=vfktmp3wc6L93qFG",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/cascade-head/",
+      "waypoints": [
+        {
+          "location": "45.04183, -123.99234",
+          "name": "Knights Park Trailhead"
+        },
+        {
+          "location": "45.06068, -123.98842",
+          "name": "Nature Conservancy Trailhead"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Family Friendly"],
+      "regulations": [
+        "Dogs are not permitted on this trail",
+        "Off-trail travel is not permitted",
+        "Last 0.6 miles of trail as well as the upper Nature Conservancy Trailhead closed from January 1st to July 15th.",
+        "Restrooms at Knights Park Trailhead"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Cape Kiwanda",
+      "length": 5,
+      "difficulty": "Easy",
+      "image": [
+        "https://www.oregonhikers.org/w/images/9/98/CapeKiwanda1.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/3/31/CapeKiwanda4.jpg/500px-CapeKiwanda4.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/b/b3/CapeKiwanda2.jpg/500px-CapeKiwanda2.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjgwODg2NzYvMDBiNDA2NDA0ZGQxZTU4OTAwZGYzMmQ2OTM2ZDA0ZTguanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://www.oregonhikers.org/w/images/3/38/GreatDune1.jpg"
+      ],
+      "description": "One of the most unique features of Cape Kiwanda is the massive sand dune that dominates the landscape. You can climb to the top for incredible views of the beach and surrounding area or you can try your hand at sandboarding down the dune.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/cape-kiwanda-state-natural-area?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/pQm0p8xb_4w?si=XCqsruw7BHtoUY4_",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=130",
+      "waypoints": [
+        {
+          "location": "45.20239, -123.96697",
+          "name": "Pacific Avenue Trailhead"
+        },
+        {
+          "location": "45.21981, -123.97435",
+          "name": "Great Dune"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Family Friendly"],
+      "regulations": [
+        "$10 Tillamook County Day Use Access Parking Fee",
+        "Cars on the beach at the Cape Kiwanda Trailhead",
+        "Dogs on leash"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Tamolitch Pool Hike",
+      "length": 4.2,
+      "difficulty": "Easy",
+      "image": [
+        "https://www.oregonhikers.org/w/images/5/51/Tamolitch_Falls_and_Blue_Pool%2C_McKenzie_River_Trail.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzUxNzg5MzcvYjE3YTZjNTM1MGRjZjk1MWNmZmY3YjFjYmIzZDM4YWQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzUxNzMwNzQvNTM0YTg4MDMzYWZkOTIyNjE2MzEyNzU0N2I0NDQ3M2YuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzUwMTExODcvZGFkMzNhN2Y3YTc1NWZlYmMxZjU5MTE0NzY0NGY4NjUuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzUwNTEzODMvNDkxYTdjMmE0ZDFkMDQ2MjIwMzc5MTY2MjAwOGVmYmEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "This short portion of the McKenzie River National Recreation Trail takes you to the beautiful turquoise Tamolitch Pool, also known as Blue Pool. It does not take you to the Koosah and Sahalie Falls",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/tamolitch-blue-pool-via-mckenzie-river-trail?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/ge_vHS99huo?si=5CZmj_l6UUWqDf0d",
+      "stars": "★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/willamette/recarea/?recid=82063",
+      "waypoints": [
+        {
+          "location": "4.29022, -122.03567",
+          "name": "Tamolitch Blue Pool Trailhead"
+        },
+        {
+          "location": "44.3120, -122.0269",
+          "name": "Tamolitch Blue Pool"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Family Friendly"],
+      "regulations": [
+        "Restrooms, information kiosk, nearby campground",
+        "Share trail with mountain bikers"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Opal Pool-Cedar Flats Hike",
+      "length": 10.9,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/9/97/OpalPoolCedarFlats1.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjg1NDg1MDkvYzBkZmQ4OTc3YWUyMGE0OGYwY2MxY2RhNGM2MmVmZWEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjA2ODc4NDMvOWU5OTU2Mzk1MDllY2U0ZjJhNmU4Mjk5ZWJlODNjNGYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjgzNDU4NjMvODViZTFlZjJkMWM1MzEwN2I5NGY2NmUyNmFkM2JhN2MuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjgyMDUxODMvZWQwNGU0YWUxNzQzZmRhNTNkZmI1YmFiODZlOWEyOGEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "Opal Creek is a beautiful area that is popular with hikers and campers. The hike to Jawbone Flats is a great way to experience the area. The trail is easy to follow and the scenery is beautiful. The hike is a great way to experience the beauty of the Opal Creek area.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/opal-creek-to-cedar-flats",
+      "video": "https://www.youtube.com/embed/zrK95oHorT4?si=Y-FYRwSaSDREwe8W",
+      "stars": "★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/willamette/recarea/?recid=4250",
+      "waypoints": [
+        {
+          "location": "44.85980, -122.26460",
+          "name": "Opal Creek Trailhead"
+        },
+        {
+          "location": "44.82993, -122.20125",
+          "name": "Cedar Flats"
+        }
+      ],
+      "categories": [
+        "Hiking",
+        "All Season",
+        "Crowded",
+        "Family Friendly",
+        "Backpacking"
+      ],
+      "regulations": [
+        "Northwest Forest Pass (or America the Beautiful Pass) required at trailhead",
+        "Restrooms, information kiosk at trailhead",
+        "Dogs on leash in Jawbone Flats",
+        "Respect private property in the Jawbone Flats area: keep to the main road and walk your bike",
+        "The gravel road/trail to Jawbone Flats is not wilderness, but trails north and east of the mining area are, so all normal wilderness rules apply: no groups larger than 12, no bikes, and leave no trace."
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Cape Falcon Hike",
+      "length": 4.8,
+      "difficulty": "Easy",
+      "image": [
+        "https://www.oregonhikers.org/w/images/5/52/CapeFalcon1.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/8/86/Short_Sand_Beach_from_Cape_Falcon_Trail%2C_Oswald_West_State_Park.jpeg/500px-Short_Sand_Beach_from_Cape_Falcon_Trail%2C_Oswald_West_State_Park.jpeg",
+        "https://www.oregonhikers.org/w/images/thumb/4/4a/Looking_to_the_north_point_of_Cape_Falcon%2C_Oswald_West_State_Park.jpeg/500px-Looking_to_the_north_point_of_Cape_Falcon%2C_Oswald_West_State_Park.jpeg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTI4MDg1NzAvODA4ZjUwNzJiNDFiMWZjNmZjZTk2ZjllMDkyZjg5ODQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzQ1NjUxNDUvODYxNDFkNWFhNDA3MGM1N2E3YTZhNmYyZjdiYTkxODguanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "This loop features beautiful ocean views. It can be a little muddy in some spots, especially on foggy days. There are lots of curves and light uphill and downhills, but nothing too extreme. The trail is well-maintained, except for the walk out to the point, which is a little overgrown.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/cape-falcon?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/_bfxh7pALfU?si=KkstL6Ke2g69SGB4",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=139",
+      "waypoints": [
+        {
+          "location": "45.76312, -123.95607",
+          "name": "Cape Falcon Trailhead"
+        },
+        {
+          "location": "45.76214, -123.98073",
+          "name": "Cape Falcon"
+        }
+      ],
+      "categories": ["Hiking", "All Season", "Crowded", "Family Friendly"],
+      "regulations": [
+        "No fee",
+        "Dogs on leash",
+        "Trailhead parking lot is closed from 10:00 p.m. - 6:00 a.m."
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Adams Glacier Meadows Hike",
+      "length": 8.2,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/thumb/6/6e/Meadows_at_High_Camp%2C_High_Camp_Trail.jpg/800px-Meadows_at_High_Camp%2C_High_Camp_Trail.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/2/21/Killen4.JPG/500px-Killen4.JPG",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjU3MzcwMDMvZGQwYTI5NTZiOWExNTg5YjBiMDE1ZWMyNjIwZWU2MGEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjU3MzY5OTgvYzUxM2I1OTIzZDdkMDdmNzM4YzRhYWE4YTlkNzQ3NTcuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjQ2NTE2NzcvN2JmYzRiNmRmYWQ2NWJhMGU3ZTA2ZWNkMzczMmJmMWMuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "Adams Glacier Meadows, also known as High Camp, is one of the highest, easiest to access alpine areas on Mount Adams. It can get pretty busy on summer weekends, but the meadow area is large enough for many people to camp without being on top of each other. The area is very exposed during bad weather, so keep an eye on the weather report. The shortest approach for day hikers is via the Killen Creek Trail, which rises through montane woods on a rather aggressively stepped trail before reaching lush subalpine meadows and then the Pacific Crest Trail.",
+      "src": "https://www.alltrails.com/widget/trail/us/washington/mt-adams-via-divide-camp-trail-112-and-pct?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/wUdQSADa3ho?si=ulVcd-yJoeEy56bA",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/giffordpinchot/recarea/?recid=31804",
+      "waypoints": [
+        {
+          "location": "46.2883, -121.5523",
+          "name": "Killen Creek Trailhead"
+        },
+        {
+          "location": "46.24126, -121.52358",
+          "name": "Adams Glacier Meadows"
+        }
+      ],
+      "categories": ["Hiking", "Crowded", "Backpacking"],
+      "regulations": [
+        "$3.50 toll each way at Hood River Bridge",
+        "Self-issued wilderness permit",
+        "Information kiosk at trailhead"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Battle Ax Loop Hike",
+      "length": 6,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/4/4c/BattleAxLoop4.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/2/29/BattleAxLoop3.jpg/500px-BattleAxLoop3.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjIxODY0NjUvMzIzNWE2MTA5MDc2NDc1Nzk0ODY5MzM2MTc0MjZmNmYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjgxMTE3NTcvMzQyYWRjYzNjMWE5ZmZlMDQ4YjA0NmYwMTNhZmIxYTYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=",
+        "https://www.oregonhikers.org/w/images/thumb/e/e7/BattleAxLoop5.jpg/320px-BattleAxLoop5.jpg"
+      ],
+      "description": "The loop to the top of Battle Ax is probably the most scenic short loop in the Bull of the Woods Wilderness. You just have to endure the slow, rocky, potholed road up to Elk Lake in order to partake of the visual feast. You will pass a series of lush tarns, which harbor mosquitoes late into the summer, before gaining incredible views, from Mount Rainier to the Three Sisters as you switchback up to the old lookout site on Battle Ax’s summit ridge. Coming down the north ridge, you’ll get a glimpse of the formations on the mountains rugged west face as well as across to Mount Beachies spectacular northeast ridge",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/twin-lakes-via-battle-ax-mountain-and-bagby-trails-loop?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/FzTGd2VQwog?si=U7eY3VP-H6W_vShC",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/mthood/recarea/?recid=52882",
+      "waypoints": [
+        {
+          "location": "44.8252, -122.1250",
+          "name": "Elk Lake Junction Trailhead"
+        },
+        {
+          "location": "44.8266, -122.1396",
+          "name": "Battle Ax Summit"
+        }
+      ],
+      "categories": ["Hiking", "Summer", "Backpacking"],
+      "regulations": ["Self-issued Wilderness Permit"]
+    },
+    {
+      "id": 15,
+      "name": "Belknap Crater Hike",
+      "length": 6.8,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/0/08/Mt._Washington%2C_Belknap_Crater%2C_McKenzie_Pass.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/a/aa/View_to_Belknap_and_Little_Belknap%2C_PCT%2C_McKenzie_Pass.jpg/500px-View_to_Belknap_and_Little_Belknap%2C_PCT%2C_McKenzie_Pass.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/3/35/Looking_to_Little_Belknap%2C_PCT%2C_McKenzie_Pass.jpg/500px-Looking_to_Little_Belknap%2C_PCT%2C_McKenzie_Pass.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/0/0e/Hiking_to_Belknap_Crater%2C_McKenzie_Pass.jpg/500px-Hiking_to_Belknap_Crater%2C_McKenzie_Pass.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjcwNTc5ODQvMzVmYWMwYWVhNzAyNmM2NmUwOTEwMzZiOTYyNjA2ZmYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "The impressive rugged black lava flows at McKenzie Pass were produced by two shield volcanoes, Belknap Crater and Little Belknap Crater, between about 3,000 and 1,500 years ago. The last eruption in the area is estimated to have been around 480 A.D. The Pacific Crest Trail enters the Mount Washington Wilderness in these lava fields, and a short hike takes you on trail to the small prominence of Little Belknap Crater. On the hike and at Little Belknap’s summit, you will get views of Cascade prominences such as North and Middle Sister, The Husband, Black Butte, Mount Washington, Three Fingered Jack, and Mount Jefferson. A little farther on, you can take a well-defined user trail to the summit of Belknap Crater, which offers the same views from much higher up and invites exploration of its craters.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/belknap-crater-from-old-mckenzie-highway-242?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/GMieU_KnNaE?si=hhhwOGtAYPmGLHkt",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/willamette/recarea/?recid=81235",
+      "waypoints": [
+        {
+          "location": "44.2602, -121.8098",
+          "name": "McKenzie Pass Trailhead"
+        },
+        {
+          "location": "44.28396, -121.84151",
+          "name": "Belknap Crater"
+        }
+      ],
+      "categories": ["Hiking", "Summer and Fall", "Family Friendly"],
+      "regulations": [
+        "Northwest Forest Pass (or America the Beautiful Pass) required",
+        "Central Cascades Wilderness Permit required: $6 overnight permit; $1 per person day use (June 15th - October 15th)",
+        "Self-issued wilderness permit",
+        "Information kiosk",
+        "Leave your dog at home: Lava is very unforgiving on paw pads!",
+        "Highway 242 usually closed from mid-fall through most of spring"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Blue Basin Loop Hike",
+      "length": 4.1,
+      "difficulty": "Moderate",
+      "image": [
+        "https://www.oregonhikers.org/w/images/thumb/f/f9/Claystone%2C_tuff%2C_basalt%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg/500px-Claystone%2C_tuff%2C_basalt%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/b/bb/Turtle_Cove_Formation%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg/500px-Turtle_Cove_Formation%2C_Island_in_Time_Trail%2C_Blue_Basin.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/0/06/Above_the_Blue_Basin%2C_Overlook_Trail%2C_Blue_Basin.jpg/500px-Above_the_Blue_Basin%2C_Overlook_Trail%2C_Blue_Basin.jpg",
+        "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNzM5MzU1NjIvZmQ4ZDA2ZGI5NTE1ODkyNDY4MTA2MzA3NjRlOGZlY2EuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0="
+      ],
+      "description": "Active volcanic activity 31-29 million years ago and about 100 miles to the west of the current location of the Blue Basin produced the welded ash tuffs and blue-green claystone that characterizes exposed remnants of the Turtle Cove Member of the John Day Formation. At that time, this part of Oregon was a mixed woodland interspersed with open meadows and home to a wide variety of creatures, including tortoises, three-toed horses, beavers, oreodonts, wild dogs, nimravids (false saber-tooths), and entelodonts. Fossil remains of all of these species and many more come to light as the soft deposits steadily erode.",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/blue-basin-overlook-trail?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/iWsMwQK0Waw?si=K-kNyzD7RBDQqAwc",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.nps.gov/joda/planyourvisit/sr-unit.htm",
+      "waypoints": [
+        {
+          "location": "44.5955, -119.6311",
+          "name": "Blue Basin Trailhead"
+        },
+        {
+          "location": "44.59115, -119.61769",
+          "name": "Blue Basin Overlook"
+        }
+      ],
+      "categories": [
+        "Hiking",
+        "All Season",
+        "Family Friendly",
+        "Rattlesnakes sightings possible"
+      ],
+      "regulations": [
+        "Open sunrise to sunset",
+        "Dogs on leash (the bridges on the Island in Time Trail with serrated steel grating are rough on the paws; consider leaving the pooch behind)",
+        "Picnic tables, restroom",
+        "Off-trail hiking not permitted; respect private property"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Cached Lake Loop Hike",
+      "length": 17.4,
+      "difficulty": "Hard",
+      "image": [
+        "https://www.oregonhikers.org/w/images/thumb/b/b8/Whitebark_pines_and_Needle_Point%2C_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-Whitebark_pines_and_Needle_Point%2C_Eagle_Creek_Trail%2C_Wallowas.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/4/46/Waterfall_on_Eagle_Creek%2C_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-Waterfall_on_Eagle_Creek%2C_Eagle_Creek_Trail%2C_Wallowas.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/b/b4/Eagle_Meadow_from_the_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-Eagle_Meadow_from_the_Eagle_Creek_Trail%2C_Wallowas.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/1/1e/Looking_down_on_Cached_Lake%2C_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-Looking_down_on_Cached_Lake%2C_Eagle_Creek_Trail%2C_Wallowas.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/7/7a/View_to_the_Minam_River_valley%2C_Eagle_Creek_Trail%2C_Wallowas.jpg/500px-View_to_the_Minam_River_valley%2C_Eagle_Creek_Trail%2C_Wallowas.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/1/1d/Eagle_Creek_valley%2C_Bench_Canyon_Trail%2C_Wallowas.jpg/500px-Eagle_Creek_valley%2C_Bench_Canyon_Trail%2C_Wallowas.jpg"
+      ],
+      "description": "The south side of the Wallowas sees far fewer visitors than the northern access routes from Lostine and Joseph. Yet there are similar raw granite slopes, bright displays of wildflowers, rushing creeks, alpine lakes and meadows, and 9,000 foot peaks to explore. This lollipop route up the Main Eagle Trail takes you past a broad meadow to high cirques with mountain lakes and then an 8,000-foot pass that delivers you into the Minam River drainage with more spectacular views. You’ll descend back to Eagle Creek via the “unmaintained” Bench Canyon Trail, rough but easy to follow, passing a couple more secluded mountain lakes. Wildlife is present, but you’re most likely to see golden-mantled ground squirrels, chipmunks, red squirrels, and lots of Columbian ground squirrels in the meadows. Mule deer and elk are also common in the valleys. Up high, you’ll be lucky to see mountain goats, which generally stay away from trails",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/cache-mountain-via-national-forest-road-900-and-800?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/30EgWO_Y3o0?si=9VRt7XNOSmrirDWv",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://www.fs.usda.gov/recarea/wallowa-whitman/recarea/?recid=79468",
+      "waypoints": [
+        {
+          "location": "45.06799, -117.40668",
+          "name": "Main Eagle Trailhead"
+        },
+        {
+          "location": "45.11812, -117.36852",
+          "name": "Cached Lake"
+        }
+      ],
+      "categories": ["Hiking", "Summer and Fall", "Backpacking", "Crowded"],
+      "regulations": [
+        "Northwest Forest Pass (or America the Beautiful Pass) required or $5 daily fee",
+        "Self-issued wilderness permit",
+        "Picnic tables, restrooms, nearby campground (Boulder Park)"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Ice Lake Hike",
+      "length": 15.4,
+      "difficulty": "Hard",
+      "image": [
+        "https://www.oregonhikers.org/w/images/thumb/a/a6/IceLake7.jpg/500px-IceLake7.jpg",
+        "https://www.oregonhikers.org/w/images/5/56/IceLake6.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/6/6b/IceLake1.jpg/500px-IceLake1.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/7/75/IceLake3.jpg/320px-IceLake3.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/b/bf/IceLake5.jpg/500px-IceLake5.jpg",
+        "https://www.oregonhikers.org/w/images/thumb/8/81/IceLake2.jpg/500px-IceLake2.jpg"
+      ],
+      "description": "Ice Lake is one of the most coveted destinations in the Wallowas and, as such, campsites can be at a premium on summer weekends, when overnighters have their sights set on bagging the Matterhorn’s marble summit (see Matterhorn Add-on Hike). The popularity of the spot should not detract from a visit, however, especially if you can do it mid-week. All up the trail, meadows are blooming in mid-summer, there are waterfalls to explore as you ascend Adam Creek, and Ice Lake itself is a tranquil oasis below the Wallowas’ highest ridge. Some will do Ice Lake, and even the Matterhorn, as a long day hike; others will prefer the repose of an evening or two in the wilderness on the shores of this high lake",
+      "src": "https://www.alltrails.com/widget/trail/us/oregon/ice-lake-trail?u=i&sh=cngirw",
+      "video": "https://www.youtube.com/embed/TwR6pEvrWgo?si=dlYtJYpoYlanFxk5",
+      "stars": "★ ★ ★ ★ ★",
+      "info": "https://trailsnw.com/trails/wallowas/ice-lake",
+      "waypoints": [
+        {
+          "location": "45.267040, -117.212834",
+          "name": "Wallowa Lake Trailhead"
+        },
+        {
+          "location": "45.22957, -117.27339",
+          "name": "Ice Lake"
+        }
+      ],
+      "categories": ["Hiking", "Summer and Fall", "Backpacking", "Crowded"],
+      "regulations": [
+        "Sign in at the Wilderness Permit box at the trailhead",
+        "Keep dogs on leash around horse and mule trains; step off the trail when they approach."
+      ]
+    }
+  ]
 }
