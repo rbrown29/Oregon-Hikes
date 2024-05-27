@@ -49,6 +49,11 @@
   .card-title {
     font-family: 'Syne Mono', monospace;
   }
+  #button {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 </style>
 <%- include('nav.ejs')-%>
 <body style="background-color: #28282B;">
@@ -71,15 +76,15 @@
               <h6 class="white-text text-darken-4"><p><%= trail.description %></p></h6>
               <br />
                <!-- Modal Trigger Button -->
-               <a class="waves-effect waves-light btn-small modal-trigger black" href="#video-modal"> Play Video</a>
-               <a class="waves-effect waves-light btn-small modal-trigger black" href="#map-modal">View Map</a>
-               <a class="waves-effect waves-light btn-small modal-trigger black" href='<%= trail.info %>' target="_blank" >More Info</a>
+               <a class="waves-effect waves-light btn-small modal-trigger black" id="button" href="#video-modal"> Play Video</a>
+               <a class="waves-effect waves-light btn-small modal-trigger black" id="button" href="#map-modal">View Map</a>
+               <a class="waves-effect waves-light btn-small modal-trigger black" id="button" href='<%= trail.info %>' target="_blank" >More Info</a>
               <%if (trail.difficulty === "Hard"){%>
-                <h6 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
+                <h6 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
               <%} else if (trail.difficulty === "Moderate") {%>
-                <h6 class="yellow-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: yellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
+                <h6 class="yellow-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: yellow;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
               <%} else { %>
-                <h6 class="green-text text-darken-4"><span style="color: #08ff08;"><%= trail.stars %><span/><span style="color: greenyellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
+                <h6 class="green-text text-darken-4"><span style="color: #08ff08;"><%= trail.stars %><span/><span style="color: greenyellow;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
               <%}%>
               <h6 class="white-text">Categories</h6>
               <ul class="collection">
