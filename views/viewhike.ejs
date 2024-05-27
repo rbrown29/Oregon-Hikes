@@ -1,5 +1,15 @@
 <%- include('head.ejs')-%>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 <style>
+  body {
+    background: 
+      linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, black 25%, transparent 25%),
+      linear-gradient(45deg, black 25%, transparent 25%);	
+   background-size: 2em 2em;
+   background-color: #232323;
+  }
   .carousel .carousel-item img {
     width: 100%;
     height: 100%; 
@@ -8,8 +18,9 @@
   .carousel.carousel-slider .carousel-item {
     height: 400px;
   }
-  .card-content h5 {
+  .card-content h6 {
     color: white;
+    font-family: 'Syne Mono', monospace;
   }
   .card-content ul.collection {
     background-color: black;
@@ -29,14 +40,23 @@
     color: white;
     font-size: large;
   }
+  .card {
+    border-radius: 25px;
+    overflow: hidden; 
+    border-color:  #08ff08;
+    box-shadow: 0 0 5px 5px #08ff08;
+  }
+  .card-title {
+    font-family: 'Syne Mono', monospace;
+  }
 </style>
 <%- include('nav.ejs')-%>
-<body style="background-color: #3E363F;">
+<body style="background-color: #28282B;">
   <div class="container">
     <div class="section">
       <div class="row" id="contain">
         <div class="row s12 m4">
-          <div class="card x-large green">
+          <div class="card x-large green" id="card">
             <div class="card-image green">
               <div class="carousel carousel-slider">
                 <% trail.image.forEach((img, index) => { %>
@@ -48,18 +68,17 @@
               <span class="card-title"><%=trail.name%></span>
             </div>
             <div class="card-content black">
-              <h5><p><%= trail.description %></p></h5>
+              <h6 class="white-text text-darken-4"><p><%= trail.description %></p></h6>
               <br />
                <!-- Modal Trigger Button -->
-               <a class="waves-effect waves-light btn-large modal-trigger black" href="#video-modal"> Play Video</a>
-               <a class="waves-effect waves-light btn-large modal-trigger black" href='<%= trail.info %>' target="_blank" >More Info</a>
+               <a class="waves-effect waves-light btn-small modal-trigger black" href="#video-modal"> Play Video</a>
+               <a class="waves-effect waves-light btn-small modal-trigger black" href='<%= trail.info %>' target="_blank" >More Info</a>
               <%if (trail.difficulty === "Hard"){%>
-                <h5 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
-              <br />
+                <h6 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
               <%} else if (trail.difficulty === "Moderate") {%>
-                <h5 class="yellow-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: yellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
+                <h6 class="yellow-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: yellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
               <%} else { %>
-                <h5 class="green-text text-darken-4"><span style="color: #08ff08;"><%= trail.stars %><span/><span style="color: greenyellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
+                <h6 class="green-text text-darken-4"><span style="color: #08ff08;"><%= trail.stars %><span/><span style="color: greenyellow;"><span style="display:inline-block; width: 5%;"></span><%= trail.difficulty %><h4/>
               <%}%>
               <h6 class="white-text">Categories</h6>
               <ul class="collection">
