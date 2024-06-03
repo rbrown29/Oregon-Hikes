@@ -17,21 +17,29 @@ async function IPlog(req, res, next) {
     }
 
     try {
-        const response = await axios.get(`http://ip-api.com/json/${userIp}`);
-        const { country, regionName, city, lat, lon } = response.data;
-        console.log(`Location Data: ${country}, ${regionName}, ${city}, ${lat}, ${lon}`);
+        // Check if the IP address already exists in the database
+        const existingLog = await IPLog.findOne({ ipAddress: userIp });
+        if (existingLog) {
+            console.log('IP address already logged. Skipping save to MongoDB.');
+        } else {
+            // Fetch location data
+            const response = await axios.get(`http://ip-api.com/json/${userIp}`);
+            const { country, regionName, city, lat, lon } = response.data;
+            console.log(`Location Data: ${country}, ${regionName}, ${city}, ${lat}, ${lon}`);
 
-        const newLog = new IPLog({
-            ipAddress: userIp,
-            country,
-            region: regionName,
-            city,
-            latitude: lat,
-            longitude: lon,
-        });
+            // Save new log if IP address is not already logged
+            const newLog = new IPLog({
+                ipAddress: userIp,
+                country,
+                region: regionName,
+                city,
+                latitude: lat,
+                longitude: lon,
+            });
 
-        await newLog.save();
-        console.log('IP address and location saved to MongoDB');
+            await newLog.save();
+            console.log('IP address and location saved to MongoDB');
+        }
     } catch (error) {
         console.error('Error fetching location or saving to MongoDB:', error);
     }
