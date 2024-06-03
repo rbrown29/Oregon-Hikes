@@ -119,6 +119,10 @@
     {
       "src" : "https://www.waterfallsnorthwest.com/Oregon/map",
       "title" : "Mapped Waterfalls in Oregon"
+    },
+    {
+      "src" : "https://www.fs.usda.gov/ivm/index.html?minx=-14010553.45654903&miny=5067067.128341907&maxx=-13510349.54345097&maxy=5432741.871658093&exploremenu=no&activities=Hiking",
+      "title" : "Forest Service Interactive Visitor Map"
     }
   ]
 }
