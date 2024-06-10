@@ -96,7 +96,10 @@
               <% } %>
               <% if (trail.name === "Cape Perpetua Hike") { %>
                 <a class="waves-effect waves-light btn-small modal-trigger black" id="button" href='https://incandescent-malasada-94726c.netlify.app' target="_blank" >3D Terrain Elevation Map</a>
-              <% } %> 
+              <% } %>
+              <% if (trail.name === "Garfield Peak Hike") { %>
+                <a class="waves-effect waves-light btn-small modal-trigger black" id="button" href='https://stellar-melomakarona-25960e.netlify.app' target="_blank" >3D Terrain Elevation Map</a>
+              <% } %>
               <%if (trail.difficulty === "Hard"){%>
                 <h6 class="red-text"><span style="color: #08ff08;"><span/><%= trail.stars %><span style="color: red;"><span style="display:inline-block; width: 2%;"></span><%= trail.difficulty %><h4/>
               <%} else if (trail.difficulty === "Moderate") {%>
