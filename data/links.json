@@ -123,6 +123,10 @@
     {
       "src" : "https://www.fs.usda.gov/ivm/index.html?minx=-14010553.45654903&miny=5067067.128341907&maxx=-13510349.54345097&maxy=5432741.871658093&exploremenu=no&activities=Hiking",
       "title" : "Forest Service Interactive Visitor Map"
+    },
+    {
+      "src" : "https://www.google.com/maps/d/viewer?mid=1hjGcDMThH8MBafGDWJT_NsDz-l8&femb=1&ll=21.439003054323877%2C-158.16808737581152&z=10",
+      "title" : "Oahu Hike Map"
     }
   ]
 }
