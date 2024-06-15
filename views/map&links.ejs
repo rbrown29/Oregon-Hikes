@@ -4,15 +4,9 @@
       <div class="col l6 s12">
         <h5 class="black-text">Oregon Hikes</h5>
         <iframe
-          class="alltrails"
-          src="https://www.alltrails.com/widget/us/oregon"
+          src="https://www.google.com/maps/d/embed?mid=1_JPwzEQ4Ev1RgliNXwR7gJgslOOG_CU&ehbc=2E312F"
           width="100%"
           height="400"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          title="Trail Guides and Maps for Hiking, Camping, and Running"
         ></iframe>
       </div>
       <div class="col l6 s12">
@@ -26,47 +20,42 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-
       </div>
       <div class="row">
         <% for (var j = 0; j < names.length; j++) { %>
-          <div class="col s12 m4">
-            <h5 class="black-text"><%= names[j] %></h5>
-            <% if (j === 0) { %>
-              <% for (var i = 0; i < 7 && i < links.length; i++) { %>
-                <ul>
-                  <li>
-                    <a class="black-text" target="_blank" href="<%= links[i].src %>">
-                      <%= links[i].title %>
-                    </a>
-                  </li>
-                </ul>
-              <% } %>
-            <% } else if (j === 1) { %>
-              <% for (var i = 7; i < 20 && i < links.length; i++) { %>
-                <ul>
-                  <li>
-                    <a class="black-text" target="_blank" href="<%= links[i].src %>">
-                      <%= links[i].title %>
-                    </a>
-                  </li>
-                </ul>
-              <% } %>
-            <% } else if (j === 2) { %>
-              <% for (var i = 20; i < 32 && i < links.length; i++) { %>
-                <ul>
-                  <li>
-                    <a class="black-text" target="_blank" href="<%= links[i].src %>">
-                      <%= links[i].title %>
-                    </a>
-                  </li>
-                </ul>
-              <% } %>
-            <% } %>
-          </div>
+        <div class="col s12 m4">
+          <h5 class="black-text"><%= names[j] %></h5>
+          <% if (j === 0) { %> <% for (var i = 0; i < 7 && i < links.length;
+          i++) { %>
+          <ul>
+            <li>
+              <a class="black-text" target="_blank" href="<%= links[i].src %>">
+                <%= links[i].title %>
+              </a>
+            </li>
+          </ul>
+          <% } %> <% } else if (j === 1) { %> <% for (var i = 7; i < 20 && i <
+          links.length; i++) { %>
+          <ul>
+            <li>
+              <a class="black-text" target="_blank" href="<%= links[i].src %>">
+                <%= links[i].title %>
+              </a>
+            </li>
+          </ul>
+          <% } %> <% } else if (j === 2) { %> <% for (var i = 20; i < 32 && i <
+          links.length; i++) { %>
+          <ul>
+            <li>
+              <a class="black-text" target="_blank" href="<%= links[i].src %>">
+                <%= links[i].title %>
+              </a>
+            </li>
+          </ul>
+          <% } %> <% } %>
+        </div>
         <% } %>
       </div>
-      
     </div>
   </div>
 </footer>
