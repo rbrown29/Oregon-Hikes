@@ -24,6 +24,10 @@ https://github.com/rbrown29/Oregon-Hikes
 * view the json data at localhost:3001/trailsData
 * view the json data at localhost:3001/bikingData
 * Internet search for more information on the hike, or the area.
+* View a 3D Terrain Elevation map of the hike.
+* View a Data map of the hike.
+* View a 2D and 3D google earth map of the hike.
+* View a video of the hike.
 
 ### Maps, links, and Videos on the site
 * YouTube
@@ -33,6 +37,16 @@ https://github.com/rbrown29/Oregon-Hikes
 * Vist Oregon
 * Leaflet Open Street Maps
 * data.oregon.gov (Oregon State Data api)
+* Google Earth
+* Google Maps
+* Mapbox
+
+### 3D Terrain Elevation Map was derived from the following articles and added custom code.
+* https://docs.mapbox.com/mapbox-gl-js/example/query-terrain-elevation/
+* https://www.mapbox.com/blog/building-cinematic-route-animations-with-mapboxgl
+
+### View my 3D Terrain Elevation Map repository here.
+* https://github.com/rbrown29/TrailMapReact
 
 ### This app is a full stack app that uses the following technologies:
 
