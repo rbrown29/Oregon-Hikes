@@ -1,11 +1,7 @@
 <style>
   @media screen and (max-width: 600px){
     #download-button{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
+     display: none;
     }
   }
 </style>
@@ -20,7 +16,26 @@
           <h5 class="header col s12 light"></h5>
         </div>
         <% if (loggedIn) { %>
-        <div class="row center">
+        <div class="row center" id="row-center">
+          <a
+            href="https://nimble-stardust-d376f9.netlify.app/"
+            id="download-button"
+            target="_blank"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Directions</a
+          >
+          <a
+            href="https://stirring-empanada-d536de.netlify.app/"
+            target="_blank"
+            id="download-button"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Viewpoint Hikes</a>
+            <a
+            href="https://timely-scone-7b792f.netlify.app/"
+            target="_blank"
+            id="download-button"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Hike Map</a>
           <a
             href="/show"
             id="download-button"
@@ -47,7 +62,7 @@
           >
         </div>
         <% } else { %>
-        <div class="row center">
+        <div class="row center" id="row-center">
           <a
             href="/signup"
             id="download-button"
@@ -73,6 +88,30 @@
             id="download-button"
             class="btn-small waves-effect waves-light green lighten-1"
             >Hike Map</a>
+            <a
+            href="/show"
+            id="download-button"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Hike Trails</a
+          >
+          <a
+            href="/biking"
+            id="download-button"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Bike Trails</a
+          >
+          <a
+            href="/camping"
+            id="download-button"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Camping </a
+          >
+          <a
+            href="/search"
+            id="download-button"
+            class="btn-small waves-effect waves-light green lighten-1"
+            >Hiking Search</a
+          >
         </div>
           
         <% } %>

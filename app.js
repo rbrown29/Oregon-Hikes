@@ -90,10 +90,10 @@ app.get("/disclaimer", disclaimer);
 app.get("/signup", signUp);
 app.get("/login", login);
 app.get("/viewhike/:id", viewHike);
-app.get("/show", ensureAuthenticated, hike );
-app.get("/biking", ensureAuthenticated, bike);
-app.get("/camping", ensureAuthenticated, camp);
-app.get("/search", ensureAuthenticated, search);
+app.get("/show", hike );
+app.get("/biking", bike);
+app.get("/camping", camp);
+app.get("/search",search);
 app.get("/logout", logout);
 
 module.exports = app;
