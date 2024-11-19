@@ -127,6 +127,10 @@
     {
       "src" : "https://www.google.com/maps/d/viewer?mid=1hjGcDMThH8MBafGDWJT_NsDz-l8&femb=1&ll=21.439003054323877%2C-158.16808737581152&z=10",
       "title" : "Oahu Hike Map"
+    },
+    {
+      "src" : "https://incatrail.vacations/3dtour/",
+      "title" : "Inca Trail Machupicchu"
     }
   ]
 }
