@@ -3,53 +3,91 @@
     background-color: #087830;
   }
   #nav-mobile li a {
-    color: #3B3C36;
-    text-shadow: -1px -1px 0 #F4FDFF, 1px -1px 0 #F4FDFF, -1px 1px 0 #F4FDFF, 1px 1px 0 #F4FDFF;
+    color: #3b3c36;
+    text-shadow: -1px -1px 0 #f4fdff, 1px -1px 0 #f4fdff, -1px 1px 0 #f4fdff,
+      1px 1px 0 #f4fdff;
+  }
+  #loggedin a {
+    font-size: large;
   }
 </style>
 <nav class="green" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="/" class="brand-logo">Hiking</a>
     <% if (loggedIn) { %>
-      <ul class="right hide-on-med-and-down">
-        <li>Welcome, <%= username %></li>
-        <li><a class="a" href="/logout">Log Out</a></li>
-        <li><a class="a" href="/reset-password">Reset Password</a></li>
-        <li><a class="a" href="/profile">Profile</a></li>
-        <%= console.log("Logged in status:", loggedIn); %>
-      </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li style="color: black; margin-left: 1rem;"><%= username %></li>
-        <li><a href="/logout">Log Out</a></li>
-        <li><a href="/reset-password">Reset Password?</a></li>
-        <li><a class="a" href="/profile">Profile</a></li>
-        <li><a href="https://nimble-stardust-d376f9.netlify.app/" target="_blank">Directions</a></li>
-        <li><a href="https://stirring-empanada-d536de.netlify.app/" target="_blank">View Point Hikes</a></li>
-        <li><a href="https://timely-scone-7b792f.netlify.app/" target="_blank">Hike Map</a></li>
-        <li><a href="/show" target="_blank">Hike Trails</a></li>
-        <li><a href="/biking" target="_blank">Biking Trails</a></li>
-        <li><a href="/camping" target="_blank">Camping</a></li>
-        <li><a href="/search" target="_blank">Hiking Search</a></li>
-      </ul>
-      <% } else { %>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="/login">Sign In</a>
-        </li>
-      </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="/login">Sign In</a></li>
-        <li><a href="/signup">Sign Up</a></li>
-        <li><a href="https://nimble-stardust-d376f9.netlify.app/" target="_blank">Directions</a></li>
-        <li><a href="https://stirring-empanada-d536de.netlify.app/" target="_blank">View Point Hikes</a></li>
-        <li><a href="https://timely-scone-7b792f.netlify.app/" target="_blank">Hike Map</a></li>
-        <li><a href="/show" target="_blank">Hike Trails</a></li>
-        <li><a href="/biking" target="_blank">Biking Trails</a></li>
-        <li><a href="/camping" target="_blank">Camping</a></li>
-        <li><a href="/search" target="_blank">Hiking Search</a></li>
-      </ul>
-      <% } %>      
-    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons" style="color: black;">menu</i></a>
+    <a id="logo-container" href="/" class="brand-logo hide-on-med-and-down"
+      ><%= username %></a
+    >
+    <% } else { %>
+    <a
+      id="logo-container"
+      href="/signup"
+      class="brand-logo hide-on-med-and-down"
+      >Sign Up</a
+    >
+    <% } %> <% if (loggedIn) { %>
+    <ul class="right hide-on-med-and-down" id="loggedin">
+      <li><a class="a" href="/logout">Log Out</a></li>
+      <li><a class="a" href="/reset-password">Reset Password</a></li>
+      <li><a class="a" href="/profile">Profile</a></li>
+      <%= console.log("Logged in status:", loggedIn); %>
+    </ul>
+    <ul id="nav-mobile" class="sidenav">
+      <li style="color: black; margin-left: 1rem"><%= username %></li>
+      <li><a href="/logout">Log Out</a></li>
+      <li><a href="/reset-password">Reset Password?</a></li>
+      <li><a class="a" href="/profile">Profile</a></li>
+      <li>
+        <a href="https://nimble-stardust-d376f9.netlify.app/" target="_blank"
+          >Directions</a
+        >
+      </li>
+      <li>
+        <a href="https://stirring-empanada-d536de.netlify.app/" target="_blank"
+          >View Point Hikes</a
+        >
+      </li>
+      <li>
+        <a href="https://timely-scone-7b792f.netlify.app/" target="_blank"
+          >Hike Map</a
+        >
+      </li>
+      <li><a href="/show" target="_blank">Hike Trails</a></li>
+      <li><a href="/biking" target="_blank">Biking Trails</a></li>
+      <li><a href="/camping" target="_blank">Camping</a></li>
+      <li><a href="/search" target="_blank">Hiking Search</a></li>
+    </ul>
+    <% } else { %>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <a href="/login">Sign In</a>
+      </li>
+    </ul>
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="/login">Sign In</a></li>
+      <li><a href="/signup">Sign Up</a></li>
+      <li>
+        <a href="https://nimble-stardust-d376f9.netlify.app/" target="_blank"
+          >Directions</a
+        >
+      </li>
+      <li>
+        <a href="https://stirring-empanada-d536de.netlify.app/" target="_blank"
+          >View Point Hikes</a
+        >
+      </li>
+      <li>
+        <a href="https://timely-scone-7b792f.netlify.app/" target="_blank"
+          >Hike Map</a
+        >
+      </li>
+      <li><a href="/show" target="_blank">Hike Trails</a></li>
+      <li><a href="/biking" target="_blank">Biking Trails</a></li>
+      <li><a href="/camping" target="_blank">Camping</a></li>
+      <li><a href="/search" target="_blank">Hiking Search</a></li>
+    </ul>
+    <% } %>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+      ><i class="material-icons" style="color: black">menu</i></a
+    >
   </div>
 </nav>
-
