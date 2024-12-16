@@ -38,7 +38,7 @@
     border-radius: 25px;
     overflow: hidden;
     border-color: #28282b;
-    box-shadow: 0 0 5px 5px #28282b;
+    box-shadow: 0 0 10px 10px #28282b;
   }
   .card-title {
     font-family: "Syne Mono", monospace;
@@ -47,6 +47,22 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+  }
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0 20px 40px #28282b;
+    border-color: #28282b;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: black;
+  }
+  .iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: black;
   }
 </style>
 <%- include('nav.ejs')-%>
@@ -71,19 +87,13 @@
                 <p><%= trail.description %></p>
               </h6>
               <br />
-              <!-- Modal Trigger Button -->
+              <!-- Modal Trigger Buttons -->
               <a
                 class="waves-effect waves-light btn-small modal-trigger black"
                 id="button"
                 href="#video-modal"
               >
                 Play Video</a
-              >
-              <a
-                class="waves-effect waves-light btn-small modal-trigger black"
-                id="button"
-                href="#map-modal"
-                >View Map</a
               >
               <a
                 class="waves-effect waves-light btn-small modal-trigger black"
@@ -106,35 +116,23 @@
                 target="_blank"
                 >2D and 3D Google Earth</a
               >
-              <h6 class="white-text">Categories</h6>
-              <ul class="collection">
-                <% trail.categories.forEach((category, index) => { %>
-                <li class="collection-item"><%= category %></li>
-                <% }); %>
-              </ul>
               <br />
-              <h6 class="white-text">Regulations</h6>
-              <ul class="collection">
-                <% trail.regulations.forEach((regulation, index) => { %>
-                <li class="collection-item"><%= regulation %></li>
-                <% }); %>
-              </ul>
-              <h6 class="#08ff08-text">Way Points</h6>
-              <ul class="collection">
-                <% trail.waypoints.forEach((waypoint, index) => { %>
-                <li class="collection-item" id="waypointname">
-                  <%= waypoint.name %>
-                </li>
-                <li class="collection-item"><%= waypoint.location %></li>
-                <% }); %>
-              </ul>
               <br />
+
+              <div class="iframe-container">
+                <iframe
+                  src="<%= trail.src %>"
+                  title="Trail Map"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- Modal Structure -->
   <div id="video-modal" class="modal green">
     <div class="modal-content">
@@ -154,31 +152,6 @@
       <a
         href="#!"
         class="modal-close waves-effect waves-green btn-flat black-text"
-        >Close</a
-      >
-    </div>
-  </div>
-
-  <div id="map-modal" class="modal green">
-    <div class="modal-content">
-      <h4 class="black-text">Map</h4>
-      <iframe
-        class="alltrails"
-        src="<%= trail.src %>"
-        width="100%"
-        height="400"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-        title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"
-      >
-      </iframe>
-    </div>
-    <div class="modal-footer green">
-      <a
-        href="#!"
-        class="modal-close waves-effect waves-white btn-flat black-text"
         >Close</a
       >
     </div>
