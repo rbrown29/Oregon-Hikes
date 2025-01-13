@@ -83,6 +83,22 @@
   .weather-widget .info {
     font-family: "Syne Mono", monospace;
   }
+  @media (max-width: 768px) {
+    .iframe-container {
+      display: none;
+    }
+    .iframe-container iframe {
+      display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    .iframe-container {
+      display: none;
+    }
+    .iframe-container iframe {
+      display: none;
+    }
+  }
 </style>
 <%- include('nav.ejs')-%>
 <body style="background-color: black">
@@ -197,7 +213,7 @@
       // Fetch weather for the trail location
       const apiKey = "<%= process.env.OPENWEATHER_API_KEY %>";
       const location = "<%= trail.waypoints[0].location %>"; // Get the first waypoint location
-      const [lat, lon] = location.split(",").map((coord) => coord.trim());  // Split the location string into latitude and longitude
+      const [lat, lon] = location.split(",").map((coord) => coord.trim()); // Split the location string into latitude and longitude
 
       const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`; // Change units to imperial
 
