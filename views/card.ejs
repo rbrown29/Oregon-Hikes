@@ -17,13 +17,20 @@
     <div class="row" id="container">
       <% for (var i = 0; i < trails.length; i++) { %>
       <div class="col s12 m4">
-        <div class="card small  black">
+        <div class="card small black">
           <div class="card-image">
             <img src="<%= trails[i].image[0] %>" />
-            <span class="card-title ">
+            <span class="card-title">
               <ul>
                 <li>
-                  <a class="tooltipped" id="name" data-position="top" data-delay="50" data-tooltip="Click The Name!" href="/viewhike/<%= trails[i].id %>">
+                  <a
+                    class="tooltipped"
+                    id="name"
+                    data-position="top"
+                    data-delay="50"
+                    data-tooltip="Click The Name!"
+                    href="/viewhike/<%= trails[i].id %>"
+                  >
                     <%= trails[i].name %>
                   </a>
                 </li>
@@ -31,16 +38,10 @@
             </span>
           </div>
           <div class="card-content green-text text-accent-4">
-            <p>
-              <%= trails[i].difficulty %>
-            </p>
-            <p>
-              <%= trails[i].length %> Miles
-            </p>
-            <p>
-              <%= trails[i].stars %>
-            </p>
-            </div>
+            <p><%= trails[i].difficulty %></p>
+            <p><%= trails[i].length %> Miles</p>
+            <p><%= trails[i].stars %></p>
+          </div>
         </div>
       </div>
       <% } %>

@@ -1,239 +1,26 @@
-<%- include('head.ejs')-%>
-<link
-  href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap"
-  rel="stylesheet"
-/>
-<style>
-  .carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .carousel.carousel-slider .carousel-item {
-    height: 400px;
-  }
-  .card-content h6 {
-    color: white;
-    font-family: "Syne Mono", monospace;
-  }
-  .card-content ul.collection {
-    background-color: #28282b;
-    border: none;
-  }
-  .card-content ul.collection .collection-item {
-    color: #08ff08;
-    font-size: medium;
-    background-color: black;
-    border: none;
-  }
-  .modal.green .modal-content h4,
-  .modal.green .modal-footer .btn-flat {
-    color: white;
-  }
-  #waypointname {
-    color: white;
-    font-size: large;
-  }
-  .card {
-    border-radius: 25px;
-    overflow: hidden;
-    border-color: #28282b;
-    box-shadow: 0 0 10px 10px #28282b;
-  }
-  .card-title {
-    font-family: "Syne Mono", monospace;
-  }
-  #button {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .iframe-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    box-shadow: 0 0 20px 40px #28282b;
-    border-color: #28282b;
-    overflow: hidden;
-    margin-top: 20px;
-    background-color: black;
-  }
-  .iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background-color: black;
-  }
-  .weather-widget {
-    position: relative;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .weather-widget img {
-    width: 50px;
-    height: 50px;
-  }
-  .weather-widget .info {
-    font-family: "Syne Mono", monospace;
-  }
-  @media (max-width: 768px) {
-    .iframe-container {
-      display: none;
-    }
-    .iframe-container iframe {
-      display: none;
-    }
-  }
-  @media (max-width: 480px) {
-    .iframe-container {
-      display: none;
-    }
-    .iframe-container iframe {
-      display: none;
-    }
-  }
-</style>
-<%- include('nav.ejs')-%>
-<body style="background-color: black">
-  <div class="container" id="container">
-    <div class="section" id="section">
-      <div class="row" id="contain">
-        <div class="row s12 m4">
-          <div class="card x-large green" id="card">
-            <div class="card-image green">
-              <div class="carousel carousel-slider">
-                <% trail.image.forEach((img, index) => { %>
-                <a class="carousel-item">
-                  <img src="<%= img %>" alt="Image <%= index + 1 %>" />
-                </a>
-                <% }); %>
-              </div>
-              <span class="card-title"><%=trail.name%></span>
-            </div>
-            <div class="card-content black">
-              <h6 class="white-text text-darken-4">
-                <p><%= trail.description %></p>
-              </h6>
-              <div class="weather-widget" id="weather-widget">
-                <img id="weather-icon" src="" alt="Weather Icon" />
-                <div class="info" id="weather-info">Loading...</div>
-              </div>
-              <br />
-              <a
-                class="waves-effect waves-light btn-small modal-trigger black"
-                id="button"
-                href="#video-modal"
-              >
-                Play Video</a
-              >
-              <a
-                class="waves-effect waves-light btn-small modal-trigger black"
-                id="button"
-                href="<%= trail.info %>"
-                target="_blank"
-                >More Info</a
-              >
-              <a
-                class="waves-effect waves-light btn-small modal-trigger black"
-                id="button"
-                href="<%= trail['3dmap'] %>"
-                target="_blank"
-                >Trail Walkthrough</a
-              >
-              <a
-                class="waves-effect waves-light btn-small modal-trigger black"
-                id="button"
-                href="<%= trail['google3d'] %>"
-                target="_blank"
-                >2D and 3D Google Earth</a
-              >
-              <br />
-              <br />
+<script>
+  const hikeMappings = {
+    "/viewhike/1": "https://viewangelsrest.netlify.app/",
+    "/viewhike/2": "https://viewsmithrock.netlify.app/",
+    "/viewhike/3": "https://vieweaglecreek.netlify.app/",
+    "/viewhike/4": "https://viewmultnomah-wahkeena.netlify.app/",
+    "/viewhike/5": "https://viewmirrorlake.netlify.app/",
+    "/viewhike/6": "https://viewcapeperpetua.netlify.app/",
+    "/viewhike/7": "https://viewgarfieldpeak.netlify.app/",
+    "/viewhike/8": "https://viewcascadehead.netlify.app/",
+    "/viewhike/9": "https://viewcapekiwanda.netlify.app/",
+    "/viewhike/10": "https://viewtamolitchbluepool.netlify.app/",
+    "/viewhike/11": "https://viewopalcreek.netlify.app/",
+    "/viewhike/12": "https://viewcapefalcon.netlify.app/",
+    "/viewhike/13": "https://viewadamsglacier.netlify.app/",
+    "/viewhike/14": "https://viewbattleax.netlify.app/",
+    "/viewhike/15": "https://viewbelknapcrater.netlify.app/",
+  };
 
-              <div class="iframe-container">
-                <iframe
-                  src="<%= trail.src %>"
-                  title="Trail Map"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Structure -->
-  <div id="video-modal" class="modal green">
-    <div class="modal-content">
-      <h4 class="black-text">Video</h4>
-      <iframe
-        width="100%"
-        height="400"
-        src="<%=trail.video%>&amp;start=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      >
-      </iframe>
-    </div>
-    <div class="modal-footer green">
-      <a
-        href="#!"
-        class="modal-close waves-effect waves-green btn-flat black-text"
-        >Close</a
-      >
-    </div>
-  </div>
-  <%- include('scripts.ejs')-%>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".carousel");
-      var instances = M.Carousel.init(elems, {
-        fullWidth: true,
-        indicators: true,
-      });
-      setInterval(() => {
-        instances.forEach((instance) => instance.next());
-      }, 2500);
-
-      var modalElems = document.querySelectorAll(".modal");
-      M.Modal.init(modalElems);
-
-      // Fetch weather for the trail location
-      const apiKey = "<%= process.env.OPENWEATHER_API_KEY %>";
-      const location = "<%= trail.waypoints[0].location %>"; // Get the first waypoint location
-      const [lat, lon] = location.split(",").map((coord) => coord.trim()); // Split the location string into latitude and longitude
-
-      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`; // Change units to imperial
-
-      fetch(weatherUrl)
-        .then((response) => response.json())
-        .then((data) => {
-          const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-          const weatherInfo = `
-      <strong>Location:</strong> ${data.name}<br />
-      <strong>Temperature:</strong> ${data.main.temp} °F<br />
-      <strong>Conditions:</strong> ${data.weather[0].description}
-    `;
-          document.getElementById("weather-icon").src = weatherIcon;
-          document.getElementById("weather-info").innerHTML = weatherInfo;
-        })
-        .catch((error) => {
-          console.error("Error fetching weather data:", error);
-          document.getElementById("weather-info").innerHTML =
-            "Unable to fetch weather data.";
-        });
-    });
-  </script>
-</body>
+  const currentPath = window.location.pathname;
+  if (hikeMappings[currentPath]) {
+    window.location.href = hikeMappings[currentPath];
+  } else {
+    window.location.href = "https://404errors.netlify.app/";
+  }
+</script>
