@@ -1,14 +1,46 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
   #h4 {
-    color: #100c08;
+    color: #fffafa;
     font-family: "Syne Mono", monospace;
     font-size: 2em;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    -webkit-text-stroke: #100c08 0.5px;
+    text-align: center;
+    background-color: color-mix(in sRGB, 70%, #3e363f);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
   }
   #name {
     font-family: "Syne Mono", monospace;
     font-size: 1em;
+    -webkit-text-stroke:#100c08 0.5px;
     color: #fffafa;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    background-color: color-mix(in sRGB, 70%, #3e363f);
+  }
+  .stars {
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #fffafa;
+    font-family: "Syne Mono", monospace;
+    font-size: 2em;
+    color: #100c08;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+  }
+  .difficulty {
+    font-family: "Syne Mono", monospace;
+    font-size: 1.2em;
+    -webkit-text-stroke: #100c08 0.5px;
+    color: #fffafa;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+  }
+  .length {
+    font-family: "Syne Mono", monospace;
+    font-size: 1em;
+    -webkit-text-stroke: #100c08 0.5px;
+    color: #fffafa;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
   }
 </style>
 <div class="container">
@@ -38,9 +70,9 @@
             </span>
           </div>
           <div class="card-content green-text text-accent-4">
-            <p><%= trails[i].difficulty %></p>
-            <p><%= trails[i].length %> Miles</p>
-            <p><%= trails[i].stars %></p>
+            <p class="difficulty"><%= trails[i].difficulty %></p>
+            <p class="length"><%= trails[i].length %> Miles</p>
+            <p class="stars"><%= trails[i].stars %></p>
           </div>
         </div>
       </div>

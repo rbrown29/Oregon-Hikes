@@ -1,8 +1,30 @@
+<style>
+  .text {
+    font-family: "Syne Mono", monospace;
+    font-size: 1.1em;
+    -webkit-text-stroke:#100c08 0.5px;
+    color: #fffafa;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    background-color: color-mix(in sRGB, 40%, #3e363f);
+    cursor: pointer;
+  }
+  .h5 {
+    font-family: "Syne Mono", monospace;
+    font-size: 2em;
+    -webkit-text-stroke:#100c08 0.5px;
+    color: #fffafa;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    background-color: color-mix(in sRGB, 70%, #3e363f);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-bottom: #3e363f solid 1px;
+  }
+</style>
 <footer class="page-footer green">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="black-text">Featured Hike Map</h5>
+        <h5 class="h5">Featured Hike Map</h5>
         <iframe
           src="https://timely-scone-7b792f.netlify.app/"
           width="100%"
@@ -14,7 +36,7 @@
         ></iframe>
       </div>
       <div class="col l6 s12">
-        <h5 class="black-text">Oregon Hiking Video Playlist</h5>
+        <h5 class="h5">Oregon Hiking Video Playlist</h5>
         <iframe
           width="100%"
           height="400"
@@ -28,12 +50,12 @@
       <div class="row">
         <% for (var j = 0; j < names.length; j++) { %>
         <div class="col s12 m4">
-          <h5 class="black-text"><%= names[j] %></h5>
+          <h5 class="h5"><%= names[j] %></h5>
           <% if (j === 0) { %> <% for (var i = 0; i < 7 && i < links.length;
           i++) { %>
           <ul>
             <li>
-              <a class="black-text" target="_blank" href="<%= links[i].src %>">
+              <a class="text" target="_blank" href="<%= links[i].src %>">
                 <%= links[i].title %>
               </a>
             </li>
@@ -42,7 +64,7 @@
           links.length; i++) { %>
           <ul>
             <li>
-              <a class="black-text" target="_blank" href="<%= links[i].src %>">
+              <a class="text" target="_blank" href="<%= links[i].src %>">
                 <%= links[i].title %>
               </a>
             </li>
@@ -51,7 +73,7 @@
           links.length; i++) { %>
           <ul>
             <li>
-              <a class="black-text" target="_blank" href="<%= links[i].src %>">
+              <a class="text" target="_blank" href="<%= links[i].src %>">
                 <%= links[i].title %>
               </a>
             </li>
