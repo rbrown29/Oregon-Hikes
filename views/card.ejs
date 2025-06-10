@@ -4,7 +4,8 @@
     color: #fffafa;
     font-family: "Syne Mono", monospace;
     font-size: 2em;
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000,
+      -1px 1px 2px #000;
     -webkit-text-stroke: #100c08 0.5px;
     text-align: center;
     background-color: color-mix(in sRGB, 70%, #3e363f);
@@ -12,35 +13,49 @@
     border-radius: 5px;
     margin-bottom: 20px;
   }
+  #icon {
+    color: #fffafa;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000,
+      -1px 1px 2px #000;
+    background-color: color-mix(in sRGB, 70%, #3e363f);
+    -webkit-text-stroke: #100c08 0.5px;
+    font-size: .8em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
   #name {
     font-family: "Syne Mono", monospace;
     font-size: 1em;
-    -webkit-text-stroke:#100c08 0.5px;
+    -webkit-text-stroke: #100c08 0.5px;
     color: #fffafa;
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000,
+      -1px 1px 2px #000;
     background-color: color-mix(in sRGB, 70%, #3e363f);
   }
   .stars {
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #fffafa;
     font-family: "Syne Mono", monospace;
     font-size: 2em;
     color: #100c08;
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000,
+      -1px 1px 2px #000;
   }
   .difficulty {
     font-family: "Syne Mono", monospace;
     font-size: 1.2em;
     -webkit-text-stroke: #100c08 0.5px;
     color: #fffafa;
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000,
+      -1px 1px 2px #000;
   }
   .length {
     font-family: "Syne Mono", monospace;
     font-size: 1em;
     -webkit-text-stroke: #100c08 0.5px;
     color: #fffafa;
-    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000,
+      -1px 1px 2px #000;
   }
 </style>
 <div class="container">
@@ -60,8 +75,8 @@
                     id="name"
                     data-position="top"
                     data-delay="50"
-                    data-tooltip="Click The Name!"
-                    href="/viewhike/<%= trails[i].id %>"
+                    data-tooltip="Click To View This Hike!"
+                    href="/viewhike/<%= trails[i].id %>" target="_blank"
                   >
                     <%= trails[i].name %>
                   </a>
@@ -72,7 +87,70 @@
           <div class="card-content green-text text-accent-4">
             <p class="difficulty"><%= trails[i].difficulty %></p>
             <p class="length"><%= trails[i].length %> Miles</p>
-            <p class="stars"><%= trails[i].stars %></p>
+            <p class="stars">
+              <%= trails[i].stars %>
+              <a
+                class="tooltipped right"
+                data-position="top"
+                data-delay="50"
+                data-tooltip="Click For Elevation Profile!"
+                <% if (trails[i].name === "Angels Rest") { %>
+                href="https://angelsrestelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Smith Rock") { %>
+                href="https://smithrockelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Eagle Creek to Tunnel Falls Hike") { %>
+                href="https://eaglecreekelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Multnomah-Wahkeena Loop Hike") { %>
+                href="https://multnomah-wahkeenaelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Mirror Lake Trail") { %>
+                href="https://mirrorlakeelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Cape Perpetua Hike") { %>
+                href="https://capeperpetuaelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Garfield Peak Hike") { %>
+                href="https://garfieldpeakelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Cascade Head Hike") { %>
+                href="https://cascadeheadelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Cape Kiwanda") { %>
+                href="https://capekiwandaelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Tamolitch Pool Hike") { %>
+                href="https://tamolitchpoolelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Opal Pool-Cedar Flats Hike") { %>
+                href="https://opalpoolelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Cape Falcon Hike") { %>
+                href="https://capefalconelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Adams Glacier Meadows Hike") { %>
+                href="https://adamsglacierelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Battle Ax Loop Hike") { %>
+                href="https://battleaxelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Belknap Crater Hike") { %>
+                href="https://belknapcraterelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Blue Basin Loop Hike") { %>
+                href="https://bluebasinelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Cached Lake Loop Hike") { %>
+                href="https://cachedlakeelevation.netlify.app/" target="_blank"
+                <% } %>
+                <% if (trails[i].name === "Ice Lake Hike") { %>
+                href="https://icelakeelevation.netlify.app/" target="_blank"
+                <% } %>
+                ><i class="material-icons" id="icon">info</i></a
+              >
+            </p>
           </div>
         </div>
       </div>
