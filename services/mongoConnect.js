@@ -6,8 +6,6 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/Hiking
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, {
-     useNewUrlParser: true, 
-     useUnifiedTopology: true
 });
 db.on('open', () => {
     console.log('Connected to MongoDB' + MONGODB_URI);
