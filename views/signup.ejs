@@ -138,7 +138,7 @@
   </div>
   <%- include('scripts.ejs')-%>
   <script>
-    function generatePassword() {
+    function generatePassword() { 
       var length = document.getElementById("passwordLength").value;
       var charset =
         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -151,19 +151,16 @@
           document.getElementById("passwordOutput").innerText =
             "Really! 0? That's like trying to make a sandwich with no bread! Try again!";
           return;
-        } else if (length === null || length === " ") {
-          document.getElementById("passwordOutput").innerText =
-            "Who knew numbers could be so rebellious? Please enter a valid number before the math police show up!";
-          return;
-        }
+        } 
         document.getElementById("passwordOutput").innerText =
           "The number you entered is like trying to fit a giraffe in a go-kart or a mouse in a monster truck. Please enter a number greater or equal to 6 and less than 60 before we call in animal control!";
-        return;
+        return; 
       } else if (isNaN(length)) {
         document.getElementById("passwordOutput").innerText =
           "The value you entered isn't a number! It's like trying to make a smoothie with rocks. Please enter a valid number before the blender breaks down!";
         return;
-      } else {
+      } 
+       else {
         document.getElementById("passwordOutput").innerText = password;
       }
     }
